@@ -1,0 +1,138 @@
+=== Baseline & Correctness Experiment ===
+Timestamp: 20250925_003750
+Warmup enabled: False
+
+--- System Info ---
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4991.99
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+
+--- Compiler Info ---
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+
+[Compiling scalar baseline]
+
+
+[Compiling SIMD version]
+
+
+--- SAXPY: running L1_mid (N=3072) ---
+Runtime scalar=2.800e-06s, SIMD=1.467e-06s, speedup=1.91
+GFLOP/s scalar=2.19, SIMD=4.19
+Validation SAXPY L1_mid N=3072: scalar_val=5.124690e+00, simd_val=5.124690e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: running L2_mid (N=84992) ---
+Runtime scalar=4.024e-04s, SIMD=1.075e-04s, speedup=3.74
+GFLOP/s scalar=0.42, SIMD=1.58
+Validation SAXPY L2_mid N=84992: scalar_val=2.393930e+00, simd_val=2.393930e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: running L3_mid (N=1654784) ---
+Runtime scalar=2.897e-03s, SIMD=2.139e-03s, speedup=1.35
+GFLOP/s scalar=1.14, SIMD=1.55
+Validation SAXPY L3_mid N=1654784: scalar_val=3.459370e+00, simd_val=3.459370e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: running DRAM_mid (N=15728640) ---
+Runtime scalar=2.134e-02s, SIMD=1.937e-02s, speedup=1.10
+GFLOP/s scalar=1.47, SIMD=1.62
+Validation SAXPY DRAM_mid N=15728640: scalar_val=4.106310e+00, simd_val=4.106310e+00, validated=True, rel_err=0.00e+00
+
+--- Dot: running L1_mid (N=3072) ---
+Runtime scalar=5.200e-06s, SIMD=1.400e-06s, speedup=3.71
+GFLOP/s scalar=1.18, SIMD=4.39
+Validation Dot L1_mid N=3072: scalar_val=5.435100e+03, simd_val=5.435100e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: running L2_mid (N=84992) ---
+Runtime scalar=1.542e-04s, SIMD=7.950e-05s, speedup=1.94
+GFLOP/s scalar=1.10, SIMD=2.14
+Validation Dot L2_mid N=84992: scalar_val=8.203390e+04, simd_val=8.203390e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: running L3_mid (N=1654784) ---
+Runtime scalar=3.394e-03s, SIMD=1.917e-03s, speedup=1.77
+GFLOP/s scalar=0.98, SIMD=1.73
+Validation Dot L3_mid N=1654784: scalar_val=1.554110e+06, simd_val=1.554110e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: running DRAM_mid (N=15728640) ---
+Runtime scalar=3.275e-02s, SIMD=1.802e-02s, speedup=1.82
+GFLOP/s scalar=0.96, SIMD=1.75
+Validation Dot DRAM_mid N=15728640: scalar_val=1.474800e+07, simd_val=1.474800e+07, validated=True, rel_err=0.00e+00
+
+--- ElemMul: running L1_mid (N=2048) ---
+Runtime scalar=1.900e-06s, SIMD=1.100e-06s, speedup=1.73
+GFLOP/s scalar=1.08, SIMD=1.86
+Validation ElemMul L1_mid N=2048: scalar_val=5.552500e+00, simd_val=5.552500e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: running L2_mid (N=56661) ---
+Runtime scalar=7.323e-05s, SIMD=4.517e-05s, speedup=1.62
+GFLOP/s scalar=0.77, SIMD=1.25
+Validation ElemMul L2_mid N=56661: scalar_val=2.534640e+00, simd_val=2.534640e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: running L3_mid (N=1103189) ---
+Runtime scalar=1.865e-03s, SIMD=1.738e-03s, speedup=1.07
+GFLOP/s scalar=0.59, SIMD=0.63
+Validation ElemMul L3_mid N=1103189: scalar_val=1.070830e+00, simd_val=1.070830e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: running DRAM_mid (N=10485760) ---
+Runtime scalar=2.093e-02s, SIMD=1.803e-02s, speedup=1.16
+GFLOP/s scalar=0.50, SIMD=0.58
+Validation ElemMul DRAM_mid N=10485760: scalar_val=1.855130e+00, simd_val=1.855130e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: running L1_mid (N=3072) ---
+Runtime scalar=4.033e-06s, SIMD=2.633e-06s, speedup=1.53
+GFLOP/s scalar=2.28, SIMD=3.50
+Validation Stencil L1_mid N=3072: scalar_val=2.034960e+00, simd_val=2.034960e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: running L2_mid (N=84992) ---
+Runtime scalar=1.007e-04s, SIMD=5.590e-05s, speedup=1.80
+GFLOP/s scalar=2.53, SIMD=4.56
+Validation Stencil L2_mid N=84992: scalar_val=9.181790e-01, simd_val=9.181790e-01, validated=True, rel_err=0.00e+00
+
+--- Stencil: running L3_mid (N=1654784) ---
+Runtime scalar=2.463e-03s, SIMD=2.248e-03s, speedup=1.10
+GFLOP/s scalar=2.02, SIMD=2.21
+Validation Stencil L3_mid N=1654784: scalar_val=1.414070e+00, simd_val=1.414070e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: running DRAM_mid (N=15728640) ---
+Runtime scalar=2.361e-02s, SIMD=1.941e-02s, speedup=1.22
+GFLOP/s scalar=2.00, SIMD=2.43
+Validation Stencil DRAM_mid N=15728640: scalar_val=1.587930e+00, simd_val=1.587930e+00, validated=True, rel_err=0.00e+00

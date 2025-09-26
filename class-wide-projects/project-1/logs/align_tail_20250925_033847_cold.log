@@ -1,0 +1,78 @@
+=== Alignment & Tail Experiment ===
+Warmup: False, CPU freq 2.50 GHz
+[Compiling scalar]
+
+[Compiling SIMD]
+
+
+--- SAXPY, N=200000, no_tail_16x, aligned ---
+SAXPY speedup=1.26, GFLOP/s SIMD=2.41
+
+--- SAXPY, N=200000, no_tail_16x, misaligned ---
+SAXPY speedup=1.18, GFLOP/s SIMD=2.31
+
+--- SAXPY, N=200008, no_tail_8x, aligned ---
+SAXPY speedup=1.27, GFLOP/s SIMD=2.15
+
+--- SAXPY, N=200008, no_tail_8x, misaligned ---
+SAXPY speedup=1.54, GFLOP/s SIMD=2.47
+
+--- SAXPY, N=200003, tail, aligned ---
+SAXPY speedup=1.27, GFLOP/s SIMD=2.10
+
+--- SAXPY, N=200003, tail, misaligned ---
+SAXPY speedup=1.35, GFLOP/s SIMD=2.43
+
+--- Dot, N=200000, no_tail_16x, aligned ---
+Dot speedup=2.22, GFLOP/s SIMD=2.50
+
+--- Dot, N=200000, no_tail_16x, misaligned ---
+Dot speedup=2.33, GFLOP/s SIMD=2.54
+
+--- Dot, N=200008, no_tail_8x, aligned ---
+Dot speedup=2.22, GFLOP/s SIMD=2.44
+
+--- Dot, N=200008, no_tail_8x, misaligned ---
+Dot speedup=2.19, GFLOP/s SIMD=2.45
+
+--- Dot, N=200003, tail, aligned ---
+Dot speedup=2.25, GFLOP/s SIMD=2.53
+
+--- Dot, N=200003, tail, misaligned ---
+Dot speedup=2.66, GFLOP/s SIMD=2.91
+
+--- ElemMul, N=200000, no_tail_16x, aligned ---
+ElemMul speedup=1.21, GFLOP/s SIMD=0.89
+
+--- ElemMul, N=200000, no_tail_16x, misaligned ---
+ElemMul speedup=1.01, GFLOP/s SIMD=0.82
+
+--- ElemMul, N=200008, no_tail_8x, aligned ---
+ElemMul speedup=0.85, GFLOP/s SIMD=0.62
+
+--- ElemMul, N=200008, no_tail_8x, misaligned ---
+ElemMul speedup=1.17, GFLOP/s SIMD=0.79
+
+--- ElemMul, N=200003, tail, aligned ---
+ElemMul speedup=1.15, GFLOP/s SIMD=0.84
+
+--- ElemMul, N=200003, tail, misaligned ---
+ElemMul speedup=1.17, GFLOP/s SIMD=0.93
+
+--- Stencil, N=200000, no_tail_16x, aligned ---
+Stencil speedup=1.85, GFLOP/s SIMD=4.28
+
+--- Stencil, N=200000, no_tail_16x, misaligned ---
+Stencil speedup=1.54, GFLOP/s SIMD=3.85
+
+--- Stencil, N=200008, no_tail_8x, aligned ---
+Stencil speedup=1.75, GFLOP/s SIMD=4.36
+
+--- Stencil, N=200008, no_tail_8x, misaligned ---
+Stencil speedup=1.63, GFLOP/s SIMD=4.24
+
+--- Stencil, N=200003, tail, aligned ---
+Stencil speedup=1.67, GFLOP/s SIMD=4.23
+
+--- Stencil, N=200003, tail, misaligned ---
+Stencil speedup=1.59, GFLOP/s SIMD=4.09

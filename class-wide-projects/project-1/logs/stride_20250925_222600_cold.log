@@ -1,0 +1,129 @@
+=== Stride / Gather Experiment ===
+Timestamp: 20250925_222600
+Warmup enabled: False
+
+[Compiling scalar baseline]
+
+
+[Compiling SIMD version]
+
+
+[1/4] Kernel=SAXPY, Mode=Stride, stride=1 (unit-stride)
+  Run 1: scalar=0.0244665, simd=0.0196551
+  Run 2: scalar=0.0246066, simd=0.0192741
+  Run 3: scalar=0.0243756, simd=0.018258
+
+[1/4] Kernel=Dot, Mode=Stride, stride=1 (unit-stride)
+  Run 1: scalar=0.0578452, simd=0.0201118
+  Run 2: scalar=0.0577603, simd=0.0176221
+  Run 3: scalar=0.0576207, simd=0.0179827
+
+[1/4] Kernel=ElemMul, Mode=Stride, stride=1 (unit-stride)
+  Run 1: scalar=0.0285842, simd=0.0277742
+  Run 2: scalar=0.0280185, simd=0.0263459
+  Run 3: scalar=0.0282165, simd=0.0281437
+
+[1/4] Kernel=Stencil, Mode=Stride, stride=1 (unit-stride)
+  Run 1: scalar=0.0394876, simd=0.0204294
+  Run 2: scalar=0.0384249, simd=0.0196268
+  Run 3: scalar=0.0388051, simd=0.0191045
+
+[2/4] Kernel=SAXPY, Mode=Stride, stride=2 (stride-2)
+  Run 1: scalar=0.0206436, simd=0.0203791
+  Run 2: scalar=0.0205469, simd=0.0215665
+  Run 3: scalar=0.0194595, simd=0.0201112
+
+[2/4] Kernel=Dot, Mode=Stride, stride=2 (stride-2)
+  Run 1: scalar=0.0297891, simd=0.0307948
+  Run 2: scalar=0.0297553, simd=0.0298959
+  Run 3: scalar=0.0297517, simd=0.0302025
+
+[2/4] Kernel=ElemMul, Mode=Stride, stride=2 (stride-2)
+  Run 1: scalar=0.0262005, simd=0.0252414
+  Run 2: scalar=0.0256417, simd=0.0259037
+  Run 3: scalar=0.025892, simd=0.0263195
+
+[2/4] Kernel=Stencil, Mode=Stride, stride=2 (stride-2)
+  Run 1: scalar=0.0217705, simd=0.0213925
+  Run 2: scalar=0.0215765, simd=0.021324
+  Run 3: scalar=0.0224144, simd=0.0215449
+
+[3/4] Kernel=SAXPY, Mode=Stride, stride=8 (stride-8)
+  Run 1: scalar=0.0207736, simd=0.0209564
+  Run 2: scalar=0.0201576, simd=0.0210917
+  Run 3: scalar=0.0204362, simd=0.0199517
+
+[3/4] Kernel=Dot, Mode=Stride, stride=8 (stride-8)
+  Run 1: scalar=0.0179204, simd=0.0214807
+  Run 2: scalar=0.0193327, simd=0.0184955
+  Run 3: scalar=0.0201803, simd=0.0199902
+
+[3/4] Kernel=ElemMul, Mode=Stride, stride=8 (stride-8)
+  Run 1: scalar=0.0284723, simd=0.0295517
+  Run 2: scalar=0.0278446, simd=0.0290092
+  Run 3: scalar=0.0275332, simd=0.0286664
+
+[3/4] Kernel=Stencil, Mode=Stride, stride=8 (stride-8)
+  Run 1: scalar=0.0191184, simd=0.0193786
+  Run 2: scalar=0.0172606, simd=0.0196066
+  Run 3: scalar=0.018306, simd=0.0194587
+
+[4/4] Kernel=SAXPY, Mode=Stride, stride=32 (stride-32)
+  Run 1: scalar=0.023177, simd=0.0227472
+  Run 2: scalar=0.023213, simd=0.0227322
+  Run 3: scalar=0.0230456, simd=0.02257
+
+[4/4] Kernel=Dot, Mode=Stride, stride=32 (stride-32)
+  Run 1: scalar=0.020859, simd=0.0205231
+  Run 2: scalar=0.0212906, simd=0.0211318
+  Run 3: scalar=0.0198469, simd=0.0215875
+
+[4/4] Kernel=ElemMul, Mode=Stride, stride=32 (stride-32)
+  Run 1: scalar=0.0303114, simd=0.0331438
+  Run 2: scalar=0.0330114, simd=0.0325392
+  Run 3: scalar=0.0337533, simd=0.0335851
+
+[4/4] Kernel=Stencil, Mode=Stride, stride=32 (stride-32)
+  Run 1: scalar=0.021904, simd=0.0226338
+  Run 2: scalar=0.0218154, simd=0.0220489
+  Run 3: scalar=0.0219496, simd=0.0217898
+
+[1/2] Kernel=SAXPY, Mode=Gather-gather-blocked, frac=0.5
+  Run 1: scalar=0.020165, simd=0.021162
+  Run 2: scalar=0.0216997, simd=0.020104
+  Run 3: scalar=0.0194348, simd=0.0203684
+
+[1/2] Kernel=Dot, Mode=Gather-gather-blocked, frac=0.5
+  Run 1: scalar=0.0203587, simd=0.0210083
+  Run 2: scalar=0.0209211, simd=0.0198097
+  Run 3: scalar=0.0202743, simd=0.0187696
+
+[1/2] Kernel=ElemMul, Mode=Gather-gather-blocked, frac=0.5
+  Run 1: scalar=0.028568, simd=0.0316292
+  Run 2: scalar=0.02883, simd=0.0294692
+  Run 3: scalar=0.0274915, simd=0.0289784
+
+[1/2] Kernel=Stencil, Mode=Gather-gather-blocked, frac=0.5
+  Run 1: scalar=0.0209223, simd=0.0214796
+  Run 2: scalar=0.0212618, simd=0.0226934
+  Run 3: scalar=0.0212451, simd=0.0221154
+
+[2/2] Kernel=SAXPY, Mode=Gather-gather-random, frac=0.5
+  Run 1: scalar=1.06032, simd=1.06047
+  Run 2: scalar=1.0394, simd=1.03999
+  Run 3: scalar=1.03789, simd=1.05842
+
+[2/2] Kernel=Dot, Mode=Gather-gather-random, frac=0.5
+  Run 1: scalar=0.975423, simd=1.00064
+  Run 2: scalar=0.964709, simd=0.985297
+  Run 3: scalar=0.967234, simd=0.990198
+
+[2/2] Kernel=ElemMul, Mode=Gather-gather-random, frac=0.5
+  Run 1: scalar=1.87877, simd=1.8277
+  Run 2: scalar=1.80046, simd=1.83325
+  Run 3: scalar=1.82516, simd=1.84343
+
+[2/2] Kernel=Stencil, Mode=Gather-gather-random, frac=0.5
+  Run 1: scalar=1.06717, simd=1.08099
+  Run 2: scalar=1.10132, simd=1.08018
+  Run 3: scalar=1.07427, simd=1.07479

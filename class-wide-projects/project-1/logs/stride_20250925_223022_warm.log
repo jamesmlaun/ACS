@@ -1,0 +1,153 @@
+=== Stride / Gather Experiment ===
+Timestamp: 20250925_223022
+Warmup enabled: True
+
+[Compiling scalar baseline]
+
+
+[Compiling SIMD version]
+
+
+[1/4] Kernel=SAXPY, Mode=Stride, stride=1 (unit-stride)
+  Skipping warmup run
+  Run 2: scalar=0.0243693, simd=0.0193296
+  Run 3: scalar=0.0274448, simd=0.0225159
+  Run 4: scalar=0.0258163, simd=0.0199376
+
+[1/4] Kernel=Dot, Mode=Stride, stride=1 (unit-stride)
+  Skipping warmup run
+  Run 2: scalar=0.0572405, simd=0.0170163
+  Run 3: scalar=0.0577117, simd=0.017751
+  Run 4: scalar=0.0575275, simd=0.0174378
+
+[1/4] Kernel=ElemMul, Mode=Stride, stride=1 (unit-stride)
+  Skipping warmup run
+  Run 2: scalar=0.0290455, simd=0.0289352
+  Run 3: scalar=0.0285631, simd=0.0279555
+  Run 4: scalar=0.0346264, simd=0.0366356
+
+[1/4] Kernel=Stencil, Mode=Stride, stride=1 (unit-stride)
+  Skipping warmup run
+  Run 2: scalar=0.0449268, simd=0.0185084
+  Run 3: scalar=0.0442763, simd=0.0247571
+  Run 4: scalar=0.0396558, simd=0.019055
+
+[2/4] Kernel=SAXPY, Mode=Stride, stride=2 (stride-2)
+  Skipping warmup run
+  Run 2: scalar=0.0312382, simd=0.0201931
+  Run 3: scalar=0.0192879, simd=0.020708
+  Run 4: scalar=0.0193503, simd=0.0202698
+
+[2/4] Kernel=Dot, Mode=Stride, stride=2 (stride-2)
+  Skipping warmup run
+  Run 2: scalar=0.0291526, simd=0.0300366
+  Run 3: scalar=0.029379, simd=0.0298981
+  Run 4: scalar=0.029556, simd=0.0296679
+
+[2/4] Kernel=ElemMul, Mode=Stride, stride=2 (stride-2)
+  Skipping warmup run
+  Run 2: scalar=0.0260532, simd=0.0269592
+  Run 3: scalar=0.02451, simd=0.0248189
+  Run 4: scalar=0.0262659, simd=0.0270363
+
+[2/4] Kernel=Stencil, Mode=Stride, stride=2 (stride-2)
+  Skipping warmup run
+  Run 2: scalar=0.0243426, simd=0.0212583
+  Run 3: scalar=0.0218961, simd=0.0211941
+  Run 4: scalar=0.022065, simd=0.0211788
+
+[3/4] Kernel=SAXPY, Mode=Stride, stride=8 (stride-8)
+  Skipping warmup run
+  Run 2: scalar=0.0219643, simd=0.0226842
+  Run 3: scalar=0.0196748, simd=0.0204495
+  Run 4: scalar=0.019428, simd=0.0215751
+
+[3/4] Kernel=Dot, Mode=Stride, stride=8 (stride-8)
+  Skipping warmup run
+  Run 2: scalar=0.0185651, simd=0.0202603
+  Run 3: scalar=0.0192032, simd=0.0192348
+  Run 4: scalar=0.0188286, simd=0.0195484
+
+[3/4] Kernel=ElemMul, Mode=Stride, stride=8 (stride-8)
+  Skipping warmup run
+  Run 2: scalar=0.0265388, simd=0.0290995
+  Run 3: scalar=0.0288504, simd=0.0291656
+  Run 4: scalar=0.0269821, simd=0.0270448
+
+[3/4] Kernel=Stencil, Mode=Stride, stride=8 (stride-8)
+  Skipping warmup run
+  Run 2: scalar=0.0195513, simd=0.0190453
+  Run 3: scalar=0.0203904, simd=0.0194914
+  Run 4: scalar=0.0192876, simd=0.0195914
+
+[4/4] Kernel=SAXPY, Mode=Stride, stride=32 (stride-32)
+  Skipping warmup run
+  Run 2: scalar=0.0229154, simd=0.0217856
+  Run 3: scalar=0.0228625, simd=0.0218636
+  Run 4: scalar=0.022493, simd=0.0223273
+
+[4/4] Kernel=Dot, Mode=Stride, stride=32 (stride-32)
+  Skipping warmup run
+  Run 2: scalar=0.0202212, simd=0.0200105
+  Run 3: scalar=0.0198497, simd=0.0213915
+  Run 4: scalar=0.0198452, simd=0.0216868
+
+[4/4] Kernel=ElemMul, Mode=Stride, stride=32 (stride-32)
+  Skipping warmup run
+  Run 2: scalar=0.0318955, simd=0.0333971
+  Run 3: scalar=0.0328183, simd=0.032216
+  Run 4: scalar=0.0345068, simd=0.0332292
+
+[4/4] Kernel=Stencil, Mode=Stride, stride=32 (stride-32)
+  Skipping warmup run
+  Run 2: scalar=0.0225018, simd=0.0226813
+  Run 3: scalar=0.021774, simd=0.0213327
+  Run 4: scalar=0.0223832, simd=0.022723
+
+[1/2] Kernel=SAXPY, Mode=Gather-gather-blocked, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=0.0197481, simd=0.0210198
+  Run 3: scalar=0.0207194, simd=0.0211506
+  Run 4: scalar=0.020533, simd=0.0213548
+
+[1/2] Kernel=Dot, Mode=Gather-gather-blocked, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=0.0193519, simd=0.020939
+  Run 3: scalar=0.02029, simd=0.0216446
+  Run 4: scalar=0.0209604, simd=0.020666
+
+[1/2] Kernel=ElemMul, Mode=Gather-gather-blocked, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=0.0268568, simd=0.0303831
+  Run 3: scalar=0.0271904, simd=0.0295635
+  Run 4: scalar=0.0283143, simd=0.0297199
+
+[1/2] Kernel=Stencil, Mode=Gather-gather-blocked, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=0.0206892, simd=0.0215149
+  Run 3: scalar=0.0200399, simd=0.0222867
+  Run 4: scalar=0.0226838, simd=0.0218636
+
+[2/2] Kernel=SAXPY, Mode=Gather-gather-random, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=1.03578, simd=1.03843
+  Run 3: scalar=1.04064, simd=1.03645
+  Run 4: scalar=1.04186, simd=1.04799
+
+[2/2] Kernel=Dot, Mode=Gather-gather-random, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=0.981449, simd=0.974738
+  Run 3: scalar=0.977384, simd=0.984036
+  Run 4: scalar=0.992113, simd=0.97471
+
+[2/2] Kernel=ElemMul, Mode=Gather-gather-random, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=1.82229, simd=1.88116
+  Run 3: scalar=1.87043, simd=1.8518
+  Run 4: scalar=1.82376, simd=1.85839
+
+[2/2] Kernel=Stencil, Mode=Gather-gather-random, frac=0.5
+  Skipping warmup run
+  Run 2: scalar=1.08282, simd=1.10141
+  Run 3: scalar=1.10606, simd=1.10582
+  Run 4: scalar=1.09428, simd=1.08182

@@ -1,0 +1,970 @@
+=== Locality Sweep Experiment ===
+Timestamp: 20250925_134929
+Warmup enabled: True
+CPU frequency used for CPE: 2.50 GHz
+
+[Compiling scalar baseline]
+
+
+[Compiling SIMD version]
+
+
+--- SAXPY: N=768 ---
+Runtime scalar=5.667e-07s, SIMD=4.333e-07s, speedup=1.31
+GFLOP/s scalar=2.71, SIMD=3.54
+CPE scalar=1.84, SIMD=1.41
+Validation SAXPY N=768: scalar_val=7.732930e+00, simd_val=7.732930e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1002 ---
+Runtime scalar=9.000e-07s, SIMD=6.667e-07s, speedup=1.35
+GFLOP/s scalar=2.23, SIMD=3.01
+CPE scalar=2.24, SIMD=1.66
+Validation SAXPY N=1002: scalar_val=7.819460e+00, simd_val=7.819460e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1308 ---
+Runtime scalar=1.067e-06s, SIMD=8.000e-07s, speedup=1.33
+GFLOP/s scalar=2.45, SIMD=3.27
+CPE scalar=2.04, SIMD=1.53
+Validation SAXPY N=1308: scalar_val=7.771620e+00, simd_val=7.771620e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1708 ---
+Runtime scalar=1.700e-06s, SIMD=1.100e-06s, speedup=1.55
+GFLOP/s scalar=2.01, SIMD=3.11
+CPE scalar=2.48, SIMD=1.61
+Validation SAXPY N=1708: scalar_val=7.452010e+00, simd_val=7.452010e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=2230 ---
+Runtime scalar=1.900e-06s, SIMD=1.100e-06s, speedup=1.73
+GFLOP/s scalar=2.35, SIMD=4.05
+CPE scalar=2.13, SIMD=1.23
+Validation SAXPY N=2230: scalar_val=6.689730e+00, simd_val=6.689730e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=2912 ---
+Runtime scalar=2.600e-06s, SIMD=1.267e-06s, speedup=2.05
+GFLOP/s scalar=2.24, SIMD=4.60
+CPE scalar=2.23, SIMD=1.09
+Validation SAXPY N=2912: scalar_val=5.418480e+00, simd_val=5.418480e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=3802 ---
+Runtime scalar=2.733e-06s, SIMD=1.433e-06s, speedup=1.91
+GFLOP/s scalar=2.78, SIMD=5.31
+CPE scalar=1.79, SIMD=0.94
+Validation SAXPY N=3802: scalar_val=4.052070e+00, simd_val=4.052070e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=4963 ---
+Runtime scalar=3.433e-06s, SIMD=1.900e-06s, speedup=1.81
+GFLOP/s scalar=2.89, SIMD=5.22
+CPE scalar=1.73, SIMD=0.96
+Validation SAXPY N=4963: scalar_val=3.763120e+00, simd_val=3.763120e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=6480 ---
+Runtime scalar=4.567e-06s, SIMD=2.667e-06s, speedup=1.71
+GFLOP/s scalar=2.84, SIMD=4.86
+CPE scalar=1.76, SIMD=1.03
+Validation SAXPY N=6480: scalar_val=4.856120e+00, simd_val=4.856120e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=8460 ---
+Runtime scalar=6.067e-06s, SIMD=3.167e-06s, speedup=1.92
+GFLOP/s scalar=2.79, SIMD=5.34
+CPE scalar=1.79, SIMD=0.93
+Validation SAXPY N=8460: scalar_val=3.638080e+00, simd_val=3.638080e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=11045 ---
+Runtime scalar=8.600e-06s, SIMD=4.233e-06s, speedup=2.03
+GFLOP/s scalar=2.57, SIMD=5.22
+CPE scalar=1.94, SIMD=0.96
+Validation SAXPY N=11045: scalar_val=3.411670e+00, simd_val=3.411670e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=14419 ---
+Runtime scalar=8.900e-06s, SIMD=5.300e-06s, speedup=1.68
+GFLOP/s scalar=3.24, SIMD=5.44
+CPE scalar=1.54, SIMD=0.92
+Validation SAXPY N=14419: scalar_val=7.273950e+00, simd_val=7.273950e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=18824 ---
+Runtime scalar=1.167e-05s, SIMD=1.100e-05s, speedup=1.06
+GFLOP/s scalar=3.23, SIMD=3.42
+CPE scalar=1.55, SIMD=1.46
+Validation SAXPY N=18824: scalar_val=4.732510e+00, simd_val=4.732510e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=24576 ---
+Runtime scalar=1.987e-05s, SIMD=1.080e-05s, speedup=1.84
+GFLOP/s scalar=2.47, SIMD=4.55
+CPE scalar=2.02, SIMD=1.10
+Validation SAXPY N=24576: scalar_val=5.554880e+00, simd_val=5.554880e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=32084 ---
+Runtime scalar=4.153e-05s, SIMD=1.727e-05s, speedup=2.41
+GFLOP/s scalar=1.54, SIMD=3.72
+CPE scalar=3.23, SIMD=1.34
+Validation SAXPY N=32084: scalar_val=4.954450e+00, simd_val=4.954450e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=41886 ---
+Runtime scalar=4.193e-05s, SIMD=2.250e-05s, speedup=1.86
+GFLOP/s scalar=2.00, SIMD=3.72
+CPE scalar=2.50, SIMD=1.34
+Validation SAXPY N=41886: scalar_val=3.750720e+00, simd_val=3.750720e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=54683 ---
+Runtime scalar=5.687e-05s, SIMD=3.953e-05s, speedup=1.44
+GFLOP/s scalar=1.92, SIMD=2.77
+CPE scalar=2.60, SIMD=1.80
+Validation SAXPY N=54683: scalar_val=3.672090e+00, simd_val=3.672090e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=71389 ---
+Runtime scalar=6.907e-05s, SIMD=5.850e-05s, speedup=1.18
+GFLOP/s scalar=2.07, SIMD=2.44
+CPE scalar=2.41, SIMD=2.05
+Validation SAXPY N=71389: scalar_val=3.503700e+00, simd_val=3.503700e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=93199 ---
+Runtime scalar=1.217e-04s, SIMD=1.165e-04s, speedup=1.04
+GFLOP/s scalar=1.53, SIMD=1.60
+CPE scalar=3.26, SIMD=3.12
+Validation SAXPY N=93199: scalar_val=3.924640e+00, simd_val=3.924640e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=121673 ---
+Runtime scalar=1.331e-04s, SIMD=1.253e-04s, speedup=1.06
+GFLOP/s scalar=1.83, SIMD=1.94
+CPE scalar=2.73, SIMD=2.57
+Validation SAXPY N=121673: scalar_val=3.478150e+00, simd_val=3.478150e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=158846 ---
+Runtime scalar=1.848e-04s, SIMD=1.316e-04s, speedup=1.40
+GFLOP/s scalar=1.72, SIMD=2.41
+CPE scalar=2.90, SIMD=2.07
+Validation SAXPY N=158846: scalar_val=4.182420e+00, simd_val=4.182420e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=207375 ---
+Runtime scalar=2.197e-04s, SIMD=1.606e-04s, speedup=1.37
+GFLOP/s scalar=1.89, SIMD=2.58
+CPE scalar=2.64, SIMD=1.93
+Validation SAXPY N=207375: scalar_val=4.767740e+00, simd_val=4.767740e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=270731 ---
+Runtime scalar=3.015e-04s, SIMD=2.026e-04s, speedup=1.49
+GFLOP/s scalar=1.80, SIMD=2.67
+CPE scalar=2.78, SIMD=1.87
+Validation SAXPY N=270731: scalar_val=4.954250e+00, simd_val=4.954250e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=353442 ---
+Runtime scalar=3.579e-04s, SIMD=2.311e-04s, speedup=1.55
+GFLOP/s scalar=1.98, SIMD=3.06
+CPE scalar=2.53, SIMD=1.63
+Validation SAXPY N=353442: scalar_val=7.580180e+00, simd_val=7.580180e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=461423 ---
+Runtime scalar=3.990e-04s, SIMD=3.700e-04s, speedup=1.08
+GFLOP/s scalar=2.31, SIMD=2.49
+CPE scalar=2.16, SIMD=2.00
+Validation SAXPY N=461423: scalar_val=2.882730e+00, simd_val=2.882730e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=602393 ---
+Runtime scalar=5.247e-04s, SIMD=5.346e-04s, speedup=0.98
+GFLOP/s scalar=2.30, SIMD=2.25
+CPE scalar=2.17, SIMD=2.22
+Validation SAXPY N=602393: scalar_val=4.998950e+00, simd_val=4.998950e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=786431 ---
+Runtime scalar=8.070e-04s, SIMD=6.757e-04s, speedup=1.19
+GFLOP/s scalar=1.95, SIMD=2.33
+CPE scalar=2.56, SIMD=2.14
+Validation SAXPY N=786431: scalar_val=4.849540e+00, simd_val=4.849540e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1026696 ---
+Runtime scalar=1.212e-03s, SIMD=9.361e-04s, speedup=1.29
+GFLOP/s scalar=1.69, SIMD=2.19
+CPE scalar=2.95, SIMD=2.28
+Validation SAXPY N=1026696: scalar_val=3.148630e+00, simd_val=3.148630e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1340363 ---
+Runtime scalar=1.481e-03s, SIMD=1.350e-03s, speedup=1.10
+GFLOP/s scalar=1.81, SIMD=1.99
+CPE scalar=2.76, SIMD=2.51
+Validation SAXPY N=1340363: scalar_val=3.819440e+00, simd_val=3.819440e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=1749860 ---
+Runtime scalar=2.040e-03s, SIMD=1.739e-03s, speedup=1.17
+GFLOP/s scalar=1.72, SIMD=2.01
+CPE scalar=2.91, SIMD=2.48
+Validation SAXPY N=1749860: scalar_val=5.013710e+00, simd_val=5.013710e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=2284463 ---
+Runtime scalar=2.868e-03s, SIMD=2.646e-03s, speedup=1.08
+GFLOP/s scalar=1.59, SIMD=1.73
+CPE scalar=3.13, SIMD=2.89
+Validation SAXPY N=2284463: scalar_val=2.310420e+00, simd_val=2.310420e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=2982393 ---
+Runtime scalar=3.588e-03s, SIMD=3.654e-03s, speedup=0.98
+GFLOP/s scalar=1.66, SIMD=1.63
+CPE scalar=3.00, SIMD=3.06
+Validation SAXPY N=2982393: scalar_val=3.763940e+00, simd_val=3.763940e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=3893550 ---
+Runtime scalar=4.852e-03s, SIMD=4.361e-03s, speedup=1.11
+GFLOP/s scalar=1.60, SIMD=1.79
+CPE scalar=3.11, SIMD=2.80
+Validation SAXPY N=3893550: scalar_val=2.657300e+00, simd_val=2.657300e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=5083075 ---
+Runtime scalar=6.482e-03s, SIMD=5.866e-03s, speedup=1.11
+GFLOP/s scalar=1.57, SIMD=1.73
+CPE scalar=3.18, SIMD=2.88
+Validation SAXPY N=5083075: scalar_val=4.735480e+00, simd_val=4.735480e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=6636014 ---
+Runtime scalar=8.385e-03s, SIMD=8.061e-03s, speedup=1.04
+GFLOP/s scalar=1.58, SIMD=1.65
+CPE scalar=3.15, SIMD=3.03
+Validation SAXPY N=6636014: scalar_val=7.814020e+00, simd_val=7.814020e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=8663394 ---
+Runtime scalar=1.128e-02s, SIMD=1.080e-02s, speedup=1.04
+GFLOP/s scalar=1.54, SIMD=1.60
+CPE scalar=3.25, SIMD=3.11
+Validation SAXPY N=8663394: scalar_val=3.876790e+00, simd_val=3.876790e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=11310162 ---
+Runtime scalar=1.410e-02s, SIMD=1.461e-02s, speedup=0.97
+GFLOP/s scalar=1.60, SIMD=1.55
+CPE scalar=3.11, SIMD=3.22
+Validation SAXPY N=11310162: scalar_val=7.421090e+00, simd_val=7.421090e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=14765549 ---
+Runtime scalar=1.871e-02s, SIMD=1.859e-02s, speedup=1.01
+GFLOP/s scalar=1.58, SIMD=1.59
+CPE scalar=3.16, SIMD=3.14
+Validation SAXPY N=14765549: scalar_val=6.864740e+00, simd_val=6.864740e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=19276597 ---
+Runtime scalar=2.495e-02s, SIMD=2.370e-02s, speedup=1.05
+GFLOP/s scalar=1.55, SIMD=1.63
+CPE scalar=3.23, SIMD=3.07
+Validation SAXPY N=19276597: scalar_val=6.317190e+00, simd_val=6.317190e+00, validated=True, rel_err=0.00e+00
+
+--- SAXPY: N=25165823 ---
+Runtime scalar=3.251e-02s, SIMD=3.114e-02s, speedup=1.04
+GFLOP/s scalar=1.55, SIMD=1.62
+CPE scalar=3.22, SIMD=3.09
+Validation SAXPY N=25165823: scalar_val=4.303020e+00, simd_val=4.303020e+00, validated=True, rel_err=0.00e+00
+
+--- Dot: N=768 ---
+Runtime scalar=1.333e-06s, SIMD=4.000e-07s, speedup=3.33
+GFLOP/s scalar=1.15, SIMD=3.84
+CPE scalar=4.33, SIMD=1.30
+Validation Dot N=768: scalar_val=1.382080e+03, simd_val=1.382080e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1002 ---
+Runtime scalar=1.700e-06s, SIMD=4.667e-07s, speedup=3.64
+GFLOP/s scalar=1.18, SIMD=4.29
+CPE scalar=4.23, SIMD=1.16
+Validation Dot N=1002: scalar_val=1.972290e+03, simd_val=1.972290e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1308 ---
+Runtime scalar=2.233e-06s, SIMD=6.000e-07s, speedup=3.72
+GFLOP/s scalar=1.17, SIMD=4.36
+CPE scalar=4.26, SIMD=1.14
+Validation Dot N=1308: scalar_val=2.788320e+03, simd_val=2.788320e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1708 ---
+Runtime scalar=2.933e-06s, SIMD=8.000e-07s, speedup=3.67
+GFLOP/s scalar=1.16, SIMD=4.27
+CPE scalar=4.29, SIMD=1.17
+Validation Dot N=1708: scalar_val=3.804570e+03, simd_val=3.804570e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=2230 ---
+Runtime scalar=3.767e-06s, SIMD=9.667e-07s, speedup=3.90
+GFLOP/s scalar=1.18, SIMD=4.61
+CPE scalar=4.22, SIMD=1.08
+Validation Dot N=2230: scalar_val=4.808820e+03, simd_val=4.808820e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=2912 ---
+Runtime scalar=4.933e-06s, SIMD=1.267e-06s, speedup=3.89
+GFLOP/s scalar=1.18, SIMD=4.60
+CPE scalar=4.23, SIMD=1.09
+Validation Dot N=2912: scalar_val=5.393580e+03, simd_val=5.393580e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=3802 ---
+Runtime scalar=6.400e-06s, SIMD=1.667e-06s, speedup=3.84
+GFLOP/s scalar=1.19, SIMD=4.56
+CPE scalar=4.20, SIMD=1.09
+Validation Dot N=3802: scalar_val=5.438110e+03, simd_val=5.438110e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=4963 ---
+Runtime scalar=8.400e-06s, SIMD=2.100e-06s, speedup=4.00
+GFLOP/s scalar=1.18, SIMD=4.73
+CPE scalar=4.22, SIMD=1.06
+Validation Dot N=4963: scalar_val=5.418700e+03, simd_val=5.418700e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=6480 ---
+Runtime scalar=1.087e-05s, SIMD=2.767e-06s, speedup=3.93
+GFLOP/s scalar=1.19, SIMD=4.68
+CPE scalar=4.19, SIMD=1.07
+Validation Dot N=6480: scalar_val=6.146360e+03, simd_val=6.146360e+03, validated=True, rel_err=0.00e+00
+
+--- Dot: N=8460 ---
+Runtime scalar=1.420e-05s, SIMD=3.667e-06s, speedup=3.87
+GFLOP/s scalar=1.19, SIMD=4.61
+CPE scalar=4.19, SIMD=1.08
+Validation Dot N=8460: scalar_val=1.061920e+04, simd_val=1.061920e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=11045 ---
+Runtime scalar=1.850e-05s, SIMD=4.733e-06s, speedup=3.91
+GFLOP/s scalar=1.19, SIMD=4.67
+CPE scalar=4.18, SIMD=1.07
+Validation Dot N=11045: scalar_val=1.130890e+04, simd_val=1.130890e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=14419 ---
+Runtime scalar=2.413e-05s, SIMD=6.267e-06s, speedup=3.85
+GFLOP/s scalar=1.19, SIMD=4.60
+CPE scalar=4.18, SIMD=1.08
+Validation Dot N=14419: scalar_val=1.590940e+04, simd_val=1.590940e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=18824 ---
+Runtime scalar=3.660e-05s, SIMD=7.933e-06s, speedup=4.61
+GFLOP/s scalar=1.03, SIMD=4.75
+CPE scalar=4.85, SIMD=1.05
+Validation Dot N=18824: scalar_val=1.764330e+04, simd_val=1.764330e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=24576 ---
+Runtime scalar=4.560e-05s, SIMD=1.523e-05s, speedup=2.99
+GFLOP/s scalar=1.08, SIMD=3.23
+CPE scalar=4.63, SIMD=1.55
+Validation Dot N=24576: scalar_val=2.317500e+04, simd_val=2.317500e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=32084 ---
+Runtime scalar=8.270e-05s, SIMD=1.397e-05s, speedup=5.92
+GFLOP/s scalar=0.78, SIMD=4.59
+CPE scalar=6.43, SIMD=1.09
+Validation Dot N=32084: scalar_val=3.060060e+04, simd_val=3.060060e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=41886 ---
+Runtime scalar=7.143e-05s, SIMD=1.757e-05s, speedup=4.07
+GFLOP/s scalar=1.17, SIMD=4.77
+CPE scalar=4.26, SIMD=1.05
+Validation Dot N=41886: scalar_val=4.076470e+04, simd_val=4.076470e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=54683 ---
+Runtime scalar=9.577e-05s, SIMD=2.580e-05s, speedup=3.71
+GFLOP/s scalar=1.14, SIMD=4.24
+CPE scalar=4.37, SIMD=1.18
+Validation Dot N=54683: scalar_val=5.254270e+04, simd_val=5.254270e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=71389 ---
+Runtime scalar=1.335e-04s, SIMD=5.287e-05s, speedup=2.53
+GFLOP/s scalar=1.07, SIMD=2.70
+CPE scalar=4.67, SIMD=1.85
+Validation Dot N=71389: scalar_val=6.966640e+04, simd_val=6.966640e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=93199 ---
+Runtime scalar=1.623e-04s, SIMD=6.653e-05s, speedup=2.44
+GFLOP/s scalar=1.15, SIMD=2.80
+CPE scalar=4.35, SIMD=1.78
+Validation Dot N=93199: scalar_val=8.789080e+04, simd_val=8.789080e+04, validated=True, rel_err=0.00e+00
+
+--- Dot: N=121673 ---
+Runtime scalar=2.477e-04s, SIMD=7.157e-05s, speedup=3.46
+GFLOP/s scalar=0.98, SIMD=3.40
+CPE scalar=5.08, SIMD=1.47
+Validation Dot N=121673: scalar_val=1.168150e+05, simd_val=1.168150e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=158846 ---
+Runtime scalar=2.938e-04s, SIMD=1.168e-04s, speedup=2.51
+GFLOP/s scalar=1.08, SIMD=2.72
+CPE scalar=4.62, SIMD=1.84
+Validation Dot N=158846: scalar_val=1.512010e+05, simd_val=1.512010e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=207375 ---
+Runtime scalar=3.509e-04s, SIMD=1.432e-04s, speedup=2.45
+GFLOP/s scalar=1.18, SIMD=2.90
+CPE scalar=4.22, SIMD=1.72
+Validation Dot N=207375: scalar_val=1.944200e+05, simd_val=1.944200e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=270731 ---
+Runtime scalar=5.452e-04s, SIMD=1.925e-04s, speedup=2.83
+GFLOP/s scalar=0.99, SIMD=2.81
+CPE scalar=5.03, SIMD=1.77
+Validation Dot N=270731: scalar_val=2.541890e+05, simd_val=2.541890e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=353442 ---
+Runtime scalar=6.347e-04s, SIMD=2.084e-04s, speedup=3.05
+GFLOP/s scalar=1.11, SIMD=3.39
+CPE scalar=4.48, SIMD=1.47
+Validation Dot N=353442: scalar_val=3.333710e+05, simd_val=3.333710e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=461423 ---
+Runtime scalar=8.301e-04s, SIMD=3.411e-04s, speedup=2.43
+GFLOP/s scalar=1.11, SIMD=2.71
+CPE scalar=4.49, SIMD=1.85
+Validation Dot N=461423: scalar_val=4.353270e+05, simd_val=4.353270e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=602393 ---
+Runtime scalar=1.116e-03s, SIMD=3.693e-04s, speedup=3.02
+GFLOP/s scalar=1.08, SIMD=3.26
+CPE scalar=4.62, SIMD=1.53
+Validation Dot N=602393: scalar_val=5.650440e+05, simd_val=5.650440e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=786431 ---
+Runtime scalar=1.470e-03s, SIMD=6.489e-04s, speedup=2.27
+GFLOP/s scalar=1.07, SIMD=2.42
+CPE scalar=4.67, SIMD=2.06
+Validation Dot N=786431: scalar_val=7.383640e+05, simd_val=7.383640e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1026696 ---
+Runtime scalar=2.073e-03s, SIMD=7.745e-04s, speedup=2.68
+GFLOP/s scalar=0.99, SIMD=2.65
+CPE scalar=5.04, SIMD=1.88
+Validation Dot N=1026696: scalar_val=9.653170e+05, simd_val=9.653170e+05, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1340363 ---
+Runtime scalar=2.531e-03s, SIMD=1.319e-03s, speedup=1.92
+GFLOP/s scalar=1.06, SIMD=2.03
+CPE scalar=4.71, SIMD=2.46
+Validation Dot N=1340363: scalar_val=1.259180e+06, simd_val=1.259180e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=1749860 ---
+Runtime scalar=3.397e-03s, SIMD=1.730e-03s, speedup=1.96
+GFLOP/s scalar=1.03, SIMD=2.02
+CPE scalar=4.85, SIMD=2.47
+Validation Dot N=1749860: scalar_val=1.643000e+06, simd_val=1.643000e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=2284463 ---
+Runtime scalar=4.311e-03s, SIMD=2.505e-03s, speedup=1.72
+GFLOP/s scalar=1.06, SIMD=1.82
+CPE scalar=4.71, SIMD=2.74
+Validation Dot N=2284463: scalar_val=2.143690e+06, simd_val=2.143690e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=2982393 ---
+Runtime scalar=5.858e-03s, SIMD=3.214e-03s, speedup=1.82
+GFLOP/s scalar=1.02, SIMD=1.86
+CPE scalar=4.90, SIMD=2.69
+Validation Dot N=2982393: scalar_val=2.797510e+06, simd_val=2.797510e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=3893550 ---
+Runtime scalar=7.456e-03s, SIMD=4.229e-03s, speedup=1.76
+GFLOP/s scalar=1.04, SIMD=1.84
+CPE scalar=4.78, SIMD=2.71
+Validation Dot N=3893550: scalar_val=3.651630e+06, simd_val=3.651630e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=5083075 ---
+Runtime scalar=9.587e-03s, SIMD=5.686e-03s, speedup=1.69
+GFLOP/s scalar=1.06, SIMD=1.79
+CPE scalar=4.71, SIMD=2.79
+Validation Dot N=5083075: scalar_val=4.765380e+06, simd_val=4.765380e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=6636014 ---
+Runtime scalar=1.253e-02s, SIMD=7.625e-03s, speedup=1.64
+GFLOP/s scalar=1.06, SIMD=1.74
+CPE scalar=4.71, SIMD=2.87
+Validation Dot N=6636014: scalar_val=6.222240e+06, simd_val=6.222240e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=8663394 ---
+Runtime scalar=1.648e-02s, SIMD=9.433e-03s, speedup=1.75
+GFLOP/s scalar=1.05, SIMD=1.84
+CPE scalar=4.75, SIMD=2.72
+Validation Dot N=8663394: scalar_val=8.122510e+06, simd_val=8.122510e+06, validated=True, rel_err=0.00e+00
+
+--- Dot: N=11310162 ---
+Runtime scalar=2.172e-02s, SIMD=1.291e-02s, speedup=1.68
+GFLOP/s scalar=1.04, SIMD=1.75
+CPE scalar=4.79, SIMD=2.85
+Validation Dot N=11310162: scalar_val=1.060350e+07, simd_val=1.060350e+07, validated=True, rel_err=0.00e+00
+
+--- Dot: N=14765549 ---
+Runtime scalar=2.790e-02s, SIMD=1.707e-02s, speedup=1.63
+GFLOP/s scalar=1.06, SIMD=1.73
+CPE scalar=4.72, SIMD=2.89
+Validation Dot N=14765549: scalar_val=1.384270e+07, simd_val=1.384270e+07, validated=True, rel_err=0.00e+00
+
+--- Dot: N=19276597 ---
+Runtime scalar=3.641e-02s, SIMD=2.078e-02s, speedup=1.75
+GFLOP/s scalar=1.06, SIMD=1.86
+CPE scalar=4.71, SIMD=2.69
+Validation Dot N=19276597: scalar_val=1.807180e+07, simd_val=1.807180e+07, validated=True, rel_err=0.00e+00
+
+--- Dot: N=25165823 ---
+Runtime scalar=4.785e-02s, SIMD=2.946e-02s, speedup=1.62
+GFLOP/s scalar=1.05, SIMD=1.71
+CPE scalar=4.75, SIMD=2.92
+Validation Dot N=25165823: scalar_val=2.359510e+07, simd_val=2.359510e+07, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=512 ---
+Runtime scalar=5.333e-07s, SIMD=3.667e-07s, speedup=1.45
+GFLOP/s scalar=0.96, SIMD=1.40
+CPE scalar=2.60, SIMD=1.79
+Validation ElemMul N=512: scalar_val=4.747980e+00, simd_val=4.747980e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=668 ---
+Runtime scalar=5.667e-07s, SIMD=2.333e-07s, speedup=2.43
+GFLOP/s scalar=1.18, SIMD=2.86
+CPE scalar=2.12, SIMD=0.87
+Validation ElemMul N=668: scalar_val=5.127520e+00, simd_val=5.127520e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=872 ---
+Runtime scalar=8.000e-07s, SIMD=2.667e-07s, speedup=3.00
+GFLOP/s scalar=1.09, SIMD=3.27
+CPE scalar=2.29, SIMD=0.76
+Validation ElemMul N=872: scalar_val=5.549330e+00, simd_val=5.549330e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1139 ---
+Runtime scalar=9.667e-07s, SIMD=7.667e-07s, speedup=1.26
+GFLOP/s scalar=1.18, SIMD=1.49
+CPE scalar=2.12, SIMD=1.68
+Validation ElemMul N=1139: scalar_val=5.927970e+00, simd_val=5.927970e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1487 ---
+Runtime scalar=1.133e-06s, SIMD=5.333e-07s, speedup=2.12
+GFLOP/s scalar=1.31, SIMD=2.79
+CPE scalar=1.90, SIMD=0.90
+Validation ElemMul N=1487: scalar_val=6.074550e+00, simd_val=6.074550e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1941 ---
+Runtime scalar=1.333e-06s, SIMD=7.000e-07s, speedup=1.90
+GFLOP/s scalar=1.46, SIMD=2.77
+CPE scalar=1.71, SIMD=0.90
+Validation ElemMul N=1941: scalar_val=5.707840e+00, simd_val=5.707840e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=2534 ---
+Runtime scalar=1.700e-06s, SIMD=1.067e-06s, speedup=1.59
+GFLOP/s scalar=1.49, SIMD=2.38
+CPE scalar=1.67, SIMD=1.05
+Validation ElemMul N=2534: scalar_val=4.703290e+00, simd_val=4.703290e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=3309 ---
+Runtime scalar=2.233e-06s, SIMD=1.367e-06s, speedup=1.63
+GFLOP/s scalar=1.48, SIMD=2.42
+CPE scalar=1.68, SIMD=1.03
+Validation ElemMul N=3309: scalar_val=3.557080e+00, simd_val=3.557080e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=4320 ---
+Runtime scalar=8.200e-06s, SIMD=1.833e-06s, speedup=4.47
+GFLOP/s scalar=0.53, SIMD=2.36
+CPE scalar=4.74, SIMD=1.06
+Validation ElemMul N=4320: scalar_val=2.701390e+00, simd_val=2.701390e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=5640 ---
+Runtime scalar=5.700e-06s, SIMD=3.333e-06s, speedup=1.71
+GFLOP/s scalar=0.99, SIMD=1.69
+CPE scalar=2.52, SIMD=1.48
+Validation ElemMul N=5640: scalar_val=1.842660e+00, simd_val=1.842660e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=7363 ---
+Runtime scalar=8.833e-06s, SIMD=3.200e-06s, speedup=2.76
+GFLOP/s scalar=0.83, SIMD=2.30
+CPE scalar=2.99, SIMD=1.08
+Validation ElemMul N=7363: scalar_val=3.720840e+00, simd_val=3.720840e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=9612 ---
+Runtime scalar=6.467e-06s, SIMD=3.900e-06s, speedup=1.66
+GFLOP/s scalar=1.49, SIMD=2.46
+CPE scalar=1.68, SIMD=1.01
+Validation ElemMul N=9612: scalar_val=1.139820e+00, simd_val=1.139820e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=12549 ---
+Runtime scalar=1.100e-05s, SIMD=5.033e-06s, speedup=2.19
+GFLOP/s scalar=1.14, SIMD=2.49
+CPE scalar=2.19, SIMD=1.00
+Validation ElemMul N=12549: scalar_val=3.326940e+00, simd_val=3.326940e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=16383 ---
+Runtime scalar=1.127e-05s, SIMD=8.233e-06s, speedup=1.37
+GFLOP/s scalar=1.45, SIMD=1.99
+CPE scalar=1.72, SIMD=1.25
+Validation ElemMul N=16383: scalar_val=3.106430e+00, simd_val=3.106430e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=21389 ---
+Runtime scalar=1.383e-05s, SIMD=1.307e-05s, speedup=1.06
+GFLOP/s scalar=1.55, SIMD=1.64
+CPE scalar=1.61, SIMD=1.52
+Validation ElemMul N=21389: scalar_val=2.009370e+00, simd_val=2.009370e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=27924 ---
+Runtime scalar=1.800e-05s, SIMD=1.293e-05s, speedup=1.39
+GFLOP/s scalar=1.55, SIMD=2.16
+CPE scalar=1.61, SIMD=1.16
+Validation ElemMul N=27924: scalar_val=4.258020e+00, simd_val=4.258020e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=36455 ---
+Runtime scalar=2.617e-05s, SIMD=1.647e-05s, speedup=1.59
+GFLOP/s scalar=1.39, SIMD=2.21
+CPE scalar=1.79, SIMD=1.13
+Validation ElemMul N=36455: scalar_val=1.413100e+00, simd_val=1.413100e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=47592 ---
+Runtime scalar=4.310e-05s, SIMD=2.397e-05s, speedup=1.80
+GFLOP/s scalar=1.10, SIMD=1.99
+CPE scalar=2.26, SIMD=1.26
+Validation ElemMul N=47592: scalar_val=1.072070e+00, simd_val=1.072070e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=62133 ---
+Runtime scalar=9.980e-05s, SIMD=3.807e-05s, speedup=2.62
+GFLOP/s scalar=0.62, SIMD=1.63
+CPE scalar=4.01, SIMD=1.53
+Validation ElemMul N=62133: scalar_val=1.918880e+00, simd_val=1.918880e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=81115 ---
+Runtime scalar=9.650e-05s, SIMD=9.183e-05s, speedup=1.05
+GFLOP/s scalar=0.84, SIMD=0.88
+CPE scalar=2.97, SIMD=2.83
+Validation ElemMul N=81115: scalar_val=1.863240e+00, simd_val=1.863240e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=105897 ---
+Runtime scalar=2.768e-04s, SIMD=1.334e-04s, speedup=2.08
+GFLOP/s scalar=0.38, SIMD=0.79
+CPE scalar=6.52, SIMD=3.14
+Validation ElemMul N=105897: scalar_val=1.868570e+00, simd_val=1.868570e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=138250 ---
+Runtime scalar=1.749e-04s, SIMD=1.482e-04s, speedup=1.18
+GFLOP/s scalar=0.79, SIMD=0.93
+CPE scalar=3.16, SIMD=2.68
+Validation ElemMul N=138250: scalar_val=3.425720e+00, simd_val=3.425720e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=180487 ---
+Runtime scalar=3.175e-04s, SIMD=2.490e-04s, speedup=1.28
+GFLOP/s scalar=0.57, SIMD=0.72
+CPE scalar=4.39, SIMD=3.44
+Validation ElemMul N=180487: scalar_val=2.487990e+00, simd_val=2.487990e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=235628 ---
+Runtime scalar=3.595e-04s, SIMD=2.791e-04s, speedup=1.29
+GFLOP/s scalar=0.66, SIMD=0.84
+CPE scalar=3.81, SIMD=2.96
+Validation ElemMul N=235628: scalar_val=1.244390e+00, simd_val=1.244390e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=307615 ---
+Runtime scalar=5.183e-04s, SIMD=3.628e-04s, speedup=1.43
+GFLOP/s scalar=0.59, SIMD=0.85
+CPE scalar=4.21, SIMD=2.94
+Validation ElemMul N=307615: scalar_val=2.064410e+00, simd_val=2.064410e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=401595 ---
+Runtime scalar=5.960e-04s, SIMD=5.681e-04s, speedup=1.05
+GFLOP/s scalar=0.67, SIMD=0.71
+CPE scalar=3.70, SIMD=3.53
+Validation ElemMul N=401595: scalar_val=2.188020e+00, simd_val=2.188020e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=524287 ---
+Runtime scalar=7.750e-04s, SIMD=7.074e-04s, speedup=1.10
+GFLOP/s scalar=0.68, SIMD=0.74
+CPE scalar=3.69, SIMD=3.37
+Validation ElemMul N=524287: scalar_val=1.633790e+00, simd_val=1.633790e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=684464 ---
+Runtime scalar=1.166e-03s, SIMD=1.018e-03s, speedup=1.15
+GFLOP/s scalar=0.59, SIMD=0.67
+CPE scalar=4.25, SIMD=3.71
+Validation ElemMul N=684464: scalar_val=1.946370e+00, simd_val=1.946370e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=893575 ---
+Runtime scalar=1.595e-03s, SIMD=1.413e-03s, speedup=1.13
+GFLOP/s scalar=0.56, SIMD=0.63
+CPE scalar=4.46, SIMD=3.95
+Validation ElemMul N=893575: scalar_val=6.068680e+00, simd_val=6.068680e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1166573 ---
+Runtime scalar=2.321e-03s, SIMD=2.021e-03s, speedup=1.15
+GFLOP/s scalar=0.50, SIMD=0.58
+CPE scalar=4.97, SIMD=4.32
+Validation ElemMul N=1166573: scalar_val=1.146030e+00, simd_val=1.146030e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1522975 ---
+Runtime scalar=2.369e-03s, SIMD=2.477e-03s, speedup=0.96
+GFLOP/s scalar=0.64, SIMD=0.61
+CPE scalar=3.88, SIMD=4.06
+Validation ElemMul N=1522975: scalar_val=4.866260e+00, simd_val=4.866260e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=1988262 ---
+Runtime scalar=3.202e-03s, SIMD=3.351e-03s, speedup=0.96
+GFLOP/s scalar=0.62, SIMD=0.59
+CPE scalar=4.02, SIMD=4.21
+Validation ElemMul N=1988262: scalar_val=4.283960e+00, simd_val=4.283960e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=2595700 ---
+Runtime scalar=4.173e-03s, SIMD=4.295e-03s, speedup=0.97
+GFLOP/s scalar=0.62, SIMD=0.60
+CPE scalar=4.01, SIMD=4.13
+Validation ElemMul N=2595700: scalar_val=3.456250e+00, simd_val=3.456250e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=3388716 ---
+Runtime scalar=5.873e-03s, SIMD=5.620e-03s, speedup=1.05
+GFLOP/s scalar=0.58, SIMD=0.60
+CPE scalar=4.33, SIMD=4.14
+Validation ElemMul N=3388716: scalar_val=2.841750e+00, simd_val=2.841750e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=4424009 ---
+Runtime scalar=7.123e-03s, SIMD=7.194e-03s, speedup=0.99
+GFLOP/s scalar=0.62, SIMD=0.62
+CPE scalar=4.02, SIMD=4.06
+Validation ElemMul N=4424009: scalar_val=5.076910e+00, simd_val=5.076910e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=5775596 ---
+Runtime scalar=9.090e-03s, SIMD=9.873e-03s, speedup=0.92
+GFLOP/s scalar=0.64, SIMD=0.59
+CPE scalar=3.93, SIMD=4.27
+Validation ElemMul N=5775596: scalar_val=3.723410e+00, simd_val=3.723410e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=7540108 ---
+Runtime scalar=1.269e-02s, SIMD=1.268e-02s, speedup=1.00
+GFLOP/s scalar=0.59, SIMD=0.59
+CPE scalar=4.20, SIMD=4.20
+Validation ElemMul N=7540108: scalar_val=4.145850e+00, simd_val=4.145850e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=9843699 ---
+Runtime scalar=1.556e-02s, SIMD=1.712e-02s, speedup=0.91
+GFLOP/s scalar=0.63, SIMD=0.58
+CPE scalar=3.94, SIMD=4.34
+Validation ElemMul N=9843699: scalar_val=2.778380e+00, simd_val=2.778380e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=12851065 ---
+Runtime scalar=2.083e-02s, SIMD=2.180e-02s, speedup=0.96
+GFLOP/s scalar=0.62, SIMD=0.59
+CPE scalar=4.05, SIMD=4.23
+Validation ElemMul N=12851065: scalar_val=3.063650e+00, simd_val=3.063650e+00, validated=True, rel_err=0.00e+00
+
+--- ElemMul: N=16777215 ---
+Runtime scalar=2.707e-02s, SIMD=2.834e-02s, speedup=0.95
+GFLOP/s scalar=0.62, SIMD=0.59
+CPE scalar=4.03, SIMD=4.22
+Validation ElemMul N=16777215: scalar_val=5.897770e+00, simd_val=5.897770e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=768 ---
+Runtime scalar=1.100e-06s, SIMD=3.000e-07s, speedup=3.67
+GFLOP/s scalar=2.09, SIMD=7.68
+CPE scalar=3.57, SIMD=0.97
+Validation Stencil N=768: scalar_val=2.034310e+00, simd_val=2.034310e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1002 ---
+Runtime scalar=1.433e-06s, SIMD=4.000e-07s, speedup=3.58
+GFLOP/s scalar=2.10, SIMD=7.51
+CPE scalar=3.57, SIMD=1.00
+Validation Stencil N=1002: scalar_val=2.161160e+00, simd_val=2.161160e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1308 ---
+Runtime scalar=1.567e-06s, SIMD=6.000e-07s, speedup=2.61
+GFLOP/s scalar=2.50, SIMD=6.54
+CPE scalar=2.99, SIMD=1.14
+Validation Stencil N=1308: scalar_val=2.286890e+00, simd_val=2.286890e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1708 ---
+Runtime scalar=1.900e-06s, SIMD=3.533e-06s, speedup=0.54
+GFLOP/s scalar=2.70, SIMD=1.45
+CPE scalar=2.78, SIMD=5.16
+Validation Stencil N=1708: scalar_val=2.372330e+00, simd_val=2.372330e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=2230 ---
+Runtime scalar=2.400e-06s, SIMD=9.000e-07s, speedup=2.67
+GFLOP/s scalar=2.79, SIMD=7.43
+CPE scalar=2.69, SIMD=1.01
+Validation Stencil N=2230: scalar_val=2.344500e+00, simd_val=2.344500e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=2912 ---
+Runtime scalar=3.133e-06s, SIMD=1.367e-06s, speedup=2.29
+GFLOP/s scalar=2.79, SIMD=6.39
+CPE scalar=2.69, SIMD=1.17
+Validation Stencil N=2912: scalar_val=2.110990e+00, simd_val=2.110990e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=3802 ---
+Runtime scalar=5.667e-06s, SIMD=1.833e-06s, speedup=3.09
+GFLOP/s scalar=2.01, SIMD=6.22
+CPE scalar=3.72, SIMD=1.20
+Validation Stencil N=3802: scalar_val=1.666660e+00, simd_val=1.666660e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=4963 ---
+Runtime scalar=5.267e-06s, SIMD=2.433e-06s, speedup=2.16
+GFLOP/s scalar=2.83, SIMD=6.12
+CPE scalar=2.65, SIMD=1.22
+Validation Stencil N=4963: scalar_val=1.322290e+00, simd_val=1.322290e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=6480 ---
+Runtime scalar=1.210e-05s, SIMD=3.000e-06s, speedup=4.03
+GFLOP/s scalar=1.61, SIMD=6.48
+CPE scalar=4.66, SIMD=1.16
+Validation Stencil N=6480: scalar_val=1.548160e+00, simd_val=1.548160e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=8460 ---
+Runtime scalar=1.007e-05s, SIMD=3.867e-06s, speedup=2.60
+GFLOP/s scalar=2.52, SIMD=6.56
+CPE scalar=2.97, SIMD=1.14
+Validation Stencil N=8460: scalar_val=1.468300e+00, simd_val=1.468300e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=11045 ---
+Runtime scalar=1.163e-05s, SIMD=5.033e-06s, speedup=2.31
+GFLOP/s scalar=2.85, SIMD=6.58
+CPE scalar=2.63, SIMD=1.14
+Validation Stencil N=11045: scalar_val=6.556960e-01, simd_val=6.556960e-01, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=14419 ---
+Runtime scalar=1.510e-05s, SIMD=6.467e-06s, speedup=2.34
+GFLOP/s scalar=2.86, SIMD=6.69
+CPE scalar=2.61, SIMD=1.12
+Validation Stencil N=14419: scalar_val=2.379970e+00, simd_val=2.379970e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=18824 ---
+Runtime scalar=4.433e-05s, SIMD=8.667e-06s, speedup=5.12
+GFLOP/s scalar=1.27, SIMD=6.52
+CPE scalar=5.88, SIMD=1.15
+Validation Stencil N=18824: scalar_val=1.493110e+00, simd_val=1.493110e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=24576 ---
+Runtime scalar=3.167e-05s, SIMD=1.133e-05s, speedup=2.79
+GFLOP/s scalar=2.33, SIMD=6.51
+CPE scalar=3.22, SIMD=1.15
+Validation Stencil N=24576: scalar_val=1.097970e+00, simd_val=1.097970e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=32084 ---
+Runtime scalar=3.450e-05s, SIMD=1.480e-05s, speedup=2.33
+GFLOP/s scalar=2.79, SIMD=6.50
+CPE scalar=2.68, SIMD=1.15
+Validation Stencil N=32084: scalar_val=1.645420e+00, simd_val=1.645420e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=41886 ---
+Runtime scalar=4.803e-05s, SIMD=2.130e-05s, speedup=2.26
+GFLOP/s scalar=2.62, SIMD=5.90
+CPE scalar=2.86, SIMD=1.27
+Validation Stencil N=41886: scalar_val=1.500960e+00, simd_val=1.500960e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=54683 ---
+Runtime scalar=6.033e-05s, SIMD=3.000e-05s, speedup=2.01
+GFLOP/s scalar=2.72, SIMD=5.47
+CPE scalar=2.75, SIMD=1.37
+Validation Stencil N=54683: scalar_val=1.423530e+00, simd_val=1.423530e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=71389 ---
+Runtime scalar=8.283e-05s, SIMD=4.103e-05s, speedup=2.02
+GFLOP/s scalar=2.59, SIMD=5.22
+CPE scalar=2.90, SIMD=1.43
+Validation Stencil N=71389: scalar_val=1.428140e+00, simd_val=1.428140e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=93199 ---
+Runtime scalar=1.170e-04s, SIMD=6.630e-05s, speedup=1.77
+GFLOP/s scalar=2.39, SIMD=4.22
+CPE scalar=3.13, SIMD=1.78
+Validation Stencil N=93199: scalar_val=1.316900e+00, simd_val=1.316900e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=121673 ---
+Runtime scalar=1.349e-04s, SIMD=1.007e-04s, speedup=1.34
+GFLOP/s scalar=2.71, SIMD=3.62
+CPE scalar=2.77, SIMD=2.07
+Validation Stencil N=121673: scalar_val=1.420170e+00, simd_val=1.420170e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=158846 ---
+Runtime scalar=2.375e-04s, SIMD=1.125e-04s, speedup=2.11
+GFLOP/s scalar=2.01, SIMD=4.24
+CPE scalar=3.73, SIMD=1.77
+Validation Stencil N=158846: scalar_val=1.604180e+00, simd_val=1.604180e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=207375 ---
+Runtime scalar=2.508e-04s, SIMD=1.851e-04s, speedup=1.35
+GFLOP/s scalar=2.48, SIMD=3.36
+CPE scalar=3.02, SIMD=2.23
+Validation Stencil N=207375: scalar_val=1.507220e+00, simd_val=1.507220e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=270731 ---
+Runtime scalar=3.109e-04s, SIMD=2.208e-04s, speedup=1.41
+GFLOP/s scalar=2.61, SIMD=3.68
+CPE scalar=2.87, SIMD=2.04
+Validation Stencil N=270731: scalar_val=1.626130e+00, simd_val=1.626130e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=353442 ---
+Runtime scalar=4.146e-04s, SIMD=3.110e-04s, speedup=1.33
+GFLOP/s scalar=2.56, SIMD=3.41
+CPE scalar=2.93, SIMD=2.20
+Validation Stencil N=353442: scalar_val=2.355780e+00, simd_val=2.355780e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=461423 ---
+Runtime scalar=5.773e-04s, SIMD=3.089e-04s, speedup=1.87
+GFLOP/s scalar=2.40, SIMD=4.48
+CPE scalar=3.12, SIMD=1.67
+Validation Stencil N=461423: scalar_val=1.200650e+00, simd_val=1.200650e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=602393 ---
+Runtime scalar=8.176e-04s, SIMD=5.157e-04s, speedup=1.59
+GFLOP/s scalar=2.21, SIMD=3.50
+CPE scalar=3.39, SIMD=2.14
+Validation Stencil N=602393: scalar_val=9.502140e-01, simd_val=9.502140e-01, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=786431 ---
+Runtime scalar=1.155e-03s, SIMD=8.571e-04s, speedup=1.35
+GFLOP/s scalar=2.04, SIMD=2.75
+CPE scalar=3.66, SIMD=2.72
+Validation Stencil N=786431: scalar_val=1.682450e+00, simd_val=1.682450e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1026696 ---
+Runtime scalar=1.384e-03s, SIMD=1.010e-03s, speedup=1.37
+GFLOP/s scalar=2.23, SIMD=3.05
+CPE scalar=3.36, SIMD=2.46
+Validation Stencil N=1026696: scalar_val=1.307400e+00, simd_val=1.307400e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1340363 ---
+Runtime scalar=1.834e-03s, SIMD=1.647e-03s, speedup=1.11
+GFLOP/s scalar=2.19, SIMD=2.44
+CPE scalar=3.42, SIMD=3.07
+Validation Stencil N=1340363: scalar_val=1.518650e+00, simd_val=1.518650e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=1749860 ---
+Runtime scalar=2.553e-03s, SIMD=2.035e-03s, speedup=1.25
+GFLOP/s scalar=2.06, SIMD=2.58
+CPE scalar=3.64, SIMD=2.90
+Validation Stencil N=1749860: scalar_val=2.004050e+00, simd_val=2.004050e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=2284463 ---
+Runtime scalar=3.274e-03s, SIMD=2.836e-03s, speedup=1.15
+GFLOP/s scalar=2.09, SIMD=2.42
+CPE scalar=3.58, SIMD=3.10
+Validation Stencil N=2284463: scalar_val=7.668380e-01, simd_val=7.668380e-01, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=2982393 ---
+Runtime scalar=4.571e-03s, SIMD=3.689e-03s, speedup=1.24
+GFLOP/s scalar=1.96, SIMD=2.43
+CPE scalar=3.83, SIMD=3.09
+Validation Stencil N=2982393: scalar_val=1.510100e+00, simd_val=1.510100e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=3893550 ---
+Runtime scalar=5.939e-03s, SIMD=4.575e-03s, speedup=1.30
+GFLOP/s scalar=1.97, SIMD=2.55
+CPE scalar=3.81, SIMD=2.93
+Validation Stencil N=3893550: scalar_val=6.268250e-01, simd_val=6.268250e-01, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=5083075 ---
+Runtime scalar=7.634e-03s, SIMD=5.965e-03s, speedup=1.28
+GFLOP/s scalar=2.00, SIMD=2.56
+CPE scalar=3.75, SIMD=2.93
+Validation Stencil N=5083075: scalar_val=1.494270e+00, simd_val=1.494270e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=6636014 ---
+Runtime scalar=9.551e-03s, SIMD=7.757e-03s, speedup=1.23
+GFLOP/s scalar=2.08, SIMD=2.57
+CPE scalar=3.59, SIMD=2.92
+Validation Stencil N=6636014: scalar_val=2.145420e+00, simd_val=2.145420e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=8663394 ---
+Runtime scalar=1.227e-02s, SIMD=1.016e-02s, speedup=1.21
+GFLOP/s scalar=2.12, SIMD=2.56
+CPE scalar=3.54, SIMD=2.93
+Validation Stencil N=8663394: scalar_val=1.315330e+00, simd_val=1.315330e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=11310162 ---
+Runtime scalar=1.668e-02s, SIMD=1.402e-02s, speedup=1.19
+GFLOP/s scalar=2.03, SIMD=2.42
+CPE scalar=3.68, SIMD=3.09
+Validation Stencil N=11310162: scalar_val=1.813570e+00, simd_val=1.813570e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=14765549 ---
+Runtime scalar=2.282e-02s, SIMD=1.738e-02s, speedup=1.31
+GFLOP/s scalar=1.94, SIMD=2.55
+CPE scalar=3.86, SIMD=2.94
+Validation Stencil N=14765549: scalar_val=1.546870e+00, simd_val=1.546870e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=19276597 ---
+Runtime scalar=2.854e-02s, SIMD=2.179e-02s, speedup=1.31
+GFLOP/s scalar=2.03, SIMD=2.65
+CPE scalar=3.70, SIMD=2.82
+Validation Stencil N=19276597: scalar_val=1.338560e+00, simd_val=1.338560e+00, validated=True, rel_err=0.00e+00
+
+--- Stencil: N=25165823 ---
+Runtime scalar=3.915e-02s, SIMD=3.049e-02s, speedup=1.28
+GFLOP/s scalar=1.93, SIMD=2.48
+CPE scalar=3.88, SIMD=3.02
+Validation Stencil N=25165823: scalar_val=1.628010e+00, simd_val=1.628010e+00, validated=True, rel_err=0.00e+00
