@@ -1,0 +1,768 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+Note: CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+Tool versions:
+MLC version:
+Intel(R) Memory Latency Checker - v3.11b
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+=== Warm-up Phase (discarded) ===
+[WARMUP] taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+[WARMUP] taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+[WARMUP] taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+[WARMUP] taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+[WARMUP] taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+=== End Warm-up ===
+
+[RUN] rep=1, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 57.59	  16117.8
+[RUN] rep=1, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 53.08	   9142.2
+[RUN] rep=1, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	234.16	  43855.4
+[RUN] rep=1, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 73.98	  29220.1
+[RUN] rep=1, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	188.34	  43724.8
+[RUN] rep=2, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	182.08	  43329.8
+[RUN] rep=2, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 59.47	   8856.1
+[RUN] rep=2, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	230.95	  43978.6
+[RUN] rep=2, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 66.04	  29238.9
+[RUN] rep=2, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 58.92	  16050.4
+[RUN] rep=3, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	210.90	  39012.4
+[RUN] rep=3, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	304.74	  33861.9
+[RUN] rep=3, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 55.06	   9004.8
+[RUN] rep=3, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 68.05	  29120.9
+[RUN] rep=3, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 60.34	  15635.3
+[RUN] rep=4, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 53.78	   8975.8
+[RUN] rep=4, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	186.89	  42702.4
+[RUN] rep=4, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 58.69	  16024.1
+[RUN] rep=4, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	311.41	  32848.5
+[RUN] rep=4, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 86.34	  26990.7
+[RUN] rep=5, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 75.67	  28314.1
+[RUN] rep=5, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	288.93	  31229.2
+[RUN] rep=5, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 55.89	  16330.0
+[RUN] rep=5, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	247.37	  41493.8
+[RUN] rep=5, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 56.22	   8954.4
+[RUN] rep=6, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	241.53	  42591.8
+[RUN] rep=6, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	284.12	  30648.1
+[RUN] rep=6, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 91.07	  26564.4
+[RUN] rep=6, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 57.87	  16173.0
+[RUN] rep=6, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 57.32	   8882.6
+[RUN] rep=7, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 56.27	   8938.7
+[RUN] rep=7, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	190.72	  43113.7
+[RUN] rep=7, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 55.47	  16329.6
+[RUN] rep=7, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	235.45	  43831.7
+[RUN] rep=7, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 88.48	  26830.5
+[RUN] rep=8, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	100.75	  25883.7
+[RUN] rep=8, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	282.35	  36438.9
+[RUN] rep=8, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 57.33	  16170.6
+[RUN] rep=8, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	247.03	  34830.0
+[RUN] rep=8, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 63.52	   8424.0
+[RUN] rep=9, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 95.34	  25942.9
+[RUN] rep=9, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	253.31	  33963.1
+[RUN] rep=9, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	308.19	  34171.1
+[RUN] rep=9, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 57.51	  16138.9
+[RUN] rep=9, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 56.17	   8960.1
+[RUN] rep=10, intensity=high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d100
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d100 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00100	180.80	  43656.0
+[RUN] rep=10, intensity=low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d400
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d400 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00400	 57.93	  16220.9
+[RUN] rep=10, intensity=medium
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d200
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d200 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00200	 70.44	  29171.5
+[RUN] rep=10, intensity=very_high
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d50
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d50 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00050	230.51	  44106.1
+[RUN] rep=10, intensity=very_low
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -d800
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -d800 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00800	 53.34	   9082.0

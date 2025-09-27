@@ -1,0 +1,206 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+Note: CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+Tool versions:
+MLC version:
+perf version 6.6.87.2.g427645e3db3a
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+[COMPILE] g++ -O2 -march=native /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy.cpp -o /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy
+[WARMUP] perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 67108864 2.0
+[RUN] rep=1, N=65536
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 65536 2.0
+N=65536 a=2 runtime_ms=0.055
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 65536 2.0':
+
+             26594      cache-references:u                                                    
+              9107      cache-misses:u                   #   34.24% of all cache refs         
+
+       0.008759799 seconds time elapsed
+
+       0.000000000 seconds user
+       0.004567000 seconds sys
+
+
+
+[RUN] rep=1, N=262144
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 262144 2.0
+N=262144 a=2 runtime_ms=0.282
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 262144 2.0':
+
+            123716      cache-references:u                                                    
+             23105      cache-misses:u                   #   18.68% of all cache refs         
+
+       0.009846700 seconds time elapsed
+
+       0.002281000 seconds user
+       0.004562000 seconds sys
+
+
+
+[RUN] rep=1, N=67108864
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 67108864 2.0
+N=67108864 a=2 runtime_ms=64.9727
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 67108864 2.0':
+
+          22740538      cache-references:u                                                    
+           8041178      cache-misses:u                   #   35.36% of all cache refs         
+
+       0.614313069 seconds time elapsed
+
+       0.321536000 seconds user
+       0.289382000 seconds sys
+
+
+
+[RUN] rep=1, N=2097152
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 2097152 2.0
+N=2097152 a=2 runtime_ms=2.1878
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 2097152 2.0':
+
+            799804      cache-references:u                                                    
+            177947      cache-misses:u                   #   22.25% of all cache refs         
+
+       0.027837098 seconds time elapsed
+
+       0.007651000 seconds user
+       0.015303000 seconds sys
+
+
+
+[RUN] rep=1, N=6291456
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 6291456 2.0
+N=6291456 a=2 runtime_ms=6.8111
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 6291456 2.0':
+
+           2219365      cache-references:u                                                    
+            866311      cache-misses:u                   #   39.03% of all cache refs         
+
+       0.071507596 seconds time elapsed
+
+       0.036157000 seconds user
+       0.032139000 seconds sys
+
+
+
+[RUN] rep=1, N=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 1024 2.0
+N=1024 a=2 runtime_ms=0.0015
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 1024 2.0':
+
+             26890      cache-references:u                                                    
+             15563      cache-misses:u                   #   57.88% of all cache refs         
+
+       0.008060000 seconds time elapsed
+
+       0.000000000 seconds user
+       0.004857000 seconds sys
+
+
+
+[RUN] rep=1, N=16777216
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0
+N=16777216 a=2 runtime_ms=16.3559
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0':
+
+           5630957      cache-references:u                                                    
+           1970009      cache-misses:u                   #   34.99% of all cache refs         
+
+       0.212149889 seconds time elapsed
+
+       0.077650000 seconds user
+       0.130779000 seconds sys
+
+
+
+[RUN] rep=1, N=8192
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 8192 2.0
+N=8192 a=2 runtime_ms=0.0077
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 8192 2.0':
+
+             25635      cache-references:u                                                    
+             11079      cache-misses:u                   #   43.22% of all cache refs         
+
+       0.007196900 seconds time elapsed
+
+       0.001973000 seconds user
+       0.001973000 seconds sys
+
+
+

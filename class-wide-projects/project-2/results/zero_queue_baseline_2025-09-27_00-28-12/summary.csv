@@ -1,0 +1,7 @@
+level,mean_ns,stddev_ns,mean_cycles
+L1,2.17,0.06,5.42
+L2,7.67,0.15,19.17
+L3,55.63,17.75,139.08
+DRAM,134.67,3.67,336.67
+
+NOTE,Prefetchers could not be disabled under WSL2; MLC used random access mode.

@@ -1,0 +1,9 @@
+| Level | Mean (ns) | Stddev (ns) | Mean (cycles) |
+|-------|-----------|-------------|----------------|
+| L1 | 2.10 | 0.00 | 5.25 |
+| L2 | 7.50 | 0.00 | 18.75 |
+| L3 | 37.30 | 0.00 | 93.25 |
+| DRAM | 128.30 | 0.00 | 320.75 |
+
+*Notes:*
+- Prefetchers could not be disabled under WSL2; MLC used random access mode.

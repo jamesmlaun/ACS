@@ -1,0 +1,589 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+Note: CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+Tool versions:
+MLC version:
+Intel(R) Memory Latency Checker - v3.11b
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+=== Warm-up Phase (discarded from results) ===
+[WARMUP] taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64
+[WARMUP] taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W6
+[WARMUP] taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W9
+[WARMUP] taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W8
+=== End Warm-up ===
+
+[RUN-BW] rep=1, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	38512.4	
+[RUN-LAT] rep=1, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	390.22	  39023.3
+ 00002	388.22	  39042.1
+ 00008	384.11	  39007.1
+ 00015	393.47	  38569.6
+ 00050	320.35	  37440.5
+ 00100	254.53	  34264.4
+ 00200	142.37	  21570.1
+ 00300	 82.79	  17361.7
+ 00400	 71.97	  14437.3
+ 00500	 70.11	  12213.9
+ 00700	 76.41	   8801.5
+ 01000	 60.70	   7309.2
+ 01300	 57.42	   5996.7
+ 01700	 55.45	   4899.7
+ 02500	 53.17	   3776.5
+ 03500	 58.60	   2902.6
+ 05000	 54.31	   2473.1
+ 09000	 54.63	   1890.7
+ 20000	 52.50	   1549.2
+[RUN-BW] rep=1, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	35153.2	
+[RUN-LAT] rep=1, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	355.42	  35642.8
+ 00002	333.98	  37169.5
+ 00008	335.77	  36894.9
+ 00015	366.43	  36227.9
+ 00050	103.13	  15681.1
+ 00100	 78.72	  11627.7
+ 00200	 69.99	   7745.7
+ 00300	 77.09	   5489.2
+ 00400	 69.89	   4544.1
+ 00500	 60.50	   4194.2
+ 00700	 59.08	   3338.6
+ 01000	 56.76	   2726.4
+ 01300	 55.89	   2384.1
+ 01700	 54.69	   2121.0
+ 02500	 55.40	   1804.6
+ 03500	 54.65	   1636.8
+ 05000	 57.45	   1433.5
+ 09000	 52.42	   1405.6
+ 20000	 55.30	   1239.1
+[RUN-BW] rep=1, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	36068.7	
+[RUN-LAT] rep=1, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	592.95	  36605.9
+ 00002	606.92	  36238.3
+ 00008	587.08	  36691.5
+ 00015	545.31	  36758.9
+ 00050	425.65	  30564.3
+ 00100	348.95	  26734.9
+ 00200	109.69	  22721.5
+ 00300	 82.90	  17760.4
+ 00400	 77.06	  14467.1
+ 00500	 71.99	  12282.0
+ 00700	 69.60	   9451.9
+ 01000	 61.04	   7339.8
+ 01300	 56.42	   6050.9
+ 01700	 57.00	   4833.5
+ 02500	 54.67	   3746.5
+ 03500	 55.09	   3006.3
+ 05000	 54.81	   2464.8
+ 09000	 54.34	   1901.1
+ 20000	 53.28	   1532.0
+[RUN-BW] rep=1, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+		Numa node
+Numa node	     0	
+       0	41771.0	
+[RUN-LAT] rep=1, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	272.77	  43351.9
+ 00002	267.49	  43697.3
+ 00008	275.42	  43110.5
+ 00015	286.15	  40286.7
+ 00050	330.11	  30248.6
+ 00100	315.73	  29177.7
+ 00200	131.67	  23877.4
+ 00300	 79.68	  19031.9
+ 00400	 66.42	  15398.7
+ 00500	 65.10	  12659.8
+ 00700	 63.42	   9667.4
+ 01000	 61.32	   7340.5
+ 01300	 54.28	   6085.7
+ 01700	 50.79	   5088.9
+ 02500	 50.07	   3902.2
+ 03500	 51.82	   3089.7
+ 05000	 52.96	   2509.5
+ 09000	 53.03	   1928.6
+ 20000	 59.21	   1406.9
+[RUN-BW] rep=2, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+		Numa node
+Numa node	     0	
+       0	43418.3	
+[RUN-LAT] rep=2, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	271.83	  43290.8
+ 00002	277.81	  43103.4
+ 00008	275.44	  42846.5
+ 00015	266.84	  43620.5
+ 00050	351.88	  29527.2
+ 00100	338.70	  27962.8
+ 00200	134.58	  24015.8
+ 00300	 81.13	  18474.5
+ 00400	 71.25	  15097.1
+ 00500	 64.05	  12965.5
+ 00700	 62.15	  10007.3
+ 01000	 58.73	   7418.8
+ 01300	 57.20	   6022.9
+ 01700	 53.70	   4963.6
+ 02500	 52.52	   3807.2
+ 03500	 53.44	   3052.1
+ 05000	 51.18	   2574.7
+ 09000	 52.05	   1967.5
+ 20000	 59.09	   1410.1
+[RUN-BW] rep=2, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	35834.3	
+[RUN-LAT] rep=2, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	326.70	  35504.7
+ 00002	335.25	  36663.9
+ 00008	327.83	  36271.4
+ 00015	351.89	  36104.0
+ 00050	 71.82	  18631.0
+ 00100	 80.95	  11493.1
+ 00200	 69.54	   7689.9
+ 00300	 63.92	   5993.6
+ 00400	 62.43	   4896.2
+ 00500	 61.15	   4154.5
+ 00700	 56.04	   3398.2
+ 01000	 55.07	   2762.3
+ 01300	 54.61	   2408.3
+ 01700	 60.11	   1987.9
+ 02500	 52.35	   1880.8
+ 03500	 52.22	   1697.6
+ 05000	 52.89	   1537.1
+ 09000	 53.61	   1375.5
+ 20000	 53.23	   1284.4
+[RUN-BW] rep=2, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	36232.5	
+[RUN-LAT] rep=2, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	582.71	  36824.7
+ 00002	584.61	  36796.1
+ 00008	582.96	  36648.7
+ 00015	566.05	  36472.2
+ 00050	448.77	  29819.9
+ 00100	335.67	  26968.1
+ 00200	109.40	  22312.1
+ 00300	 77.58	  17913.0
+ 00400	 71.62	  14707.7
+ 00500	 75.49	  11625.8
+ 00700	 64.50	   9705.1
+ 01000	 62.23	   7192.6
+ 01300	 59.41	   5903.5
+ 01700	 56.93	   4841.1
+ 02500	 53.78	   3761.7
+ 03500	 51.38	   3117.9
+ 05000	 53.88	   2479.2
+ 09000	 55.64	   1865.4
+ 20000	 53.82	   1516.0
+[RUN-BW] rep=2, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	38285.2	
+[RUN-LAT] rep=2, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	401.53	  38269.3
+ 00002	385.51	  38892.0
+ 00008	388.31	  38525.2
+ 00015	375.35	  38840.6
+ 00050	314.13	  39025.5
+ 00100	334.55	  26021.9
+ 00200	116.92	  22108.6
+ 00300	 81.39	  17390.6
+ 00400	 72.05	  14279.8
+ 00500	 67.57	  12256.6
+ 00700	 64.92	   9408.1
+ 01000	 62.33	   7272.6
+ 01300	 56.09	   6053.8
+ 01700	 53.24	   4995.3
+ 02500	 54.00	   3741.0
+ 03500	 55.22	   3000.2
+ 05000	 53.33	   2497.8
+ 09000	 52.79	   1935.8
+ 20000	 53.07	   1533.4
+[RUN-BW] rep=3, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	36465.6	
+[RUN-LAT] rep=3, ratio=50R50W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W8
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W8 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	589.89	  36677.5
+ 00002	585.06	  36753.2
+ 00008	573.58	  36771.2
+ 00015	543.20	  36750.9
+ 00050	446.20	  33099.5
+ 00100	336.13	  27140.9
+ 00200	129.22	  20492.7
+ 00300	 82.94	  17738.0
+ 00400	 77.47	  14507.6
+ 00500	 73.65	  12201.9
+ 00700	 69.57	   9453.0
+ 01000	 67.22	   6995.1
+ 01300	 68.08	   5585.1
+ 01700	 57.98	   4838.7
+ 02500	 52.66	   3824.3
+ 03500	 52.38	   3095.3
+ 05000	 54.02	   2480.3
+ 09000	 54.87	   1890.1
+ 20000	 53.72	   1518.1
+[RUN-BW] rep=3, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	38435.9	
+[RUN-LAT] rep=3, ratio=70R30W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W9
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W9 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	386.47	  39176.2
+ 00002	385.61	  39085.1
+ 00008	382.48	  38980.0
+ 00015	375.73	  38908.4
+ 00050	317.08	  38305.9
+ 00100	345.22	  26260.2
+ 00200	160.71	  20919.2
+ 00300	 84.89	  17261.3
+ 00400	 69.52	  14563.8
+ 00500	 76.60	  11420.9
+ 00700	 65.63	   9547.8
+ 01000	 61.74	   7220.6
+ 01300	 59.33	   5902.3
+ 01700	 55.23	   4904.9
+ 02500	 52.05	   3800.9
+ 03500	 51.87	   3106.6
+ 05000	 52.10	   2541.7
+ 09000	 53.40	   1922.7
+ 20000	 54.14	   1509.2
+[RUN-BW] rep=3, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+		Numa node
+Numa node	     0	
+       0	42053.9	
+[RUN-LAT] rep=3, ratio=100R
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Using Read-only traffic type
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	272.78	  42805.4
+ 00002	268.60	  43765.8
+ 00008	280.13	  42418.7
+ 00015	297.53	  37306.8
+ 00050	337.76	  30495.4
+ 00100	312.80	  29008.4
+ 00200	147.30	  23780.7
+ 00300	 79.13	  18635.2
+ 00400	 88.50	  13337.7
+ 00500	 65.69	  12622.5
+ 00700	 65.08	   9671.0
+ 01000	 59.23	   7406.8
+ 01300	 54.00	   6158.4
+ 01700	 52.52	   5047.9
+ 02500	 52.64	   3810.4
+ 03500	 53.26	   3058.6
+ 05000	 53.46	   2497.7
+ 09000	 53.75	   1916.3
+ 20000	 61.66	   1361.0
+[RUN-BW] rep=3, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --bandwidth_matrix -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --bandwidth_matrix -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+Measuring Memory Bandwidths between nodes within system 
+Bandwidths are in MB/sec (1 MB/sec = 1,000,000 Bytes/sec)
+Using all the threads from each core if Hyper-threading is enabled
+		Numa node
+Numa node	     0	
+       0	36511.2	
+[RUN-LAT] rep=3, ratio=100W
+Command: taskset -c 0 /home/launj/mlc --loaded_latency -b256M -l64 -W6
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --loaded_latency -b256M -l64 -W6 
+
+Using buffer size of 256.000MiB/thread for reads and an additional 256.000MiB/thread for writes
+
+Measuring Loaded Latencies for the system
+Using all the threads from each core if Hyper-threading is enabled
+Inject	Latency	Bandwidth
+Delay	(ns)	MB/sec
+==========================
+ 00000	401.83	  35765.3
+ 00002	362.10	  36420.0
+ 00008	364.80	  36278.9
+ 00015	330.03	  37004.2
+ 00050	 64.58	  19833.3
+ 00100	 78.64	  11816.9
+ 00200	 70.80	   7655.5
+ 00300	 70.39	   5699.8
+ 00400	 66.80	   4749.3
+ 00500	 62.68	   4122.5
+ 00700	 57.61	   3370.2
+ 01000	 56.83	   2724.8
+ 01300	 54.09	   2436.2
+ 01700	 53.77	   2154.3
+ 02500	 55.75	   1796.7
+ 03500	 54.57	   1639.1
+ 05000	 55.08	   1489.1
+ 09000	 54.95	   1347.0
+ 20000	 53.99	   1267.3

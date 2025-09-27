@@ -1,0 +1,10 @@
+intensity,lat_mean_ns,lat_std_ns,bw_mean_MBps,bw_std_MBps
+very_low,57.08,4.66,8853.22,320.52
+low,62.46,12.08,15745.54,1045.39
+medium,75.51,4.26,28203.96,1015.17
+high,247.24,48.11,34894.12,6631.18
+very_high,270.06,35.77,37873.60,6274.91
+
+Theoretical Peak GB/s,51.20
+Measured Peak GB/s,37.87
+Percent of Peak,74.0%

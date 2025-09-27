@@ -1,0 +1,7 @@
+rep,pattern,stride,latency_ns,bandwidth_MBps
+1,random,256B,150.30,22368.20
+1,sequential,64B,60.10,42871.60
+1,sequential,256B,150.80,22654.90
+1,random,64B,58.70,42616.10
+1,random,1024B,151.10,12745.80
+1,sequential,1024B,150.90,12923.20

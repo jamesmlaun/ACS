@@ -1,0 +1,189 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+
+Tool versions:
+MLC version:
+Intel(R) Memory Latency Checker - v3.11b
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+Frequency scaling:
+CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+=== Warm-up Phase (discarded from results) ===
+[WARMUP] Running: taskset -c 0 /home/launj/mlc --idle_latency -b20K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b20K 
+
+Using buffer size of 0.020MiB
+Each iteration took 5.3 base frequency clocks (	2.1	ns)
+
+[WARMUP] Running: taskset -c 0 /home/launj/mlc --idle_latency -b640K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b640K 
+
+Using buffer size of 0.625MiB
+Each iteration took 18.7 base frequency clocks (	7.5	ns)
+
+[WARMUP] Running: taskset -c 0 /home/launj/mlc --idle_latency -b8M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b8M 
+
+Using buffer size of 8.000MiB
+Each iteration took 92.5 base frequency clocks (	37.1	ns)
+
+[WARMUP] Running: taskset -c 0 /home/launj/mlc --idle_latency -b256M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b256M 
+
+Using buffer size of 256.000MiB
+Each iteration took 333.1 base frequency clocks (	133.5	ns)
+
+=== End Warm-up ===
+
+[RUN] Repetition 1, L1 (20K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b20K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b20K 
+
+Using buffer size of 0.020MiB
+Each iteration took 5.4 base frequency clocks (	2.2	ns)
+
+[RUN] Repetition 1, L2 (640K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b640K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b640K 
+
+Using buffer size of 0.625MiB
+Each iteration took 19.4 base frequency clocks (	7.8	ns)
+
+[RUN] Repetition 1, L3 (8M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b8M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b8M 
+
+Using buffer size of 8.000MiB
+Each iteration took 189.6 base frequency clocks (	76.0	ns)
+
+[RUN] Repetition 1, DRAM (256M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b256M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b256M 
+
+Using buffer size of 256.000MiB
+Each iteration took 346.6 base frequency clocks (	138.9	ns)
+
+[RUN] Repetition 2, L1 (20K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b20K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b20K 
+
+Using buffer size of 0.020MiB
+Each iteration took 5.5 base frequency clocks (	2.2	ns)
+
+[RUN] Repetition 2, L2 (640K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b640K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b640K 
+
+Using buffer size of 0.625MiB
+Each iteration took 18.8 base frequency clocks (	7.5	ns)
+
+[RUN] Repetition 2, L3 (8M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b8M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b8M 
+
+Using buffer size of 8.000MiB
+Each iteration took 108.6 base frequency clocks (	43.5	ns)
+
+[RUN] Repetition 2, DRAM (256M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b256M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b256M 
+
+Using buffer size of 256.000MiB
+Each iteration took 330.2 base frequency clocks (	132.3	ns)
+
+[RUN] Repetition 3, L3 (8M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b8M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b8M 
+
+Using buffer size of 8.000MiB
+Each iteration took 118.2 base frequency clocks (	47.4	ns)
+
+[RUN] Repetition 3, L1 (20K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b20K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b20K 
+
+Using buffer size of 0.020MiB
+Each iteration took 5.3 base frequency clocks (	2.1	ns)
+
+[RUN] Repetition 3, L2 (640K)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b640K
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b640K 
+
+Using buffer size of 0.625MiB
+Each iteration took 19.1 base frequency clocks (	7.7	ns)
+
+[RUN] Repetition 3, DRAM (256M)
+Command: taskset -c 0 /home/launj/mlc --idle_latency -b256M
+Intel(R) Memory Latency Checker - v3.11b
+Command line parameters: --idle_latency -b256M 
+
+Using buffer size of 256.000MiB
+Each iteration took 331.5 base frequency clocks (	132.8	ns)
+

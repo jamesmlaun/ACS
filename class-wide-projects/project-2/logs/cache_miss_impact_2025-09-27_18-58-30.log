@@ -1,0 +1,1322 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+Note: CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+Tool versions:
+MLC version:
+perf version 6.6.87.2.g427645e3db3a
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+[COMPILE] g++ -O2 -march=native /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy.cpp -o /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy
+[WARMUP] perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 seq
+[RUN] rep=1, pattern=stride, arg=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1
+N=16777216 a=2 mode=stride stride=1 runtime_ms=16.4796
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1':
+
+           5398562      cache-references:u                                                    
+           1745303      cache-misses:u                   #   32.33% of all cache refs         
+
+       0.159948101 seconds time elapsed
+
+       0.077484000 seconds user
+       0.077484000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=256
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256
+N=16777216 a=2 mode=stride stride=256 runtime_ms=1.507
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256':
+
+           2252662      cache-references:u                                                    
+            862049      cache-misses:u                   #   38.27% of all cache refs         
+
+       0.129380900 seconds time elapsed
+
+       0.047354000 seconds user
+       0.078924000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=128
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128
+N=16777216 a=2 mode=stride stride=128 runtime_ms=3.0979
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128':
+
+           2525699      cache-references:u                                                    
+           1131838      cache-misses:u                   #   44.81% of all cache refs         
+
+       0.132382100 seconds time elapsed
+
+       0.066272000 seconds user
+       0.062130000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=2
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2
+N=16777216 a=2 mode=stride stride=2 runtime_ms=11.3297
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2':
+
+           5702552      cache-references:u                                                    
+           2359141      cache-misses:u                   #   41.37% of all cache refs         
+
+       0.147622500 seconds time elapsed
+
+       0.067776000 seconds user
+       0.075750000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=4
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4
+N=16777216 a=2 mode=stride stride=4 runtime_ms=10.0584
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4':
+
+           5724848      cache-references:u                                                    
+           2752626      cache-misses:u                   #   48.08% of all cache refs         
+
+       0.144130300 seconds time elapsed
+
+       0.068036000 seconds user
+       0.072038000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=512
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512
+N=16777216 a=2 mode=stride stride=512 runtime_ms=0.8096
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512':
+
+           2103357      cache-references:u                                                    
+            707490      cache-misses:u                   #   33.64% of all cache refs         
+
+       0.126444100 seconds time elapsed
+
+       0.047494000 seconds user
+       0.075199000 seconds sys
+
+
+
+[RUN] rep=1, pattern=random, arg=None
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random
+N=16777216 a=2 mode=random stride=1 runtime_ms=1345.46
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random':
+
+         119717709      cache-references:u                                                    
+          82398852      cache-misses:u                   #   68.83% of all cache refs         
+
+       2.883698802 seconds time elapsed
+
+       2.711964000 seconds user
+       0.167997000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=2048
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048
+N=16777216 a=2 mode=stride stride=2048 runtime_ms=0.2855
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048':
+
+           2003494      cache-references:u                                                    
+            622858      cache-misses:u                   #   31.09% of all cache refs         
+
+       0.126473300 seconds time elapsed
+
+       0.051645000 seconds user
+       0.071508000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=4096
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096
+N=16777216 a=2 mode=stride stride=4096 runtime_ms=0.1307
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096':
+
+           1991896      cache-references:u                                                    
+            602783      cache-misses:u                   #   30.26% of all cache refs         
+
+       0.123216500 seconds time elapsed
+
+       0.037267000 seconds user
+       0.082817000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024
+N=16777216 a=2 mode=stride stride=1024 runtime_ms=0.4533
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024':
+
+           2007907      cache-references:u                                                    
+            618443      cache-misses:u                   #   30.80% of all cache refs         
+
+       0.125957700 seconds time elapsed
+
+       0.044858000 seconds user
+       0.077483000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=16
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16
+N=16777216 a=2 mode=stride stride=16 runtime_ms=11.3327
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16':
+
+           5887453      cache-references:u                                                    
+           3641215      cache-misses:u                   #   61.85% of all cache refs         
+
+       0.147830201 seconds time elapsed
+
+       0.067985000 seconds user
+       0.075983000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=8
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8
+N=16777216 a=2 mode=stride stride=8 runtime_ms=9.9196
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8':
+
+           5902141      cache-references:u                                                    
+           3274314      cache-misses:u                   #   55.48% of all cache refs         
+
+       0.197451500 seconds time elapsed
+
+       0.060750000 seconds user
+       0.105300000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=32
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32
+N=16777216 a=2 mode=stride stride=32 runtime_ms=11.4252
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32':
+
+           4208505      cache-references:u                                                    
+           2827957      cache-misses:u                   #   67.20% of all cache refs         
+
+       0.150369200 seconds time elapsed
+
+       0.073740000 seconds user
+       0.073740000 seconds sys
+
+
+
+[RUN] rep=1, pattern=stride, arg=64
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64
+N=16777216 a=2 mode=stride stride=64 runtime_ms=6.3075
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64':
+
+           3112217      cache-references:u                                                    
+           1726353      cache-misses:u                   #   55.47% of all cache refs         
+
+       0.135674100 seconds time elapsed
+
+       0.060707000 seconds user
+       0.072849000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=2048
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048
+N=16777216 a=2 mode=stride stride=2048 runtime_ms=0.2331
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048':
+
+           1996784      cache-references:u                                                    
+            607492      cache-misses:u                   #   30.42% of all cache refs         
+
+       0.124699500 seconds time elapsed
+
+       0.051184000 seconds user
+       0.070870000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=256
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256
+N=16777216 a=2 mode=stride stride=256 runtime_ms=1.7412
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256':
+
+           2271582      cache-references:u                                                    
+            882537      cache-misses:u                   #   38.85% of all cache refs         
+
+       0.127532700 seconds time elapsed
+
+       0.044142000 seconds user
+       0.080259000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=512
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512
+N=16777216 a=2 mode=stride stride=512 runtime_ms=0.8366
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512':
+
+           2044894      cache-references:u                                                    
+            656137      cache-misses:u                   #   32.09% of all cache refs         
+
+       0.128471900 seconds time elapsed
+
+       0.054229000 seconds user
+       0.070915000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=64
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64
+N=16777216 a=2 mode=stride stride=64 runtime_ms=5.8952
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64':
+
+           3064425      cache-references:u                                                    
+           1642711      cache-misses:u                   #   53.61% of all cache refs         
+
+       0.138693200 seconds time elapsed
+
+       0.057958000 seconds user
+       0.077278000 seconds sys
+
+
+
+[RUN] rep=2, pattern=random, arg=None
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random
+N=16777216 a=2 mode=random stride=1 runtime_ms=1418.31
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random':
+
+         121113465      cache-references:u                                                    
+          87498056      cache-misses:u                   #   72.24% of all cache refs         
+
+       2.996645402 seconds time elapsed
+
+       2.791195000 seconds user
+       0.199942000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=8
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8
+N=16777216 a=2 mode=stride stride=8 runtime_ms=10.2595
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8':
+
+           5810573      cache-references:u                                                    
+           3197155      cache-misses:u                   #   55.02% of all cache refs         
+
+       0.144115300 seconds time elapsed
+
+       0.066460000 seconds user
+       0.074279000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1
+N=16777216 a=2 mode=stride stride=1 runtime_ms=17.2354
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1':
+
+           5815002      cache-references:u                                                    
+           2086450      cache-misses:u                   #   35.88% of all cache refs         
+
+       0.159124300 seconds time elapsed
+
+       0.082018000 seconds user
+       0.073816000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=4096
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096
+N=16777216 a=2 mode=stride stride=4096 runtime_ms=0.1273
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096':
+
+           1960602      cache-references:u                                                    
+            576748      cache-misses:u                   #   29.42% of all cache refs         
+
+       0.142877600 seconds time elapsed
+
+       0.052105000 seconds user
+       0.088178000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024
+N=16777216 a=2 mode=stride stride=1024 runtime_ms=0.5162
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024':
+
+           2013893      cache-references:u                                                    
+            631161      cache-misses:u                   #   31.34% of all cache refs         
+
+       0.173890401 seconds time elapsed
+
+       0.057832000 seconds user
+       0.092532000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=2
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2
+N=16777216 a=2 mode=stride stride=2 runtime_ms=11.0997
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2':
+
+           5661616      cache-references:u                                                    
+           2336956      cache-misses:u                   #   41.28% of all cache refs         
+
+       0.145961500 seconds time elapsed
+
+       0.083654000 seconds user
+       0.059753000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=128
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128
+N=16777216 a=2 mode=stride stride=128 runtime_ms=3.067
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128':
+
+           2486284      cache-references:u                                                    
+           1093542      cache-misses:u                   #   43.98% of all cache refs         
+
+       0.129582500 seconds time elapsed
+
+       0.047651000 seconds user
+       0.079419000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=32
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32
+N=16777216 a=2 mode=stride stride=32 runtime_ms=11.2059
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32':
+
+           4158219      cache-references:u                                                    
+           2728377      cache-misses:u                   #   65.61% of all cache refs         
+
+       0.148385600 seconds time elapsed
+
+       0.068449000 seconds user
+       0.076502000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=16
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16
+N=16777216 a=2 mode=stride stride=16 runtime_ms=11.6791
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16':
+
+           5806856      cache-references:u                                                    
+           3553911      cache-misses:u                   #   61.20% of all cache refs         
+
+       0.150887600 seconds time elapsed
+
+       0.071618000 seconds user
+       0.075596000 seconds sys
+
+
+
+[RUN] rep=2, pattern=stride, arg=4
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4
+N=16777216 a=2 mode=stride stride=4 runtime_ms=9.4324
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4':
+
+           5707681      cache-references:u                                                    
+           2893312      cache-misses:u                   #   50.69% of all cache refs         
+
+       0.144205600 seconds time elapsed
+
+       0.074673000 seconds user
+       0.066376000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1
+N=16777216 a=2 mode=stride stride=1 runtime_ms=16.727
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1':
+
+           5598705      cache-references:u                                                    
+           1906913      cache-misses:u                   #   34.06% of all cache refs         
+
+       0.157867700 seconds time elapsed
+
+       0.083542000 seconds user
+       0.071607000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=4
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4
+N=16777216 a=2 mode=stride stride=4 runtime_ms=9.3004
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4':
+
+           5707272      cache-references:u                                                    
+           2856737      cache-misses:u                   #   50.05% of all cache refs         
+
+       0.150328400 seconds time elapsed
+
+       0.063701000 seconds user
+       0.083608000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=512
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512
+N=16777216 a=2 mode=stride stride=512 runtime_ms=0.7849
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512':
+
+           2093092      cache-references:u                                                    
+            706663      cache-misses:u                   #   33.76% of all cache refs         
+
+       0.128467300 seconds time elapsed
+
+       0.048548000 seconds user
+       0.076868000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=64
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64
+N=16777216 a=2 mode=stride stride=64 runtime_ms=6.1432
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64':
+
+           3078501      cache-references:u                                                    
+           1652345      cache-misses:u                   #   53.67% of all cache refs         
+
+       0.137372701 seconds time elapsed
+
+       0.055344000 seconds user
+       0.079063000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=128
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128
+N=16777216 a=2 mode=stride stride=128 runtime_ms=3.2991
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128':
+
+           2462959      cache-references:u                                                    
+           1065737      cache-misses:u                   #   43.27% of all cache refs         
+
+       0.132528500 seconds time elapsed
+
+       0.056684000 seconds user
+       0.072879000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024
+N=16777216 a=2 mode=stride stride=1024 runtime_ms=0.5007
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024':
+
+           1977680      cache-references:u                                                    
+            592076      cache-misses:u                   #   29.94% of all cache refs         
+
+       0.126049200 seconds time elapsed
+
+       0.049334000 seconds user
+       0.074001000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=256
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256
+N=16777216 a=2 mode=stride stride=256 runtime_ms=1.7281
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256':
+
+           2221806      cache-references:u                                                    
+            831180      cache-misses:u                   #   37.41% of all cache refs         
+
+       0.127628800 seconds time elapsed
+
+       0.062139000 seconds user
+       0.062139000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=32
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32
+N=16777216 a=2 mode=stride stride=32 runtime_ms=11.0564
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32':
+
+           4159551      cache-references:u                                                    
+           2761959      cache-misses:u                   #   66.40% of all cache refs         
+
+       0.149809000 seconds time elapsed
+
+       0.072994000 seconds user
+       0.072994000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=2
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2
+N=16777216 a=2 mode=stride stride=2 runtime_ms=11.135
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2':
+
+           5678535      cache-references:u                                                    
+           2361297      cache-misses:u                   #   41.58% of all cache refs         
+
+       0.145174500 seconds time elapsed
+
+       0.077288000 seconds user
+       0.065084000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=4096
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096
+N=16777216 a=2 mode=stride stride=4096 runtime_ms=0.1312
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096':
+
+           1981486      cache-references:u                                                    
+            595330      cache-misses:u                   #   30.04% of all cache refs         
+
+       0.124254500 seconds time elapsed
+
+       0.048659000 seconds user
+       0.072988000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=2048
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048
+N=16777216 a=2 mode=stride stride=2048 runtime_ms=0.2641
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048':
+
+           1976850      cache-references:u                                                    
+            580980      cache-misses:u                   #   29.39% of all cache refs         
+
+       0.125515800 seconds time elapsed
+
+       0.046994000 seconds user
+       0.074408000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=16
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16
+N=16777216 a=2 mode=stride stride=16 runtime_ms=10.6506
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16':
+
+           5999374      cache-references:u                                                    
+           3758907      cache-misses:u                   #   62.65% of all cache refs         
+
+       0.144833700 seconds time elapsed
+
+       0.061275000 seconds user
+       0.080424000 seconds sys
+
+
+
+[RUN] rep=3, pattern=random, arg=None
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random
+N=16777216 a=2 mode=random stride=1 runtime_ms=1346.01
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random':
+
+         120592561      cache-references:u                                                    
+          80990676      cache-misses:u                   #   67.16% of all cache refs         
+
+       2.860018802 seconds time elapsed
+
+       2.678424000 seconds user
+       0.175896000 seconds sys
+
+
+
+[RUN] rep=3, pattern=stride, arg=8
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8
+N=16777216 a=2 mode=stride stride=8 runtime_ms=11.1353
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8':
+
+           5564373      cache-references:u                                                    
+           2989312      cache-misses:u                   #   53.72% of all cache refs         
+
+       0.148189400 seconds time elapsed
+
+       0.086146000 seconds user
+       0.057431000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024
+N=16777216 a=2 mode=stride stride=1024 runtime_ms=0.4734
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024':
+
+           2030990      cache-references:u                                                    
+            644565      cache-misses:u                   #   31.74% of all cache refs         
+
+       0.126889301 seconds time elapsed
+
+       0.049788000 seconds user
+       0.072767000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=2
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2
+N=16777216 a=2 mode=stride stride=2 runtime_ms=10.7029
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2':
+
+           5639235      cache-references:u                                                    
+           2382300      cache-misses:u                   #   42.25% of all cache refs         
+
+       0.145417300 seconds time elapsed
+
+       0.064693000 seconds user
+       0.076823000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=128
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128
+N=16777216 a=2 mode=stride stride=128 runtime_ms=2.94
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128':
+
+           2496015      cache-references:u                                                    
+           1091960      cache-misses:u                   #   43.75% of all cache refs         
+
+       0.130579100 seconds time elapsed
+
+       0.049059000 seconds user
+       0.077677000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=8
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8
+N=16777216 a=2 mode=stride stride=8 runtime_ms=10.7341
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8':
+
+           5730036      cache-references:u                                                    
+           3139933      cache-misses:u                   #   54.80% of all cache refs         
+
+       0.234392100 seconds time elapsed
+
+       0.084371000 seconds user
+       0.113901000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1
+N=16777216 a=2 mode=stride stride=1 runtime_ms=16.095
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1':
+
+           5720444      cache-references:u                                                    
+           2068519      cache-misses:u                   #   36.16% of all cache refs         
+
+       0.156527700 seconds time elapsed
+
+       0.084523000 seconds user
+       0.068424000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=256
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256
+N=16777216 a=2 mode=stride stride=256 runtime_ms=1.6428
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256':
+
+           2255628      cache-references:u                                                    
+            864190      cache-misses:u                   #   38.31% of all cache refs         
+
+       0.128787200 seconds time elapsed
+
+       0.063945000 seconds user
+       0.059948000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=4096
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096
+N=16777216 a=2 mode=stride stride=4096 runtime_ms=0.1302
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096':
+
+           1981714      cache-references:u                                                    
+            583469      cache-misses:u                   #   29.44% of all cache refs         
+
+       0.125546200 seconds time elapsed
+
+       0.050320000 seconds user
+       0.071287000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=16
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16
+N=16777216 a=2 mode=stride stride=16 runtime_ms=11.8353
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16':
+
+           5859058      cache-references:u                                                    
+           3601209      cache-misses:u                   #   61.46% of all cache refs         
+
+       0.149837800 seconds time elapsed
+
+       0.081140000 seconds user
+       0.064912000 seconds sys
+
+
+
+[RUN] rep=4, pattern=random, arg=None
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random
+N=16777216 a=2 mode=random stride=1 runtime_ms=1340.24
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random':
+
+         119890733      cache-references:u                                                    
+          82576484      cache-misses:u                   #   68.88% of all cache refs         
+
+       2.857694203 seconds time elapsed
+
+       2.664234000 seconds user
+       0.187734000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=2048
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048
+N=16777216 a=2 mode=stride stride=2048 runtime_ms=0.2623
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048':
+
+           2001855      cache-references:u                                                    
+            592425      cache-misses:u                   #   29.59% of all cache refs         
+
+       0.124530800 seconds time elapsed
+
+       0.048374000 seconds user
+       0.072562000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=64
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64
+N=16777216 a=2 mode=stride stride=64 runtime_ms=5.8208
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64':
+
+           3081416      cache-references:u                                                    
+           1648852      cache-misses:u                   #   53.51% of all cache refs         
+
+       0.135373900 seconds time elapsed
+
+       0.059733000 seconds user
+       0.071680000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=512
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512
+N=16777216 a=2 mode=stride stride=512 runtime_ms=0.7971
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512':
+
+           2097527      cache-references:u                                                    
+            700342      cache-misses:u                   #   33.39% of all cache refs         
+
+       0.124967800 seconds time elapsed
+
+       0.044500000 seconds user
+       0.076864000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=4
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4
+N=16777216 a=2 mode=stride stride=4 runtime_ms=9.8722
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4':
+
+           5677836      cache-references:u                                                    
+           2823113      cache-misses:u                   #   49.72% of all cache refs         
+
+       0.144078900 seconds time elapsed
+
+       0.061914000 seconds user
+       0.078424000 seconds sys
+
+
+
+[RUN] rep=4, pattern=stride, arg=32
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32
+N=16777216 a=2 mode=stride stride=32 runtime_ms=11.6667
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32':
+
+           4167319      cache-references:u                                                    
+           2687767      cache-misses:u                   #   64.50% of all cache refs         
+
+       0.177964600 seconds time elapsed
+
+       0.074217000 seconds user
+       0.078123000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=128
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128
+N=16777216 a=2 mode=stride stride=128 runtime_ms=2.8708
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 128':
+
+           2498972      cache-references:u                                                    
+           1091415      cache-misses:u                   #   43.67% of all cache refs         
+
+       0.132035300 seconds time elapsed
+
+       0.052011000 seconds user
+       0.076016000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=4096
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096
+N=16777216 a=2 mode=stride stride=4096 runtime_ms=0.1311
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4096':
+
+           1991174      cache-references:u                                                    
+            584536      cache-misses:u                   #   29.36% of all cache refs         
+
+       0.125759400 seconds time elapsed
+
+       0.040403000 seconds user
+       0.080806000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=1024
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024
+N=16777216 a=2 mode=stride stride=1024 runtime_ms=0.4409
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1024':
+
+           1991658      cache-references:u                                                    
+            611836      cache-misses:u                   #   30.72% of all cache refs         
+
+       0.125666201 seconds time elapsed
+
+       0.050816000 seconds user
+       0.070361000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=2048
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048
+N=16777216 a=2 mode=stride stride=2048 runtime_ms=0.2363
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2048':
+
+           1994269      cache-references:u                                                    
+            600582      cache-misses:u                   #   30.12% of all cache refs         
+
+       0.125467300 seconds time elapsed
+
+       0.046895000 seconds user
+       0.074250000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=2
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2
+N=16777216 a=2 mode=stride stride=2 runtime_ms=10.9867
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 2':
+
+           5701726      cache-references:u                                                    
+           2378482      cache-misses:u                   #   41.72% of all cache refs         
+
+       0.146450800 seconds time elapsed
+
+       0.077490000 seconds user
+       0.065255000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=4
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4
+N=16777216 a=2 mode=stride stride=4 runtime_ms=9.546
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4':
+
+           5708649      cache-references:u                                                    
+           2773773      cache-misses:u                   #   48.59% of all cache refs         
+
+       0.142966500 seconds time elapsed
+
+       0.069880000 seconds user
+       0.069880000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=8
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8
+N=16777216 a=2 mode=stride stride=8 runtime_ms=10.4088
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 8':
+
+           5835005      cache-references:u                                                    
+           3225932      cache-misses:u                   #   55.29% of all cache refs         
+
+       0.145130400 seconds time elapsed
+
+       0.072542000 seconds user
+       0.068512000 seconds sys
+
+
+
+[RUN] rep=5, pattern=random, arg=None
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random
+N=16777216 a=2 mode=random stride=1 runtime_ms=1352.33
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 random':
+
+         120844099      cache-references:u                                                    
+          82737212      cache-misses:u                   #   68.47% of all cache refs         
+
+       2.894547603 seconds time elapsed
+
+       2.709699000 seconds user
+       0.179847000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1
+N=16777216 a=2 mode=stride stride=1 runtime_ms=16.4509
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 1':
+
+           5696935      cache-references:u                                                    
+           2083879      cache-misses:u                   #   36.58% of all cache refs         
+
+       0.162712400 seconds time elapsed
+
+       0.085572000 seconds user
+       0.073347000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=512
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512
+N=16777216 a=2 mode=stride stride=512 runtime_ms=0.7981
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 512':
+
+           2110107      cache-references:u                                                    
+            702517      cache-misses:u                   #   33.29% of all cache refs         
+
+       0.125458400 seconds time elapsed
+
+       0.047261000 seconds user
+       0.074830000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=256
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256
+N=16777216 a=2 mode=stride stride=256 runtime_ms=1.576
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 256':
+
+           2261687      cache-references:u                                                    
+            848677      cache-misses:u                   #   37.52% of all cache refs         
+
+       0.128850200 seconds time elapsed
+
+       0.056218000 seconds user
+       0.068265000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=16
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16
+N=16777216 a=2 mode=stride stride=16 runtime_ms=11.5251
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 16':
+
+           5834174      cache-references:u                                                    
+           3581062      cache-misses:u                   #   61.38% of all cache refs         
+
+       0.148524400 seconds time elapsed
+
+       0.069882000 seconds user
+       0.073993000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=32
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32
+N=16777216 a=2 mode=stride stride=32 runtime_ms=11.2914
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 32':
+
+           4169804      cache-references:u                                                    
+           2699522      cache-misses:u                   #   64.74% of all cache refs         
+
+       0.215637500 seconds time elapsed
+
+       0.070834000 seconds user
+       0.106251000 seconds sys
+
+
+
+[RUN] rep=5, pattern=stride, arg=64
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64
+N=16777216 a=2 mode=stride stride=64 runtime_ms=5.868
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 64':
+
+           3080021      cache-references:u                                                    
+           1659785      cache-misses:u                   #   53.89% of all cache refs         
+
+       0.137629200 seconds time elapsed
+
+       0.060548000 seconds user
+       0.072658000 seconds sys
+
+
+

@@ -1,0 +1,170 @@
+=== Log Filtering Information ===
+The following patterns were suppressed from tool output:
+- Unable to modify prefetchers
+- enabling random access
+Reason: these are environment-related warnings in WSL2 that do not affect measurement.
+================================
+
+=== Environment Information ===
+CPU information (lscpu):
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            GenuineIntel
+Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+CPU family:                           6
+Model:                                141
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             4992.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pdcm pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            384 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             10 MiB (8 instances)
+L3 cache:                             24 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Unknown: Dependent on hypervisor status
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+
+CPU frequency governor:
+
+Note: CPU frequency scaling managed by Windows Power Options (min/max=99% to prevent turbo).
+Governor not directly configurable under WSL2; assumed performance mode.
+
+Tool versions:
+MLC version:
+perf version 6.6.87.2.g427645e3db3a
+Perf version:
+perf version 6.6.87.2.g427645e3db3a
+===============================
+
+[COMPILE] g++ -O2 -march=native /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy.cpp -o /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy
+[WARMUP] perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 1
+[RUN] rep=1, stride=3
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 3
+N=16777216 a=2 stride=3 iters=4 runtime_ms=314.252
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 3':
+
+          31698508      cache-references:u                                                    
+          12141126      cache-misses:u                   #   38.30% of all cache refs         
+
+       0.520677757 seconds time elapsed
+
+       0.449258000 seconds user
+       0.067587000 seconds sys
+
+
+
+[RUN] rep=1, stride=5
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 5
+N=16777216 a=2 stride=5 iters=4 runtime_ms=310.956
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 5':
+
+          48911390      cache-references:u                                                    
+          19859509      cache-misses:u                   #   40.60% of all cache refs         
+
+       0.512400358 seconds time elapsed
+
+       0.440352000 seconds user
+       0.068054000 seconds sys
+
+
+
+[RUN] rep=1, stride=1
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 1
+N=16777216 a=2 stride=1 iters=4 runtime_ms=298.743
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 1':
+
+          11535519      cache-references:u                                                    
+           3357029      cache-misses:u                   #   29.10% of all cache refs         
+
+       0.500025059 seconds time elapsed
+
+       0.433088000 seconds user
+       0.064161000 seconds sys
+
+
+
+[RUN] rep=1, stride=17
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 17
+N=16777216 a=2 stride=17 iters=4 runtime_ms=726.042
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 17':
+
+         167197423      cache-references:u                                                    
+         122386110      cache-misses:u                   #   73.20% of all cache refs         
+
+       1.046468914 seconds time elapsed
+
+       0.966399000 seconds user
+       0.075562000 seconds sys
+
+
+
+[RUN] rep=1, stride=31
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 31
+N=16777216 a=2 stride=31 iters=4 runtime_ms=1005.2
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 31':
+
+         215258140      cache-references:u                                                    
+         180749270      cache-misses:u                   #   83.97% of all cache refs         
+
+       1.388358560 seconds time elapsed
+
+       1.304644000 seconds user
+       0.080039000 seconds sys
+
+
+
+[RUN] rep=1, stride=9
+Command: perf stat -e cache-references,cache-misses taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 9
+N=16777216 a=2 stride=9 iters=4 runtime_ms=352.43
+
+[STDERR]
+
+ Performance counter stats for 'taskset -c 0 /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-2/saxpy 16777216 2.0 stride 4 9':
+
+          86401748      cache-references:u                                                    
+          50796067      cache-misses:u                   #   58.79% of all cache refs         
+
+       0.571218999 seconds time elapsed
+
+       0.500227000 seconds user
+       0.068030000 seconds sys
+
+
+
