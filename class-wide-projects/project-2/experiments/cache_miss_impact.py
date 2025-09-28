@@ -123,15 +123,26 @@ def run(reps=3, warmup=True, randomize=False):
         for row in summary_rows:
             w.writerow([row[0],f"{row[1]:.4f}",f"{row[2]:.4f}",f"{row[3]:.6f}",f"{row[4]:.6f}"])
 
-    # Plot: Runtime vs Miss Rate
+    # Plot: Runtime vs Miss Rate with error bars
     plt.figure(figsize=(8,6))
-    summary_rows.sort(key=lambda r:int(r[0]))
-    mr=[r[3] for r in summary_rows]; rt=[r[1] for r in summary_rows]
-    plt.plot(mr,rt,"o-",label="stride")
-    plt.xlabel("Miss Rate"); plt.ylabel("Runtime (ms)")
+
+    # Sort by miss rate so line connects smoothly
+    summary_rows.sort(key=lambda r: r[3])  # r[3] = missrate_mean
+
+    mr      = [r[3] for r in summary_rows]  # mean miss rates
+    mr_err  = [r[4] for r in summary_rows]  # std miss rates
+    rt      = [r[1] for r in summary_rows]  # mean runtimes
+    rt_err  = [r[2] for r in summary_rows]  # std runtimes
+
+    plt.errorbar(mr, rt, xerr=mr_err, yerr=rt_err,
+                 fmt="o-", capsize=5, label="stride")
+
+    plt.xlabel("Miss Rate")
+    plt.ylabel("Runtime (ms)")
     plt.title("Runtime vs Miss Rate (constant work, stride sweep)")
-    plt.grid(True,linestyle="--",alpha=0.7)
+    plt.grid(True, linestyle="--", alpha=0.7)
     plt.legend()
-    plt.savefig(corr_plot,dpi=300,bbox_inches="tight"); plt.close()
+    plt.savefig(corr_plot, dpi=300, bbox_inches="tight")
+    plt.close()
 
     print(f"[DONE] Results:\n - {raw_csv}\n - {summary_csv}\n - {corr_plot}\n - {log_file}")

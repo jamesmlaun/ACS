@@ -5,6 +5,7 @@ from experiments import read_write_mix
 from experiments import intensity_sweep
 from experiments import working_set_sweep
 from experiments import cache_miss_impact
+from experiments import tlb_miss_impact
 from experiments import utils
 
 if __name__ == "__main__":
@@ -35,5 +36,7 @@ if __name__ == "__main__":
         working_set_sweep.run(reps=args.reps, warmup=warmup, randomize=randomize)
     elif args.exp == "cache_miss_impact":
         cache_miss_impact.run(reps=args.reps, warmup=warmup, randomize=randomize)
+    elif args.exp == "tlb_miss_impact":
+        tlb_miss_impact.run(reps=args.reps, warmup=warmup, randomize=randomize)
     else:
         print(f"[ERROR] Unknown experiment: {args.exp}")

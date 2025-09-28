@@ -1,3 +1,0 @@
-Theoretical Peak: 51.20 GB/s
-Measured Peak: 37.87 GB/s
-Percent of Peak: 74.0%

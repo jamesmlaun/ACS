@@ -1,7 +1,0 @@
-pattern,stride,lat_mean_ns,lat_std_ns,bw_mean_MBps,bw_std_MBps
-sequential,64B,60.1,0.0,42871.6,0.0
-sequential,256B,150.8,0.0,22654.9,0.0
-sequential,1024B,150.9,0.0,12923.2,0.0
-random,64B,58.7,0.0,42616.1,0.0
-random,256B,150.3,0.0,22368.2,0.0
-random,1024B,151.1,0.0,12745.8,0.0
