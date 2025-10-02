@@ -139,12 +139,12 @@ To verify that SIMD vectorization occurred as intended, compiler output was insp
 
 <figure>
   <figcaption><strong>Figure 5.</strong> The SIMD-compiled version performs a variety of vector operations to execute the kernels.</figcaption>
-  <img src="./media/simd_confirm.png" alt="SIMD confirmation" width="500"/>
+  <img src="./media/simd_confirm.PNG" alt="SIMD confirmation" width="500"/>
 </figure>
 
 <figure>
   <figcaption><strong>Figure 6.</strong> The scalar-compiled version contains no operations on vectors.</figcaption>
-  <img src="./media/scalar_confirm.png" alt="scalar confirmation" width="500"/>
+  <img src="./media/scalar_confirm.PNG" alt="scalar confirmation" width="500"/>
 </figure>
 
 As seen in these figures, only the SIMD-compiled version performs SIMD operations on vectors, as indicated by the `ymm` variables.
@@ -312,12 +312,12 @@ This inspection provides direct confirmation that the compiler was emitting vect
   <figcaption><strong>Figure 14.</strong> SIMD vs Scalar Throughput For Stride and Gather with Warm Cache</figcaption>
   <table>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/Dot_gflops.png" alt="Dot throughput" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/ElemMul_gflops.png" alt="ElemMul throughput" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/dot_gflops.png" alt="Dot throughput" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/elemmul_gflops.png" alt="ElemMul throughput" width="400"/></td>
     </tr>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/SAXPY_gflops.png" alt="SAXPY throughput" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/Stencil_gflops.png" alt="Stencil throughput" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/saxpy_gflops.png" alt="SAXPY throughput" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/stencil_gflops.png" alt="Stencil throughput" width="400"/></td>
     </tr>
   </table>
 </figure>
@@ -325,12 +325,12 @@ This inspection provides direct confirmation that the compiler was emitting vect
   <figcaption><strong>Figure 15.</strong> SIMD vs Scalar Runtime For Stride and Gather with Warm Cache</figcaption>
   <table>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/Dot_runtime.png" alt="Dot runtime" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/ElemMul_runtime.png" alt="ElemMul runtime" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/dot_runtime.png" alt="Dot runtime" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/elemmul_runtime.png" alt="ElemMul runtime" width="400"/></td>
     </tr>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/SAXPY_runtime.png" alt="SAXPY runtime" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/Stencil_runtime.png" alt="Stencil runtime" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/saxpy_runtime.png" alt="SAXPY runtime" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/stencil_runtime.png" alt="Stencil runtime" width="400"/></td>
     </tr>
   </table>
 </figure>
@@ -338,12 +338,12 @@ This inspection provides direct confirmation that the compiler was emitting vect
   <figcaption><strong>Figure 16.</strong> SIMD vs Scalar Speedup For Stride and Gather with Warm Cache</figcaption>
   <table>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/Dot_speedup.png" alt="Dot speedup" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/ElemMul_speedup.png" alt="ElemMul speedup" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/dot_speedup.png" alt="Dot speedup" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/elemmul_speedup.png" alt="ElemMul speedup" width="400"/></td>
     </tr>
     <tr>
-      <td><img src="./plots/stride_20250925_223022_warm/SAXPY_speedup.png" alt="SAXPY speedup" width="400"/></td>
-      <td><img src="./plots/stride_20250925_223022_warm/Stencil_speedup.png" alt="Stencil speedup" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/saxpy_speedup.png" alt="SAXPY speedup" width="400"/></td>
+      <td><img src="./plots/stride_20250925_223022_warm/stencil_speedup.png" alt="Stencil speedup" width="400"/></td>
     </tr>
   </table>
 </figure>

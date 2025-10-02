@@ -125,6 +125,7 @@ The results reveal how internal SSD parallelism, request coalescing, and control
 ### Results
 **Figure 3.1: Block Size Sweep (Sequential)**  
 ![Sequential](figures/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_sequential.png)
+
 **Figure 3.2: Block Size Sweep (Random)**  
 ![Random](figures/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_random.png)
 
