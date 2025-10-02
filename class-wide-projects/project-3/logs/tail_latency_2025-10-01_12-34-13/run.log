@@ -1,0 +1,72 @@
+# ACS SSD Project - Experiment Log
+# ======================================
+# Run timestamp: 2025-10-01T12:34:12.980460
+#
+# Environment Information
+# fio_version: fio-3.28
+# kernel: Linux P1 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+# cpu_model: Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+# cpu_cores: CPU(s):                               16
+# disk_info: NAME MODEL              SIZE TYPE
+sda  Virtual Disk     388.4M disk
+sdb  Virtual Disk       186M disk
+sdc  Virtual Disk         2G disk
+sdd  Virtual Disk       256G disk
+# nvme_smart: smartctl 7.2 2020-12-30 r5155 [x86_64-linux-6.6.87.2-microsoft-standard-WSL2] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+Smartctl open device: /dev/nvme0 failed: No such device
+# cpu_governor_note: CPU governor locked at 99% (Turbo disabled by Windows power plan); SMT enabled
+# data_pattern: Incompressible (--randrepeat=0 --norandommap --zero_buffers=0)
+#
+# Experiment Parameters
+{
+  "experiment": "tail_latency",
+  "extra": [
+    "--randomize",
+    "--reps",
+    "3"
+  ],
+  "skip_precondition": false,
+  "precondition_size": "32G"
+}
+
+[12:34:13] Preconditioning SSD (manager-controlled)…
+[12:34:13] Preconditioning SSD with sequential write (32G total, 1M blocks)...
+[12:40:12] Preconditioning complete.
+[12:40:13] ======================================
+[12:40:13]  Starting Tail Latency Characterization
+[12:40:13]  Timestamp: 2025-10-01_12-34-13
+[12:40:13]  Target file: /mnt/y/acs_testfile
+[12:40:13]  Queue depths tested: [4, 8] (mid-QD, knee-QD)
+[12:40:13]  Block size: 4k, Pattern: randread
+[12:40:13]  Repetitions: 3
+[12:40:13] ======================================
+[12:40:13] Trial order randomized: [(4,), (8,)]
+[12:40:13] Running workload: numjobs=4
+[12:40:13] Launching FIO: taillat_nj4_rep1
+[12:40:44] Completed FIO: taillat_nj4_rep1
+[12:40:44]  Rep 1: {'avg_us': 269.702686541, 'p50_us': 264.192, 'p95_us': 358.4, 'p99_us': 444.416, 'p99_9_us': 1761.28, 'numjobs': 4, 'rep': 1}
+[12:40:44] Launching FIO: taillat_nj4_rep2
+[12:41:14] Completed FIO: taillat_nj4_rep2
+[12:41:14]  Rep 2: {'avg_us': 240.793578801, 'p50_us': 238.592, 'p95_us': 329.728, 'p99_us': 399.36, 'p99_9_us': 757.76, 'numjobs': 4, 'rep': 2}
+[12:41:14] Launching FIO: taillat_nj4_rep3
+[12:41:44] Completed FIO: taillat_nj4_rep3
+[12:41:44]  Rep 3: {'avg_us': 230.328537612, 'p50_us': 230.4, 'p95_us': 305.152, 'p99_us': 382.976, 'p99_9_us': 708.608, 'numjobs': 4, 'rep': 3}
+[12:41:44]  Aggregated: avg=246.9±20.4, p50=244.4±17.6, p95=331.1±26.7, p99=408.9±31.8, p99.9=1075.9±594.1
+[12:41:44] Running workload: numjobs=8
+[12:41:44] Launching FIO: taillat_nj8_rep1
+[12:42:15] Completed FIO: taillat_nj8_rep1
+[12:42:15]  Rep 1: {'avg_us': 324.136437579, 'p50_us': 313.344, 'p95_us': 436.224, 'p99_us': 561.152, 'p99_9_us': 1011.712, 'numjobs': 8, 'rep': 1}
+[12:42:15] Launching FIO: taillat_nj8_rep2
+[12:42:45] Completed FIO: taillat_nj8_rep2
+[12:42:45]  Rep 2: {'avg_us': 326.271019844, 'p50_us': 313.344, 'p95_us': 436.224, 'p99_us': 577.536, 'p99_9_us': 1011.712, 'numjobs': 8, 'rep': 2}
+[12:42:45] Launching FIO: taillat_nj8_rep3
+[12:43:15] Completed FIO: taillat_nj8_rep3
+[12:43:15]  Rep 3: {'avg_us': 324.985864145, 'p50_us': 313.344, 'p95_us': 436.224, 'p99_us': 569.344, 'p99_9_us': 1003.52, 'numjobs': 8, 'rep': 3}
+[12:43:15]  Aggregated: avg=325.1±1.1, p50=313.3±0.0, p95=436.2±0.0, p99=569.3±8.2, p99.9=1009.0±4.7
+[12:43:15] Raw results CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/tail_latency_2025-10-01_12-34-13/tail_latency_raw.csv
+[12:43:15] Summary CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/tail_latency_2025-10-01_12-34-13/tail_latency_summary.csv
+[12:43:15] Figure saved: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/figures/tail_latency_2025-10-01_12-34-13/tail_latency.png
+[12:43:15] Experiment complete.
+[12:43:15] ======================================

@@ -1,0 +1,16 @@
+[Compiling scalar]
+
+[Compiling SIMD]
+
+
+--- SAXPY, N=32000000 ---
+  Skipping warmup run
+SAXPY: scalar=1.32 GF/s, SIMD=1.35 GF/s, AI=0.167
+
+--- Dot, N=32000000 ---
+  Skipping warmup run
+Dot: scalar=1.08 GF/s, SIMD=1.77 GF/s, AI=0.250
+
+--- Stencil, N=32000000 ---
+  Skipping warmup run
+Stencil: scalar=1.89 GF/s, SIMD=1.90 GF/s, AI=0.188

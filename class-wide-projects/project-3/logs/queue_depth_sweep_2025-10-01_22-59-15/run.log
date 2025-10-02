@@ -1,0 +1,116 @@
+# ACS SSD Project - Experiment Log
+# ======================================
+# Run timestamp: 2025-10-01T22:59:15.194215
+#
+# Environment Information
+# fio_version: fio-3.28
+# kernel: Linux P1 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+# cpu_model: Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+# cpu_cores: CPU(s):                               16
+# disk_info: NAME MODEL              SIZE TYPE
+sda  Virtual Disk     388.4M disk
+sdb  Virtual Disk       186M disk
+sdc  Virtual Disk         4G disk
+sdd  Virtual Disk       256G disk
+# nvme_smart: smartctl 7.2 2020-12-30 r5155 [x86_64-linux-6.6.87.2-microsoft-standard-WSL2] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+Smartctl open device: /dev/nvme0 failed: No such device
+# cpu_governor_note: CPU governor locked at 99% (Turbo disabled by Windows power plan); SMT enabled
+# data_pattern: Incompressible (--randrepeat=0 --norandommap --zero_buffers=0)
+#
+# Experiment Parameters
+{
+  "experiment": "queue_depth_sweep",
+  "extra": [
+    "--randomize",
+    "--reps",
+    "3"
+  ],
+  "skip_precondition": false,
+  "precondition_size": "32G"
+}
+
+[22:59:15] Preconditioning SSD (manager-controlled)…
+[22:59:15] Preconditioning SSD with sequential write (32G total, 1M blocks)...
+[23:05:16] Preconditioning complete.
+[23:05:17] ======================================
+[23:05:17]  Starting Queue-Depth Sweep Experiment (numjobs only)
+[23:05:17]  Timestamp: 2025-10-01_22-59-15
+[23:05:17]  Target file: /mnt/y/acs_testfile
+[23:05:17]  Numjobs: [1, 2, 4, 8, 16, 32]
+[23:05:17]  Repetitions: 3
+[23:05:17]  Size: 1G, Runtime: 30s
+[23:05:17] ======================================
+[23:05:17] Trial order randomized: [(4,), (16,), (2,), (1,), (32,), (8,)]
+[23:05:17] Running workload: numjobs=4, conc=4
+[23:05:17] Launching FIO: qd_sweep_nj4_rep1
+[23:05:47] Completed FIO: qd_sweep_nj4_rep1
+[23:05:47]  Rep 1: {'iops': 14359.68801, 'mb_s': 56.091796875, 'lat_avg_us': 275.368962672, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 4, 'concurrency': 4, 'rep': 1}
+[23:05:47] Launching FIO: qd_sweep_nj4_rep2
+[23:06:18] Completed FIO: qd_sweep_nj4_rep2
+[23:06:18]  Rep 2: {'iops': 16825.439152, 'mb_s': 65.7236328125, 'lat_avg_us': 236.276479056, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 4, 'concurrency': 4, 'rep': 2}
+[23:06:18] Launching FIO: qd_sweep_nj4_rep3
+[23:06:48] Completed FIO: qd_sweep_nj4_rep3
+[23:06:48]  Rep 3: {'iops': 17341.421953, 'mb_s': 67.7392578125, 'lat_avg_us': 229.252079278, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 4, 'concurrency': 4, 'rep': 3}
+[23:06:48]  Aggregated: iops=16175.5±1593.6, mb/s=63.2±6.2, lat=247.0±24.8 us
+[23:06:48] Running workload: numjobs=16, conc=16
+[23:06:48] Launching FIO: qd_sweep_nj16_rep1
+[23:07:18] Completed FIO: qd_sweep_nj16_rep1
+[23:07:18]  Rep 1: {'iops': 27183.59388, 'mb_s': 106.185546875, 'lat_avg_us': 586.9180597569999, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 16, 'concurrency': 16, 'rep': 1}
+[23:07:18] Launching FIO: qd_sweep_nj16_rep2
+[23:07:49] Completed FIO: qd_sweep_nj16_rep2
+[23:07:49]  Rep 2: {'iops': 27094.093727, 'mb_s': 105.8359375, 'lat_avg_us': 588.876319559, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 16, 'concurrency': 16, 'rep': 2}
+[23:07:49] Launching FIO: qd_sweep_nj16_rep3
+[23:08:19] Completed FIO: qd_sweep_nj16_rep3
+[23:08:19]  Rep 3: {'iops': 27176.294124, 'mb_s': 106.1572265625, 'lat_avg_us': 587.0816001620001, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 16, 'concurrency': 16, 'rep': 3}
+[23:08:19]  Aggregated: iops=27151.3±49.7, mb/s=106.1±0.2, lat=587.6±1.1 us
+[23:08:19] Running workload: numjobs=2, conc=2
+[23:08:19] Launching FIO: qd_sweep_nj2_rep1
+[23:08:49] Completed FIO: qd_sweep_nj2_rep1
+[23:08:49]  Rep 1: {'iops': 11567.514416, 'mb_s': 45.185546875, 'lat_avg_us': 171.65791117400002, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 2, 'concurrency': 2, 'rep': 1}
+[23:08:49] Launching FIO: qd_sweep_nj2_rep2
+[23:09:20] Completed FIO: qd_sweep_nj2_rep2
+[23:09:20]  Rep 2: {'iops': 11477.584081, 'mb_s': 44.833984375, 'lat_avg_us': 172.98473723599997, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 2, 'concurrency': 2, 'rep': 2}
+[23:09:20] Launching FIO: qd_sweep_nj2_rep3
+[23:09:50] Completed FIO: qd_sweep_nj2_rep3
+[23:09:50]  Rep 3: {'iops': 11304.48985, 'mb_s': 44.1572265625, 'lat_avg_us': 175.6990176, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 2, 'concurrency': 2, 'rep': 3}
+[23:09:50]  Aggregated: iops=11449.9±133.7, mb/s=44.7±0.5, lat=173.4±2.1 us
+[23:09:50] Running workload: numjobs=1, conc=1
+[23:09:50] Launching FIO: qd_sweep_nj1_rep1
+[23:10:20] Completed FIO: qd_sweep_nj1_rep1
+[23:10:20]  Rep 1: {'iops': 6379.720676, 'mb_s': 24.919921875, 'lat_avg_us': 155.536224381, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 1, 'concurrency': 1, 'rep': 1}
+[23:10:20] Launching FIO: qd_sweep_nj1_rep2
+[23:10:51] Completed FIO: qd_sweep_nj1_rep2
+[23:10:51]  Rep 2: {'iops': 6313.322889, 'mb_s': 24.6611328125, 'lat_avg_us': 157.201926739, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 1, 'concurrency': 1, 'rep': 2}
+[23:10:51] Launching FIO: qd_sweep_nj1_rep3
+[23:11:21] Completed FIO: qd_sweep_nj1_rep3
+[23:11:21]  Rep 3: {'iops': 6417.852738, 'mb_s': 25.0693359375, 'lat_avg_us': 154.667591554, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 1, 'concurrency': 1, 'rep': 3}
+[23:11:21]  Aggregated: iops=6370.3±52.9, mb/s=24.9±0.2, lat=155.8±1.3 us
+[23:11:21] Running workload: numjobs=32, conc=32
+[23:11:21] Launching FIO: qd_sweep_nj32_rep1
+[23:11:51] Completed FIO: qd_sweep_nj32_rep1
+[23:11:51]  Rep 1: {'iops': 27444.118529, 'mb_s': 107.203125, 'lat_avg_us': 1164.055318281, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 32, 'concurrency': 32, 'rep': 1}
+[23:11:51] Launching FIO: qd_sweep_nj32_rep2
+[23:12:22] Completed FIO: qd_sweep_nj32_rep2
+[23:12:22]  Rep 2: {'iops': 27288.580761, 'mb_s': 106.595703125, 'lat_avg_us': 1170.636377389, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 32, 'concurrency': 32, 'rep': 2}
+[23:12:22] Launching FIO: qd_sweep_nj32_rep3
+[23:12:52] Completed FIO: qd_sweep_nj32_rep3
+[23:12:52]  Rep 3: {'iops': 27033.931071, 'mb_s': 105.6005859375, 'lat_avg_us': 1181.636858146, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 32, 'concurrency': 32, 'rep': 3}
+[23:12:52]  Aggregated: iops=27255.5±207.1, mb/s=106.5±0.8, lat=1172.1±8.9 us
+[23:12:52] Running workload: numjobs=8, conc=8
+[23:12:52] Launching FIO: qd_sweep_nj8_rep1
+[23:13:23] Completed FIO: qd_sweep_nj8_rep1
+[23:13:23]  Rep 1: {'iops': 24595.746808, 'mb_s': 96.076171875, 'lat_avg_us': 323.70741491, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 8, 'concurrency': 8, 'rep': 1}
+[23:13:23] Launching FIO: qd_sweep_nj8_rep2
+[23:13:53] Completed FIO: qd_sweep_nj8_rep2
+[23:13:53]  Rep 2: {'iops': 24692.343589, 'mb_s': 96.4541015625, 'lat_avg_us': 322.426870376, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 8, 'concurrency': 8, 'rep': 2}
+[23:13:53] Launching FIO: qd_sweep_nj8_rep3
+[23:14:23] Completed FIO: qd_sweep_nj8_rep3
+[23:14:23]  Rep 3: {'iops': 24963.301223, 'mb_s': 97.5126953125, 'lat_avg_us': 318.934210607, 'lat_p95_us': 0.0, 'lat_p99_us': 0.0, 'numjobs': 8, 'concurrency': 8, 'rep': 3}
+[23:14:23]  Aggregated: iops=24750.5±190.5, mb/s=96.7±0.7, lat=321.7±2.5 us
+[23:14:23] Raw results CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/queue_depth_sweep_2025-10-01_22-59-15/queue_depth_sweep_raw.csv
+[23:14:23] Summary CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/queue_depth_sweep_2025-10-01_22-59-15/queue_depth_sweep_summary.csv
+[23:14:24] Figure saved: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/figures/queue_depth_sweep_2025-10-01_22-59-15/queue_depth_sweep.png
+[23:14:24] Experiment complete.
+[23:14:24] ======================================

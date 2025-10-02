@@ -8,6 +8,7 @@ EXPERIMENTS = {
     "alignment": "experiments/alignment_tail.py",
     "stride": "experiments/stride_gather.py",
     "datatype": "experiments/datatype_comparison.py",
+    "roofline": "experiments/roofline.py",
 }
 
 def main():

@@ -1,0 +1,249 @@
+# ACS SSD Project - Experiment Log
+# ======================================
+# Run timestamp: 2025-10-01T03:39:41.648057
+#
+# Environment Information
+# fio_version: fio-3.28
+# kernel: Linux P1 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+# cpu_model: Model name:                           11th Gen Intel(R) Core(TM) i7-11850H @ 2.50GHz
+# cpu_cores: CPU(s):                               16
+# disk_info: NAME MODEL              SIZE TYPE
+sda  Virtual Disk     388.4M disk
+sdb  Virtual Disk       186M disk
+sdc  Virtual Disk         2G disk
+sdd  Virtual Disk       256G disk
+# nvme_smart: smartctl 7.2 2020-12-30 r5155 [x86_64-linux-6.6.87.2-microsoft-standard-WSL2] (local build)
+Copyright (C) 2002-20, Bruce Allen, Christian Franke, www.smartmontools.org
+
+Smartctl open device: /dev/nvme0 failed: No such device
+# cpu_governor_note: CPU governor locked at 99% (Turbo disabled by Windows power plan); SMT enabled
+# data_pattern: Incompressible (--randrepeat=0 --norandommap --zero_buffers=0)
+#
+# Experiment Parameters
+{
+  "experiment": "block_size_sweep",
+  "extra": [
+    "--randomize",
+    "--reps",
+    "3"
+  ],
+  "skip_precondition": false,
+  "precondition_size": "32G"
+}
+
+[03:39:41] Preconditioning SSD (manager-controlled)…
+[03:39:41] Preconditioning SSD with sequential write (32G total, 1M blocks)...
+[03:45:38] Preconditioning complete.
+[03:45:39] ======================================
+[03:45:39]  Starting Block-Size Sweep Experiment
+[03:45:39]  Timestamp: 2025-10-01_03-39-41
+[03:45:39]  Target file: /mnt/y/acs_testfile
+[03:45:39]  Block sizes: ['4k', '8k', '16k', '32k', '64k', '128k', '256k']
+[03:45:39]  Patterns: ['sequential', 'random']
+[03:45:39]  Repetitions: 3
+[03:45:39]  iodepth: 8
+[03:45:39] ======================================
+[03:45:39] Trial order randomized: [('64k', 'read'), ('128k', 'read'), ('4k', 'read'), ('32k', 'read'), ('16k', 'read'), ('256k', 'read'), ('8k', 'read')]
+[03:45:39] Running workload: sequential 64k
+[03:45:39] Launching FIO: blocksweep_64k_read_rep1
+[03:45:39] Command: fio --name=blocksweep_64k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_64k_rep1.json --output-format=json
+[03:46:10] Completed FIO: blocksweep_64k_read_rep1
+[03:46:10]  Rep 1: {'iops': 1820.239325, 'mb_s': 113.7646484375, 'lat_avg_us': 547.523071673, 'lat_p95_us': 716.8, 'lat_p99_us': 905.216, 'blocksize': '64k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:46:10] Launching FIO: blocksweep_64k_read_rep2
+[03:46:10] Command: fio --name=blocksweep_64k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_64k_rep2.json --output-format=json
+[03:46:40] Completed FIO: blocksweep_64k_read_rep2
+[03:46:40]  Rep 2: {'iops': 1974.367521, 'mb_s': 123.3974609375, 'lat_avg_us': 504.70640521300004, 'lat_p95_us': 618.496, 'lat_p99_us': 757.76, 'blocksize': '64k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:46:40] Launching FIO: blocksweep_64k_read_rep3
+[03:46:40] Command: fio --name=blocksweep_64k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_64k_rep3.json --output-format=json
+[03:47:10] Completed FIO: blocksweep_64k_read_rep3
+[03:47:10]  Rep 3: {'iops': 1958.201393, 'mb_s': 122.38671875, 'lat_avg_us': 509.07451640899995, 'lat_p95_us': 626.688, 'lat_p99_us': 774.144, 'blocksize': '64k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:47:10]  Aggregated: iops=1917.6±84.7, mb/s=119.8±5.3, lat=520.4±23.6 us
+[03:47:10] Running workload: sequential 128k
+[03:47:10] Launching FIO: blocksweep_128k_read_rep1
+[03:47:10] Command: fio --name=blocksweep_128k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_128k_rep1.json --output-format=json
+[03:47:41] Completed FIO: blocksweep_128k_read_rep1
+[03:47:41]  Rep 1: {'iops': 1149.261691, 'mb_s': 143.6572265625, 'lat_avg_us': 868.184239595, 'lat_p95_us': 1056.768, 'lat_p99_us': 1286.144, 'blocksize': '128k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:47:41] Launching FIO: blocksweep_128k_read_rep2
+[03:47:41] Command: fio --name=blocksweep_128k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_128k_rep2.json --output-format=json
+[03:48:11] Completed FIO: blocksweep_128k_read_rep2
+[03:48:11]  Rep 2: {'iops': 1146.69511, 'mb_s': 143.3359375, 'lat_avg_us': 870.115894715, 'lat_p95_us': 1044.48, 'lat_p99_us': 1269.76, 'blocksize': '128k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:48:11] Launching FIO: blocksweep_128k_read_rep3
+[03:48:11] Command: fio --name=blocksweep_128k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_128k_rep3.json --output-format=json
+[03:48:41] Completed FIO: blocksweep_128k_read_rep3
+[03:48:41]  Rep 3: {'iops': 1127.329089, 'mb_s': 140.916015625, 'lat_avg_us': 885.000757577, 'lat_p95_us': 1056.768, 'lat_p99_us': 1253.376, 'blocksize': '128k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:48:41]  Aggregated: iops=1141.1±12.0, mb/s=142.6±1.5, lat=874.4±9.2 us
+[03:48:41] Running workload: sequential 4k
+[03:48:41] Launching FIO: blocksweep_4k_read_rep1
+[03:48:41] Command: fio --name=blocksweep_4k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_4k_rep1.json --output-format=json
+[03:49:12] Completed FIO: blocksweep_4k_read_rep1
+[03:49:12]  Rep 1: {'iops': 6397.253425, 'mb_s': 24.9892578125, 'lat_avg_us': 155.078205363, 'lat_p95_us': 205.824, 'lat_p99_us': 276.48, 'blocksize': '4k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:49:12] Launching FIO: blocksweep_4k_read_rep2
+[03:49:12] Command: fio --name=blocksweep_4k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_4k_rep2.json --output-format=json
+[03:49:42] Completed FIO: blocksweep_4k_read_rep2
+[03:49:42]  Rep 2: {'iops': 6394.520183, 'mb_s': 24.978515625, 'lat_avg_us': 155.14024712000003, 'lat_p95_us': 207.872, 'lat_p99_us': 280.576, 'blocksize': '4k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:49:42] Launching FIO: blocksweep_4k_read_rep3
+[03:49:42] Command: fio --name=blocksweep_4k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_4k_rep3.json --output-format=json
+[03:50:12] Completed FIO: blocksweep_4k_read_rep3
+[03:50:12]  Rep 3: {'iops': 6365.9878, 'mb_s': 24.8662109375, 'lat_avg_us': 155.85663729799998, 'lat_p95_us': 214.016, 'lat_p99_us': 284.672, 'blocksize': '4k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:50:12]  Aggregated: iops=6385.9±17.3, mb/s=24.9±0.1, lat=155.4±0.4 us
+[03:50:12] Running workload: sequential 32k
+[03:50:12] Launching FIO: blocksweep_32k_read_rep1
+[03:50:12] Command: fio --name=blocksweep_32k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_32k_rep1.json --output-format=json
+[03:50:43] Completed FIO: blocksweep_32k_read_rep1
+[03:50:43]  Rep 1: {'iops': 4016.666111, 'mb_s': 125.5205078125, 'lat_avg_us': 247.541254216, 'lat_p95_us': 337.92, 'lat_p99_us': 432.128, 'blocksize': '32k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:50:43] Launching FIO: blocksweep_32k_read_rep2
+[03:50:43] Command: fio --name=blocksweep_32k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_32k_rep2.json --output-format=json
+[03:51:13] Completed FIO: blocksweep_32k_read_rep2
+[03:51:13]  Rep 2: {'iops': 4171.760941, 'mb_s': 130.3671875, 'lat_avg_us': 238.39893767, 'lat_p95_us': 317.44, 'lat_p99_us': 419.84, 'blocksize': '32k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:51:13] Launching FIO: blocksweep_32k_read_rep3
+[03:51:13] Command: fio --name=blocksweep_32k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_32k_rep3.json --output-format=json
+[03:51:43] Completed FIO: blocksweep_32k_read_rep3
+[03:51:43]  Rep 3: {'iops': 4250.158328, 'mb_s': 132.8173828125, 'lat_avg_us': 233.973440604, 'lat_p95_us': 325.632, 'lat_p99_us': 428.032, 'blocksize': '32k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:51:43]  Aggregated: iops=4146.2±118.8, mb/s=129.6±3.7, lat=240.0±6.9 us
+[03:51:43] Running workload: sequential 16k
+[03:51:43] Launching FIO: blocksweep_16k_read_rep1
+[03:51:43] Command: fio --name=blocksweep_16k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_16k_rep1.json --output-format=json
+[03:52:14] Completed FIO: blocksweep_16k_read_rep1
+[03:52:14]  Rep 1: {'iops': 5841.338622, 'mb_s': 91.2705078125, 'lat_avg_us': 169.93874551800002, 'lat_p95_us': 244.736, 'lat_p99_us': 325.632, 'blocksize': '16k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:52:14] Launching FIO: blocksweep_16k_read_rep2
+[03:52:14] Command: fio --name=blocksweep_16k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_16k_rep2.json --output-format=json
+[03:52:44] Completed FIO: blocksweep_16k_read_rep2
+[03:52:44]  Rep 2: {'iops': 5887.370421, 'mb_s': 91.9892578125, 'lat_avg_us': 168.63533088399998, 'lat_p95_us': 232.448, 'lat_p99_us': 313.344, 'blocksize': '16k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:52:44] Launching FIO: blocksweep_16k_read_rep3
+[03:52:44] Command: fio --name=blocksweep_16k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_16k_rep3.json --output-format=json
+[03:53:14] Completed FIO: blocksweep_16k_read_rep3
+[03:53:14]  Rep 3: {'iops': 5857.438085, 'mb_s': 91.5224609375, 'lat_avg_us': 169.487508641, 'lat_p95_us': 240.64, 'lat_p99_us': 325.632, 'blocksize': '16k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:53:14]  Aggregated: iops=5862.0±23.4, mb/s=91.6±0.4, lat=169.4±0.7 us
+[03:53:14] Running workload: sequential 256k
+[03:53:14] Launching FIO: blocksweep_256k_read_rep1
+[03:53:14] Command: fio --name=blocksweep_256k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_256k_rep1.json --output-format=json
+[03:53:44] Completed FIO: blocksweep_256k_read_rep1
+[03:53:45]  Rep 1: {'iops': 607.792814, 'mb_s': 151.947265625, 'lat_avg_us': 1643.451298492, 'lat_p95_us': 2007.04, 'lat_p99_us': 2408.448, 'blocksize': '256k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:53:45] Launching FIO: blocksweep_256k_read_rep2
+[03:53:45] Command: fio --name=blocksweep_256k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_256k_rep2.json --output-format=json
+[03:54:15] Completed FIO: blocksweep_256k_read_rep2
+[03:54:15]  Rep 2: {'iops': 600.71331, 'mb_s': 150.177734375, 'lat_avg_us': 1662.4365016650002, 'lat_p95_us': 2088.96, 'lat_p99_us': 2473.984, 'blocksize': '256k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:54:15] Launching FIO: blocksweep_256k_read_rep3
+[03:54:15] Command: fio --name=blocksweep_256k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_256k_rep3.json --output-format=json
+[03:54:45] Completed FIO: blocksweep_256k_read_rep3
+[03:54:45]  Rep 3: {'iops': 607.079764, 'mb_s': 151.76953125, 'lat_avg_us': 1644.992528524, 'lat_p95_us': 2039.808, 'lat_p99_us': 2408.448, 'blocksize': '256k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:54:45]  Aggregated: iops=605.2±3.9, mb/s=151.3±1.0, lat=1650.3±10.5 us
+[03:54:45] Running workload: sequential 8k
+[03:54:45] Launching FIO: blocksweep_8k_read_rep1
+[03:54:45] Command: fio --name=blocksweep_8k_read_rep1 --filename=/mnt/y/acs_testfile --rw=read --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_8k_rep1.json --output-format=json
+[03:55:15] Completed FIO: blocksweep_8k_read_rep1
+[03:55:15]  Rep 1: {'iops': 6151.661611, 'mb_s': 48.0595703125, 'lat_avg_us': 161.291800586, 'lat_p95_us': 228.352, 'lat_p99_us': 301.056, 'blocksize': '8k', 'pattern': 'sequential', 'rw': 'read', 'rep': 1}
+[03:55:15] Launching FIO: blocksweep_8k_read_rep2
+[03:55:16] Command: fio --name=blocksweep_8k_read_rep2 --filename=/mnt/y/acs_testfile --rw=read --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_8k_rep2.json --output-format=json
+[03:55:46] Completed FIO: blocksweep_8k_read_rep2
+[03:55:46]  Rep 2: {'iops': 6092.296923, 'mb_s': 47.595703125, 'lat_avg_us': 162.9313236, 'lat_p95_us': 226.304, 'lat_p99_us': 296.96, 'blocksize': '8k', 'pattern': 'sequential', 'rw': 'read', 'rep': 2}
+[03:55:46] Launching FIO: blocksweep_8k_read_rep3
+[03:55:46] Command: fio --name=blocksweep_8k_read_rep3 --filename=/mnt/y/acs_testfile --rw=read --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/sequential_8k_rep3.json --output-format=json
+[03:56:16] Completed FIO: blocksweep_8k_read_rep3
+[03:56:16]  Rep 3: {'iops': 6194.426852, 'mb_s': 48.3935546875, 'lat_avg_us': 160.250834954, 'lat_p95_us': 220.16, 'lat_p99_us': 292.864, 'blocksize': '8k', 'pattern': 'sequential', 'rw': 'read', 'rep': 3}
+[03:56:16]  Aggregated: iops=6146.1±51.3, mb/s=48.0±0.4, lat=161.5±1.4 us
+[03:56:16] Trial order randomized: [('4k', 'randread'), ('256k', 'randread'), ('64k', 'randread'), ('128k', 'randread'), ('8k', 'randread'), ('32k', 'randread'), ('16k', 'randread')]
+[03:56:16] Running workload: random 4k
+[03:56:16] Launching FIO: blocksweep_4k_randread_rep1
+[03:56:16] Command: fio --name=blocksweep_4k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_4k_rep1.json --output-format=json
+[03:56:46] Completed FIO: blocksweep_4k_randread_rep1
+[03:56:46]  Rep 1: {'iops': 6221.825939, 'mb_s': 24.3037109375, 'lat_avg_us': 159.43756226, 'lat_p95_us': 218.112, 'lat_p99_us': 292.864, 'blocksize': '4k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[03:56:46] Launching FIO: blocksweep_4k_randread_rep2
+[03:56:47] Command: fio --name=blocksweep_4k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_4k_rep2.json --output-format=json
+[03:57:17] Completed FIO: blocksweep_4k_randread_rep2
+[03:57:17]  Rep 2: {'iops': 6275.224159, 'mb_s': 24.51171875, 'lat_avg_us': 158.12717599799998, 'lat_p95_us': 205.824, 'lat_p99_us': 284.672, 'blocksize': '4k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[03:57:17] Launching FIO: blocksweep_4k_randread_rep3
+[03:57:17] Command: fio --name=blocksweep_4k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=4k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_4k_rep3.json --output-format=json
+[03:57:47] Completed FIO: blocksweep_4k_randread_rep3
+[03:57:47]  Rep 3: {'iops': 6223.159228, 'mb_s': 24.30859375, 'lat_avg_us': 159.344204445, 'lat_p95_us': 216.064, 'lat_p99_us': 292.864, 'blocksize': '4k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[03:57:47]  Aggregated: iops=6240.1±30.5, mb/s=24.4±0.1, lat=159.0±0.7 us
+[03:57:47] Running workload: random 256k
+[03:57:47] Launching FIO: blocksweep_256k_randread_rep1
+[03:57:47] Command: fio --name=blocksweep_256k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_256k_rep1.json --output-format=json
+[03:58:17] Completed FIO: blocksweep_256k_randread_rep1
+[03:58:17]  Rep 1: {'iops': 585.080497, 'mb_s': 146.26953125, 'lat_avg_us': 1707.01674426, 'lat_p95_us': 2113.536, 'lat_p99_us': 2506.752, 'blocksize': '256k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[03:58:17] Launching FIO: blocksweep_256k_randread_rep2
+[03:58:17] Command: fio --name=blocksweep_256k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_256k_rep2.json --output-format=json
+[03:58:48] Completed FIO: blocksweep_256k_randread_rep2
+[03:58:48]  Rep 2: {'iops': 585.080497, 'mb_s': 146.26953125, 'lat_avg_us': 1706.868661254, 'lat_p95_us': 2113.536, 'lat_p99_us': 2441.216, 'blocksize': '256k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[03:58:48] Launching FIO: blocksweep_256k_randread_rep3
+[03:58:48] Command: fio --name=blocksweep_256k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=256k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_256k_rep3.json --output-format=json
+[03:59:18] Completed FIO: blocksweep_256k_randread_rep3
+[03:59:18]  Rep 3: {'iops': 576.614113, 'mb_s': 144.1533203125, 'lat_avg_us': 1731.395983236, 'lat_p95_us': 2179.072, 'lat_p99_us': 2637.824, 'blocksize': '256k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[03:59:18]  Aggregated: iops=582.3±4.9, mb/s=145.6±1.2, lat=1715.1±14.1 us
+[03:59:18] Running workload: random 64k
+[03:59:18] Launching FIO: blocksweep_64k_randread_rep1
+[03:59:18] Command: fio --name=blocksweep_64k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_64k_rep1.json --output-format=json
+[03:59:48] Completed FIO: blocksweep_64k_randread_rep1
+[03:59:48]  Rep 1: {'iops': 1772.107596, 'mb_s': 110.755859375, 'lat_avg_us': 562.5742868990001, 'lat_p95_us': 724.992, 'lat_p99_us': 897.024, 'blocksize': '64k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[03:59:48] Launching FIO: blocksweep_64k_randread_rep2
+[03:59:48] Command: fio --name=blocksweep_64k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_64k_rep2.json --output-format=json
+[04:00:19] Completed FIO: blocksweep_64k_randread_rep2
+[04:00:19]  Rep 2: {'iops': 1777.40742, 'mb_s': 111.087890625, 'lat_avg_us': 560.8754394270001, 'lat_p95_us': 724.992, 'lat_p99_us': 897.024, 'blocksize': '64k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[04:00:19] Launching FIO: blocksweep_64k_randread_rep3
+[04:00:19] Command: fio --name=blocksweep_64k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=64k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_64k_rep3.json --output-format=json
+[04:00:49] Completed FIO: blocksweep_64k_randread_rep3
+[04:00:49]  Rep 3: {'iops': 1749.075031, 'mb_s': 109.31640625, 'lat_avg_us': 570.057246255, 'lat_p95_us': 724.992, 'lat_p99_us': 872.448, 'blocksize': '64k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[04:00:49]  Aggregated: iops=1766.2±15.1, mb/s=110.4±0.9, lat=564.5±4.9 us
+[04:00:49] Running workload: random 128k
+[04:00:49] Launching FIO: blocksweep_128k_randread_rep1
+[04:00:49] Command: fio --name=blocksweep_128k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_128k_rep1.json --output-format=json
+[04:01:19] Completed FIO: blocksweep_128k_randread_rep1
+[04:01:19]  Rep 1: {'iops': 1041.931936, 'mb_s': 130.2412109375, 'lat_avg_us': 957.77902105, 'lat_p95_us': 1220.608, 'lat_p99_us': 1482.752, 'blocksize': '128k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[04:01:19] Launching FIO: blocksweep_128k_randread_rep2
+[04:01:19] Command: fio --name=blocksweep_128k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_128k_rep2.json --output-format=json
+[04:01:50] Completed FIO: blocksweep_128k_randread_rep2
+[04:01:50]  Rep 2: {'iops': 1000.466651, 'mb_s': 125.0576171875, 'lat_avg_us': 997.651222455, 'lat_p95_us': 1253.376, 'lat_p99_us': 1482.752, 'blocksize': '128k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[04:01:50] Launching FIO: blocksweep_128k_randread_rep3
+[04:01:50] Command: fio --name=blocksweep_128k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=128k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_128k_rep3.json --output-format=json
+[04:02:20] Completed FIO: blocksweep_128k_randread_rep3
+[04:02:20]  Rep 3: {'iops': 1022.532582, 'mb_s': 127.81640625, 'lat_avg_us': 975.928293575, 'lat_p95_us': 1253.376, 'lat_p99_us': 1548.288, 'blocksize': '128k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[04:02:20]  Aggregated: iops=1021.6±20.7, mb/s=127.7±2.6, lat=977.1±20.0 us
+[04:02:20] Running workload: random 8k
+[04:02:20] Launching FIO: blocksweep_8k_randread_rep1
+[04:02:20] Command: fio --name=blocksweep_8k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_8k_rep1.json --output-format=json
+[04:02:50] Completed FIO: blocksweep_8k_randread_rep1
+[04:02:50]  Rep 1: {'iops': 5480.617313, 'mb_s': 42.81640625, 'lat_avg_us': 181.015427784, 'lat_p95_us': 257.024, 'lat_p99_us': 333.824, 'blocksize': '8k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[04:02:50] Launching FIO: blocksweep_8k_randread_rep2
+[04:02:50] Command: fio --name=blocksweep_8k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_8k_rep2.json --output-format=json
+[04:03:21] Completed FIO: blocksweep_8k_randread_rep2
+[04:03:21]  Rep 2: {'iops': 4677.977401, 'mb_s': 36.5458984375, 'lat_avg_us': 212.04243468899998, 'lat_p95_us': 296.96, 'lat_p99_us': 370.688, 'blocksize': '8k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[04:03:21] Launching FIO: blocksweep_8k_randread_rep3
+[04:03:21] Command: fio --name=blocksweep_8k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=8k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_8k_rep3.json --output-format=json
+[04:03:51] Completed FIO: blocksweep_8k_randread_rep3
+[04:03:51]  Rep 3: {'iops': 4620.51265, 'mb_s': 36.09765625, 'lat_avg_us': 214.664935118, 'lat_p95_us': 284.672, 'lat_p99_us': 350.208, 'blocksize': '8k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[04:03:51]  Aggregated: iops=4926.4±480.9, mb/s=38.5±3.8, lat=202.6±18.7 us
+[04:03:51] Running workload: random 32k
+[04:03:51] Launching FIO: blocksweep_32k_randread_rep1
+[04:03:51] Command: fio --name=blocksweep_32k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_32k_rep1.json --output-format=json
+[04:04:22] Completed FIO: blocksweep_32k_randread_rep1
+[04:04:22]  Rep 1: {'iops': 3515.949468, 'mb_s': 109.873046875, 'lat_avg_us': 282.507958211, 'lat_p95_us': 358.4, 'lat_p99_us': 440.32, 'blocksize': '32k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[04:04:22] Launching FIO: blocksweep_32k_randread_rep2
+[04:04:22] Command: fio --name=blocksweep_32k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_32k_rep2.json --output-format=json
+[04:04:52] Completed FIO: blocksweep_32k_randread_rep2
+[04:04:52]  Rep 2: {'iops': 3972.234259, 'mb_s': 124.1318359375, 'lat_avg_us': 250.02964356299998, 'lat_p95_us': 350.208, 'lat_p99_us': 456.704, 'blocksize': '32k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[04:04:52] Launching FIO: blocksweep_32k_randread_rep3
+[04:04:52] Command: fio --name=blocksweep_32k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=32k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_32k_rep3.json --output-format=json
+[04:05:22] Completed FIO: blocksweep_32k_randread_rep3
+[04:05:22]  Rep 3: {'iops': 4053.898203, 'mb_s': 126.68359375, 'lat_avg_us': 245.212987584, 'lat_p95_us': 342.016, 'lat_p99_us': 460.8, 'blocksize': '32k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[04:05:22]  Aggregated: iops=3847.4±289.9, mb/s=120.2±9.1, lat=259.3±20.3 us
+[04:05:22] Running workload: random 16k
+[04:05:22] Launching FIO: blocksweep_16k_randread_rep1
+[04:05:22] Command: fio --name=blocksweep_16k_randread_rep1 --filename=/mnt/y/acs_testfile --rw=randread --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_16k_rep1.json --output-format=json
+[04:05:53] Completed FIO: blocksweep_16k_randread_rep1
+[04:05:53]  Rep 1: {'iops': 5532.748908, 'mb_s': 86.4482421875, 'lat_avg_us': 179.391180832, 'lat_p95_us': 244.736, 'lat_p99_us': 325.632, 'blocksize': '16k', 'pattern': 'random', 'rw': 'read', 'rep': 1}
+[04:05:53] Launching FIO: blocksweep_16k_randread_rep2
+[04:05:53] Command: fio --name=blocksweep_16k_randread_rep2 --filename=/mnt/y/acs_testfile --rw=randread --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_16k_rep2.json --output-format=json
+[04:06:23] Completed FIO: blocksweep_16k_randread_rep2
+[04:06:23]  Rep 2: {'iops': 5629.479017, 'mb_s': 87.9599609375, 'lat_avg_us': 176.28812719500002, 'lat_p95_us': 240.64, 'lat_p99_us': 325.632, 'blocksize': '16k', 'pattern': 'random', 'rw': 'read', 'rep': 2}
+[04:06:23] Launching FIO: blocksweep_16k_randread_rep3
+[04:06:23] Command: fio --name=blocksweep_16k_randread_rep3 --filename=/mnt/y/acs_testfile --rw=randread --bs=16k --size=1G --runtime=30 --iodepth=8 --numjobs=1 --time_based --direct=1 --group_reporting --randrepeat=0 --norandommap --zero_buffers=0 --output=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/logs/block_size_sweep_2025-10-01_03-39-41/random_16k_rep3.json --output-format=json
+[04:06:53] Completed FIO: blocksweep_16k_randread_rep3
+[04:06:53]  Rep 3: {'iops': 5524.149195, 'mb_s': 86.314453125, 'lat_avg_us': 179.433394551, 'lat_p95_us': 244.736, 'lat_p99_us': 325.632, 'blocksize': '16k', 'pattern': 'random', 'rw': 'read', 'rep': 3}
+[04:06:53]  Aggregated: iops=5562.1±58.5, mb/s=86.9±0.9, lat=178.4±1.8 us
+[04:06:53] Raw results CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_raw.csv
+[04:06:53] Summary CSV written: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/results/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_summary.csv
+[04:06:54] Figure saved: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/figures/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_sequential.png
+[04:06:54] Figure saved: /mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/class-wide-projects/project-3/figures/block_size_sweep_2025-10-01_03-39-41/block_size_sweep_random.png
+[04:06:54] Experiment complete.
+[04:06:54] ======================================

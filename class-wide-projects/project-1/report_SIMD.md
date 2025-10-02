@@ -1,33 +1,68 @@
-# Project 1 Report
+# Project 1: SIMD Performance and Microbenchmarking
 
-## Setup
-### Environment
-- Intel Core i7-11850H running Windows Subsystem for Linux (Ubuntu 22.04, GCC 11.4.0)
-- Process affinity pinned to a single logical core; DVFS locked to reduce timing noise
-- Affinity enforced in `kernels.cpp` by calling `SetProcessAffinityMask(..., 0x1)` on Windows or `sched_setaffinity(0, mask={CPU0})` on Linux before benchmarks begin
-- Windows power plan min/max processor state capped at 99% to clamp turbo boost and stabilize frequency
+## 1. Introduction
+This project evaluates the performance of scalar versus SIMD execution on an Intel Core i7-11850H.  
+A series of experiments were performed to measure throughput, runtime, and speedup across a range of kernels (SAXPY, Dot, ElemMul, Stencil).  
+The experiments highlight how SIMD acceleration interacts with the memory hierarchy, alignment, access patterns, datatypes, and arithmetic intensity.  
+Results are compared against theoretical expectations using roofline analysis.  
 
-### Toolchain
-- `kernels.cpp` compiled twice: scalar baseline (`-O1 -fno-tree-vectorize`) and SIMD build (`-O3 -march=native -ffast-math`)
-- Python orchestration via `project_manager.py` and experiment scripts in `experiments/`
+### System Setup
+- **CPU:** Intel Core i7-11850H (Tiger Lake, 8C/16T)  
+  - Base frequency: 2.50 GHz (Turbo disabled for consistency)  
+  - AVX2 vector width: 256 bits (8×float32, 4×float64)  
+  - L1: 32 KiB per core  
+  - L2: 1.25 MiB per core  
+  - L3: 24 MiB shared  
+- **SMT state:** 
+  - Enabled, but all experiments pinned to one physical core (`sched_setaffinity`).  
+- **Frequency scaling:** 
+  - Disabled (Windows power settings fixed at 99% min/max).  
+- **OS/Environment:** 
+  - Ubuntu 22.04 under WSL2 on Windows 10.  
+- **Toolchain:**  
+  - GCC 11.4.0  
+  - Scalar builds: `-O1 -fno-tree-vectorize`  
+  - SIMD builds: `-O3 -march=native -ffast-math`  
+  - Python 3.10 + Numpy, Pandas, Matplotlib for orchestration and plotting.  
 
-### Dependencies
-- Python packages: `numpy`, `pandas`, `matplotlib`
-- System utilities: `g++`, `lscpu`, POSIX affinity APIs (or Win32 equivalents)
+### General Methodology
+- **Repetitions:**
+  - Each experiment repeated ≥3 times; results reported as mean ± standard deviation.
+  - One warm-up run performed prior to each set to stabilize cache state and CPU frequency.
+  - Randomized trial order to reduce systematic bias (thermal drift, frequency scaling).
+- **Data Collection and Reporting:**
+  - Universal logging captured, labeled, and stored in `logs/`.
+    - Logs config at runtime: CPU metadata, SMT state, cache sizes, DRAM specs, MLC/`perf` versions.
+    - Records all commands run and terminal output.
+  - Raw data and any summary tables labeled and stored in timestamped folder in `results/`.
+    - All output data for all repetitions recorded to raw csv.
+    - Averages and standard deviations across all repetitions recorded in summary table.
+  - Relevent plots created in python using csv data and stored in timestamped folder in `plots/`
+    - Error bars included on all plots.
+    - Plots generated automatically after running experiments, but they could be created seperately using the csv data.
+- **Script Management**
+  - Individual experiment scripts found in `experiments/`.
+  - Experiments run under a unified manager script for standardization.
+  - Kernels written in a single `kernels.cpp` file, with scalar and SIMD binaries being compiled separately
+- **Validation:** 
+  - Checksums compared between scalar and SIMD runs to confirm correctness.
 
-### Configuration
-- Outputs written to timestamped directories that record warm/cold cache state
-- Randomized initial values sized to avoid denormals or trivial checksums
-- Each data point averaged over at least three trials, with optional warm-up iterations
-- Problem sizes sweep L1/L2/L3/DRAM working-set boundaries to expose locality effects
-- Logs, CSVs, and plots archived for every run to support reproducibility
+---
 
-## Baseline Correctness
+## 2. Baseline Correctness
+### Purpose
+Establish a scalar baseline and confirm correctness of SIMD implementations. Quantify throughput and runtime across cache-sized workloads.  
+
 ### Methodology
-- Use `n_midpoints` to sample each kernel (SAXPY, Dot, ElemMul, Stencil) at the midpoints of the L1/L2/L3/DRAM working-set regions.
-- For every midpoint execute scalar followed by SIMD runs (with the optional warm-up pass when requested) while recording runtimes and kernel checksums.
-- Transform the collected timings into mean/variance statistics, GFLOP/s, and scalar-versus-SIMD speedup, flagging any validation failures.
-- Write all artifacts (log, CSV, and per-kernel plus aggregate runtime/throughput/speedup plots) to `plots/baseline_<timestamp>_<cache_state>/` for later inspection.
+- **Kernels:**  
+  - SAXPY, Dot, ElemMul, Stencil.  
+- **Sample points:**  
+  - Midpoints of L1, L2, L3, and DRAM working-set regions.  
+- **Execution:**  
+  - Scalar build (`-O1 -fno-tree-vectorize`) and SIMD build (`-O3 -march=native -ffast-math`).  
+  - Runs executed back-to-back with optional warm-up run.  
+- **Validation:**  
+  - Checksums compared between scalar and SIMD runs to ensure correctness. 
 
 ### Plots
 #### Throughput
@@ -98,7 +133,7 @@
     - This makes sense, as warming up the cache with a 'dummy' run ensures consistency across all 3 trials.
     - Note: Data from 'cold' vs 'warm' runs was collected for all experiments and graphs can be viewed in the `\plots\` folder. Throughout the experiments, cold runs had slightly larger uncertainty than the warm runs. However, for the sake of brevity, the rest of this report will focus only on warm runs.  
 
-## Vectorization Verification
+## 3. Vectorization Verification
 
 To verify that SIMD vectorization occurred as intended, compiler output was inspected. Assembly listings were generated using `objdump -d` and confirmed the presence of SIMD opcodes. For my CPU, this includes instructions such as `vmovups`, `vfmadd231ps`, and `vmulps`. I performed this process on both the scalar and SIMD versions to confirm correct compilation.
 
@@ -116,12 +151,16 @@ As seen in these figures, only the SIMD-compiled version performs SIMD operation
 
 This inspection provides direct confirmation that the compiler was emitting vector instructions rather than scalar equivalents, ensuring that measured performance differences between scalar and SIMD kernels reflected true vector execution.  
 
-## Locality Sweep
-### Methodology
-- Construct a `logspace` sweep of `N` for each kernel that starts well below the L1 footprint and extends deep into DRAM-resident regions using `cache_thresholds` as anchors.
-- Run scalar then SIMD binaries across the sweep with the shared warm-up handling, capturing runtimes and output checksums for every sample.
-- Post-process the timings into GFLOP/s, scalar/SIMD speedup, and cycles-per-element using the detected CPU frequency to spotlight locality breakpoints.
-- Store the detailed log, CSV, and runtime/throughput/speedup/CPE plots in `plots/locality_<timestamp>_<cache_state>/` for memory-hierarchy analysis.
+## 4. Locality Sweep
+- **Workload sweep:**  
+  - `N` varied log-spaced from below L1 footprint to DRAM-resident sizes.  
+- **Execution:**  
+  - Both scalar and SIMD binaries with all kernels run for each `N`.  
+  - Warm-up applied before each set to stabilize cache state.  
+- **Validation:**  
+  - Checksums verified across all runs.  
+- **Metrics:**  
+  - Runtimes converted into GFLOP/s, speedup, and cycles-per-element (CPE) using measured CPU frequency.  
 
 ### Plots
 <figure>
@@ -188,12 +227,19 @@ This inspection provides direct confirmation that the compiler was emitting vect
 - Based on these graphs, it appears that the kernels become memory-bound near where N=10^5.
   - This is reasonable since this is near the L2->L3 cache boundary, which requires more intensive memory management.
 
-## Alignment Tail
+## 5. Alignment Tail
 ### Methodology
-- For every kernel enumerate the `build_N_variants` tail sizes (`no_tail_16x`, `no_tail_8x`, `tail`) and test each with aligned (offset 0) and misaligned (offset 1) buffer starts to stress tail handling.
-- Run scalar immediately followed by SIMD for each `(kernel, tail_kind, alignment)` combination, applying the shared warm-up policy and collecting timing plus checksum data.
-- Reduce the runs to runtime, GFLOP/s, and speedup summaries so the cost of misalignment and remainder cleanup is explicit.
-- Publish the log, CSV, and comparison plots under `plots/alignment_tail_<timestamp>_<cache_state>/` to review alignment-driven effects.
+- **Tail handling modes:**  
+  - `no_tail_16x`, `no_tail_8x`, `tail`.  
+- **Alignment:**  
+  - Buffers tested with aligned (offset 0) and misaligned (offset 1) starts.  
+- **Execution:**  
+  - Scalar and SIMD binaries run for every `(kernel, tail_kind, alignment)` combination.
+- **Validation:**  
+  - Checksums compared for correctness.  
+- **Metrics:**  
+  - Runtimes summarized into GFLOP/s and speedup.  
+
 ### Plots
 <figure>
   <figcaption><strong>Figure 11.</strong> SIMD vs Scalar Throughput For Alignment and Tail with Warm Cache</figcaption>
@@ -247,12 +293,19 @@ This inspection provides direct confirmation that the compiler was emitting vect
   - The performance penalty is not catastrophic but measurable; throughput typically drops by 5–15% compared to aligned cases.
   - Stencil shows the clearest alignment sensitivity, with aligned SIMD significantly outperforming misaligned SIMD in the no-tail configurations.
 
-## Stride Gather
+## 6. Stride Gather
 ### Methodology
-- Fix the workload at `N = 32e6` and sweep each kernel across representative stride choices (1, 2, 8, 32) along with blocked and random gather patterns at configurable active fractions.
-- Execute scalar then SIMD runs for every pattern using the shared warm-up cadence, logging runtimes, checksum validation, and the effective element count touched.
-- Summarize runtime, GFLOP/s, and speedup per pattern to quantify penalties introduced by non-unit access.
-- Consolidate the log, CSV, and stride/gather comparison plots inside `plots/stride_<timestamp>_<cache_state>/` for later review.
+- **Workload size:**  
+  - Fixed at `N = 32e6`.  
+- **Stride patterns:**  
+  - Unit stride (1), stride-2, stride-8, stride-32.  
+  - Blocked and random gather patterns included.  
+- **Execution:**  
+  - Scalar then SIMD runs performed for each stride/gather pattern.  
+- **Validation:**  
+  - Checksums used to confirm correctness.  
+- **Metrics:**  
+  - Runtime, GFLOP/s, and speedup per pattern. 
 
 ### Plots
 <figure>
@@ -309,12 +362,19 @@ This inspection provides direct confirmation that the compiler was emitting vect
   - With predictable strides (stride-2), the prefetcher sometimes keeps up, but effectiveness collapses at larger strides (stride-32) or random access.
   - Poor cache-line utilization is the dominant cause of throughput collapse in random gather: most of the fetched cache line is unused, wasting bandwidth and stalling SIMD pipelines waiting for data.
 
-## Datatype Comparison
+## 7. Datatype Comparison
 ### Methodology
-- Apply `n_midpoints` to choose cache-representative sizes for each kernel under both `float32` and `float64`, enabling direct comparison of precision sensitivity.
-- Run scalar then SIMD trials for every `(kernel, dtype, N)` pairing with the common warm-up approach, recording runtimes and checksum validations.
-- Convert those measurements into runtime summaries, GFLOP/s, and speedup to contrast the precision-dependent behavior.
-- Archive the log, CSV, and dtype-partitioned runtime/throughput/speedup plots in `plots/datatype_<timestamp>_<cache_state>/` for downstream analysis.
+- **Datatypes:**  
+  - Single precision (float32) and double precision (float64).  
+- **Sample points:**  
+  - Midpoints of each cache region (`n_midpoints`).  
+- **Execution:**  
+  - Scalar then SIMD runs for each `(kernel, dtype, N)` pair.  
+  - Warm-up used for consistency.  
+- **Validation:**  
+  - Checksums validated across all runs.  
+- **Metrics:**  
+  - Runtime, GFLOP/s, and speedup recorded. 
 
 ### Plots
 <figure>
@@ -363,25 +423,77 @@ This inspection provides direct confirmation that the compiler was emitting vect
 - Scalar throughput and runtime shows less difference between float32 and float64, since scalar execution uses the same number of operations regardless of datatype width.
 - Additionally, at small N, the cache locality results in significant SIMD speedup accross the board, potentially masking the differences caused by the datatypes.
 
-## Roofline Analysis
+## 8. Roofline Analysis
 ### Methodology
-- TODO: Summarize experimental procedure.
+### Methodology
+- **Kernels:**  
+  - SAXPY, Dot, Stencil.  
+- **Workload size:**  
+  - Large DRAM-resident arrays (`N ≈ 32e6`).  
+- **Execution:**  
+  - Scalar and SIMD binaries compiled and executed with warm-up handling.  
+- **Metrics:**  
+  - Runtimes converted to GFLOP/s.  
+  - Arithmetic intensity (FLOPs per byte moved) computed analytically:  
+    - SAXPY: ~0.17 FLOPs/B  
+    - Dot: 0.25 FLOPs/B  
+    - Stencil: ~0.38 FLOPs/B  
+- **Roofline construction:**  
+  - Peak bandwidth ~40 GB/s (measured in Project 2).  
+  - Peak compute = 80 GFLOP/s (2.5 GHz × 32 FLOPs/cycle per core).  
+- **Output:**  
+  - Results plotted on a roofline diagram to contextualize memory-bound vs compute-bound regimes.  
+
 ### Plots
-- TODO: Link or describe throughput-focused visualizations.
+<figure>
+  <figcaption><strong>Figure 20.</strong> Roofline Model with Kernel Placements (SIMD and Scalar).</figcaption>
+  <img src="./plots/roofline_20251001_130303_warm/roofline.png" alt="Roofline plot" width="600"/>
+</figure>
+
 ### Analysis
-- TODO: Capture SIMD vs scalar throughput behavior and alignment/tail effects.
+- All tested kernels (SAXPY, Dot, Stencil) have arithmetic intensities well below the ridge point (AI* ≈ 2 FLOPs/B). This places them in the memory-bound regime, where attainable throughput is limited by memory bandwidth rather than raw compute capability.
+- For SAXPY** and Stencil, the scalar versions already saturate the available bandwidth because each operation requires both heavy read and write traffic. SIMD reduces the number of instructions but does not alleviate the bandwidth bottleneck, so measured performance for scalar and SIMD nearly overlaps.
+- In contrast, Dot shows a clearer SIMD benefit even in the same region:
+  - Dot only reads two input arrays and accumulates into a single scalar, avoiding a large output write stream.
+  - This lighter memory footprint and the compiler’s ability to efficiently vectorize the inner multiply–accumulate loop allow SIMD to achieve higher throughput than the scalar baseline.
+- Overall, the roofline model correctly predicts that these kernels remain memory-bound, but it also highlights how differences in memory traffic patterns explain why Dot retains a SIMD benefit while SAXPY and Stencil do not.
 
-## Limitations
-- Single-core binding: All experiments were pinned to one physical core to ensure consistency. This removes noise but does not capture effects of multithreaded contention or shared resource pressure (e.g., last-level cache).
+## 9. Discussion of Anomalies/Limitations
+- **Single-core binding:**  
+  - All experiments were pinned to a single physical core to reduce variability.  
+  - While this improves consistency, it does not capture effects of multithreading such as shared last-level cache contention, SMT interactions, or bandwidth saturation across cores.  
 
-- Hardware vector width: The i7-11850H supports AVX2 (256-bit) but not AVX-512. Results therefore reflect at most 4 doubles or 8 floats per vector register. Wider SIMD units would alter both throughput and the magnitude of alignment/tail overheads.
+- **Vector width constraints (AVX2 only):**  
+  - The i7-11850H supports AVX2 (256-bit) but not AVX-512.  
+  - As a result, maximum vector width is limited to 8×float32 or 4×float64.  
+  - Wider SIMD units would change both raw throughput and the relative cost of alignment/tail overheads.  
 
-- Lack of environmental control: Experiments attempted to maintain consistency by pinning to one physical core and restricting CPU performance to 99% of its maximum to disable turbo boost. However, since these expermients were performed on an active PC over the course of a few days, some factors like background tasks and thermal conditions could not be fully controlled for.
+- **Environmental noise:**  
+  - Turbo boost was disabled to stabilize frequency, but background OS tasks and thermal conditions still introduced variability.  
+  - This explains occasional cases where scalar matched or exceeded SIMD performance at very large `N`.  
 
-- Memory subsystem bottlenecks: Many kernels become memory-bound at large problem sizes, meaning SIMD compute units are underutilized. Results may be dominated by bandwidth and cache effects rather than arithmetic performance.
+- **Memory subsystem bottlenecks:**  
+  - Many kernels became memory-bound at larger sizes, leaving SIMD compute units underutilized.  
+  - Once DRAM bandwidth is saturated, additional vectorization has no effect, masking SIMD benefits in SAXPY and Stencil.  
 
-- Compiler dependence: Vectorization outcomes depend on GCC 11.4.0’s optimization heuristics. Other compilers or newer versions could generate different instruction mixes, especially for borderline cases like gathers or tail handling.
+- **Virtualization layer (WSL2):**  
+  - Experiments were run under Windows Subsystem for Linux, which adds a thin abstraction between hardware and OS.  
+  - While lightweight, WSL2 restricts fine-grain control of CPU governors and may flatten subtle low-level effects (e.g., prefetcher tuning, DRAM scheduling).  
 
-- WSL virtualization layer: Running under Windows Subsystem for Linux introduces an abstraction between hardware and the OS. While relatively lightweight, this can restrict direct control of CPU governors and may affect precise timing.
+**Summary:**  
+The primary limitations of this project arise from environment control (single-core pinning, WSL2 noise), hardware constraints (AVX2 only), and compiler heuristics. These factors did not invalidate results but did narrow the observed contrast between scalar and SIMD in some experiments. Most notably, memory-bound behavior dominated at large sizes, preventing SIMD from achieving theoretical peak gains.
 
-- Limited instruction set exploration: Experiments focused on standard AVX2 intrinsics and auto-vectorization. Specialized instructions (e.g., fused multiply-add variants, prefetch intrinsics) were not explored, which may limit achievable peak performance.
+## 10. Conclusion
+This project systematically evaluated the performance impact of SIMD vectorization on an Intel Core i7-11850H.  
+Across seven experiments, we measured runtime, throughput, and speedup while validating results against theoretical expectations of the memory hierarchy.  
+
+- **Baseline correctness** confirmed the validity of both scalar and SIMD kernels, with SIMD showing consistent gains in cache-resident regions but diminishing benefit as memory effects dominated.  
+- **Vectorization verification** established that measured improvements corresponded to true AVX2 execution, not compiler artifacts.  
+- **Locality sweeps** highlighted cache hierarchy boundaries, showing strong SIMD speedups in L1/L2 that converged with scalar performance at DRAM scales. Cycles-per-element analysis confirmed this convergence once memory became the bottleneck.  
+- **Alignment and tail handling** demonstrated that SIMD efficiency is highest when data aligns perfectly with vector width. Tail cleanup and misalignment penalties reduced throughput modestly but predictably.  
+- **Stride and gather experiments** revealed how non-unit stride and irregular memory patterns cripple SIMD efficiency by wasting bandwidth and defeating hardware prefetchers. Random gather collapsed performance by two orders of magnitude, with both scalar and SIMD equally affected.  
+- **Datatype comparison** showed that float32 achieves higher SIMD throughput than float64, directly reflecting vector width differences (8 vs. 4 elements per AVX2 register). Compute-heavy kernels like Dot and Stencil made this effect most visible.  
+- **Roofline analysis** placed all kernels in the memory-bound regime (AI < 0.5 FLOPs/B). SAXPY and Stencil saturated DRAM bandwidth, explaining why SIMD provided little advantage. Dot retained SIMD benefit because its lighter memory footprint allowed vectorization to matter more.  
+
+**Summary:**  
+The experiments validated theoretical models of SIMD performance and memory hierarchy interaction. SIMD acceleration provides the largest benefit in compute-heavy and cache-resident workloads, but loses impact once kernels become memory-bound. Practical effects such as alignment, stride, and datatype width further modulate efficiency. The key lesson is that SIMD cannot overcome memory bottlenecks: performance at scale is dominated by locality, bandwidth, and cache/TLB behavior, not raw compute capability.
