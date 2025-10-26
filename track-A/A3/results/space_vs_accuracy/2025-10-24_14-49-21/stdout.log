@@ -1,0 +1,240 @@
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050016 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050277 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050164 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050509 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050372 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050516 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050362 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.05057 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050416 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.05 achieved=0.050379 bpe=6.23542
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010154 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010009 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010175 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.009983 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.009999 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010084 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010203 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010115 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.009894 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.01 achieved=0.010068 bpe=9.58526
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.001008 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.000994 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.000986 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.00099 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.001018 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.00101 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.00103 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.001019 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.001014 bpe=14.3778
+=== bench mode=space filter=bloom n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] bloom fpr=0.001 achieved=0.000941 bpe=14.3778
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015415 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015488 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.01537 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015342 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.01534 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015386 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015287 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015583 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015374 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.05 achieved=0.015526 bpe=7.8
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003832 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003965 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003864 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003821 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003925 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003942 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003884 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003941 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003777 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.01 achieved=0.003975 bpe=10.4
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000493 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000478 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000456 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000483 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000489 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000494 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000483 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000506 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000453 bpe=14.63
+=== bench mode=space filter=xor n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] xor fpr=0.001 achieved=0.000465 bpe=14.63
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.0875 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.094678 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.09808 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.095037 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.090889 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.095351 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.094925 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.091206 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.095127 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.05 achieved=0.091459 bpe=6.66681
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.023705 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.02365 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.023888 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.02369 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.02387 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.024041 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.024475 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.023821 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.02396 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.01 achieved=0.023735 bpe=10.6669
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000786 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000752 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.00077 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000709 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000769 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000722 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000761 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000745 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000779 bpe=20.0002
+=== bench mode=space filter=cuckoo n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] cuckoo fpr=0.001 achieved=0.000794 bpe=20.0002
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008405 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008286 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008288 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008458 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008204 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008411 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008325 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008316 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008381 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.05 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.05 achieved=0.008365 bpe=25.1658
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002056 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002094 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002029 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002107 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002121 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002065 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002134 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002126 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002031 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.01 achieved=0.002 bpe=29.3601
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000263 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000248 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.00026 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000289 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000254 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000257 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000293 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000278 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000237 bpe=35.6516
+=== bench mode=space filter=quotient n=1000000 fpr=0.001 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/space_vs_accuracy/2025-10-24_14-49-21/results.csv ===
+[SPACE] quotient fpr=0.001 achieved=0.000242 bpe=35.6516

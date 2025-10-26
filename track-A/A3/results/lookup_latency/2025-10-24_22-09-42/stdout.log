@@ -1,0 +1,480 @@
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.17%
+[LOOKUP] bloom neg=0 qps=2.59794e+07 p50=100ns p95=200ns p99=300ns fpr=0.009962
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.17%
+[LOOKUP] bloom neg=0.5 qps=2.07721e+07 p50=100ns p95=200ns p99=300ns fpr=0.009962
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.17%
+[LOOKUP] bloom neg=0.9 qps=1.82347e+07 p50=100ns p95=200ns p99=200ns fpr=0.009962
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 0.88%
+[LOOKUP] bloom neg=0 qps=2.61542e+07 p50=100ns p95=200ns p99=300ns fpr=0.010009
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 0.88%
+[LOOKUP] bloom neg=0.5 qps=2.16589e+07 p50=100ns p95=200ns p99=200ns fpr=0.010009
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 0.88%
+[LOOKUP] bloom neg=0.9 qps=1.81673e+07 p50=100ns p95=200ns p99=200ns fpr=0.010009
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.02%
+[LOOKUP] bloom neg=0 qps=2.46864e+07 p50=200ns p95=200ns p99=400ns fpr=0.010175
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.02%
+[LOOKUP] bloom neg=0.5 qps=2.10902e+07 p50=100ns p95=200ns p99=300ns fpr=0.010175
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.02%
+[LOOKUP] bloom neg=0.9 qps=1.86134e+07 p50=100ns p95=200ns p99=300ns fpr=0.010175
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.04%
+[LOOKUP] bloom neg=0 qps=2.61954e+07 p50=100ns p95=200ns p99=300ns fpr=0.009983
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.04%
+[LOOKUP] bloom neg=0.5 qps=2.1469e+07 p50=200ns p95=200ns p99=200ns fpr=0.009983
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.04%
+[LOOKUP] bloom neg=0.9 qps=1.86355e+07 p50=100ns p95=200ns p99=200ns fpr=0.009983
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 0.97%
+[LOOKUP] bloom neg=0 qps=2.59504e+07 p50=200ns p95=200ns p99=300ns fpr=0.009999
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 0.97%
+[LOOKUP] bloom neg=0.5 qps=2.10091e+07 p50=100ns p95=200ns p99=300ns fpr=0.009999
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 0.97%
+[LOOKUP] bloom neg=0.9 qps=1.88364e+07 p50=200ns p95=200ns p99=200ns fpr=0.009999
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.21%
+[LOOKUP] bloom neg=0 qps=2.62105e+07 p50=100ns p95=200ns p99=300ns fpr=0.010084
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.21%
+[LOOKUP] bloom neg=0.5 qps=2.10191e+07 p50=100ns p95=200ns p99=200ns fpr=0.010084
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.21%
+[LOOKUP] bloom neg=0.9 qps=1.84273e+07 p50=100ns p95=200ns p99=200ns fpr=0.010084
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.03%
+[LOOKUP] bloom neg=0 qps=2.50376e+07 p50=100ns p95=200ns p99=300ns fpr=0.010203
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.03%
+[LOOKUP] bloom neg=0.5 qps=2.14956e+07 p50=100ns p95=200ns p99=200ns fpr=0.010203
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.03%
+[LOOKUP] bloom neg=0.9 qps=1.86675e+07 p50=100ns p95=200ns p99=200ns fpr=0.010203
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 0.94%
+[LOOKUP] bloom neg=0 qps=2.5111e+07 p50=100ns p95=200ns p99=200ns fpr=0.010115
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 0.94%
+[LOOKUP] bloom neg=0.5 qps=2.14506e+07 p50=200ns p95=200ns p99=200ns fpr=0.010115
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 0.94%
+[LOOKUP] bloom neg=0.9 qps=1.8657e+07 p50=100ns p95=200ns p99=200ns fpr=0.010115
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 0.82%
+[LOOKUP] bloom neg=0 qps=2.59743e+07 p50=100ns p95=200ns p99=200ns fpr=0.009894
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 0.82%
+[LOOKUP] bloom neg=0.5 qps=2.13505e+07 p50=100ns p95=100ns p99=100ns fpr=0.009894
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 0.82%
+[LOOKUP] bloom neg=0.9 qps=1.83362e+07 p50=100ns p95=200ns p99=200ns fpr=0.009894
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] bloom FP rate (10k sample) = 1.01%
+[LOOKUP] bloom neg=0 qps=2.56739e+07 p50=100ns p95=200ns p99=300ns fpr=0.010068
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] bloom FP rate (10k sample) = 1.01%
+[LOOKUP] bloom neg=0.5 qps=2.1759e+07 p50=200ns p95=200ns p99=200ns fpr=0.010068
+=== bench mode=lookup filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] bloom target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] bloom FP rate (10k sample) = 1.01%
+[LOOKUP] bloom neg=0.9 qps=1.85317e+07 p50=100ns p95=200ns p99=200ns fpr=0.010068
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.33%
+[LOOKUP] xor neg=0 qps=1.94964e+07 p50=100ns p95=200ns p99=200ns fpr=0.00381
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.33%
+[LOOKUP] xor neg=0.5 qps=2.0318e+07 p50=100ns p95=100ns p99=200ns fpr=0.00381
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.33%
+[LOOKUP] xor neg=0.9 qps=1.97376e+07 p50=100ns p95=500ns p99=500ns fpr=0.00381
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.42%
+[LOOKUP] xor neg=0 qps=2.01882e+07 p50=100ns p95=200ns p99=200ns fpr=0.003965
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.42%
+[LOOKUP] xor neg=0.5 qps=1.94778e+07 p50=100ns p95=200ns p99=200ns fpr=0.003965
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.42%
+[LOOKUP] xor neg=0.9 qps=1.94813e+07 p50=100ns p95=200ns p99=200ns fpr=0.003965
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.57%
+[LOOKUP] xor neg=0 qps=1.95424e+07 p50=100ns p95=200ns p99=200ns fpr=0.003864
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.57%
+[LOOKUP] xor neg=0.5 qps=2.05553e+07 p50=100ns p95=100ns p99=200ns fpr=0.003864
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.57%
+[LOOKUP] xor neg=0.9 qps=1.93768e+07 p50=100ns p95=100ns p99=100ns fpr=0.003864
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0 qps=1.96774e+07 p50=100ns p95=200ns p99=300ns fpr=0.003821
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0.5 qps=1.92153e+07 p50=200ns p95=200ns p99=200ns fpr=0.003821
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0.9 qps=1.90405e+07 p50=100ns p95=200ns p99=200ns fpr=0.003821
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0 qps=2.0282e+07 p50=100ns p95=200ns p99=400ns fpr=0.003925
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.5 qps=1.95409e+07 p50=100ns p95=100ns p99=200ns fpr=0.003925
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.9 qps=2.01933e+07 p50=100ns p95=200ns p99=200ns fpr=0.003925
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0 qps=1.95394e+07 p50=100ns p95=300ns p99=400ns fpr=0.003942
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0.5 qps=1.94751e+07 p50=100ns p95=200ns p99=300ns fpr=0.003942
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.32%
+[LOOKUP] xor neg=0.9 qps=1.96639e+07 p50=100ns p95=100ns p99=200ns fpr=0.003942
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0 qps=1.96926e+07 p50=200ns p95=200ns p99=200ns fpr=0.003884
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.5 qps=1.96387e+07 p50=100ns p95=200ns p99=300ns fpr=0.003884
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.9 qps=1.91453e+07 p50=100ns p95=200ns p99=200ns fpr=0.003884
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0 qps=1.91344e+07 p50=100ns p95=200ns p99=200ns fpr=0.003941
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.5 qps=1.95978e+07 p50=100ns p95=200ns p99=300ns fpr=0.003941
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.39%
+[LOOKUP] xor neg=0.9 qps=1.9513e+07 p50=100ns p95=100ns p99=100ns fpr=0.003941
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.45%
+[LOOKUP] xor neg=0 qps=1.93691e+07 p50=100ns p95=200ns p99=200ns fpr=0.003777
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.45%
+[LOOKUP] xor neg=0.5 qps=1.90801e+07 p50=100ns p95=200ns p99=200ns fpr=0.003777
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.45%
+[LOOKUP] xor neg=0.9 qps=1.93184e+07 p50=100ns p95=200ns p99=200ns fpr=0.003777
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] xor FP rate (10k sample) = 0.34%
+[LOOKUP] xor neg=0 qps=2.02306e+07 p50=100ns p95=200ns p99=300ns fpr=0.003975
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] xor FP rate (10k sample) = 0.34%
+[LOOKUP] xor neg=0.5 qps=1.92377e+07 p50=100ns p95=200ns p99=200ns fpr=0.003975
+=== bench mode=lookup filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] xor target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] xor FP rate (10k sample) = 0.34%
+[LOOKUP] xor neg=0.9 qps=1.94064e+07 p50=100ns p95=200ns p99=200ns fpr=0.003975
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.75%
+[LOOKUP] cuckoo neg=0 qps=8.30385e+06 p50=200ns p95=500ns p99=500ns fpr=0.007107
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.75%
+[LOOKUP] cuckoo neg=0.5 qps=8.75675e+06 p50=200ns p95=400ns p99=500ns fpr=0.007107
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.75%
+[LOOKUP] cuckoo neg=0.9 qps=9.20358e+06 p50=200ns p95=300ns p99=400ns fpr=0.007107
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0 qps=7.42291e+06 p50=200ns p95=400ns p99=800ns fpr=0.006866
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0.5 qps=8.94795e+06 p50=200ns p95=300ns p99=300ns fpr=0.006866
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0.9 qps=9.62401e+06 p50=200ns p95=400ns p99=400ns fpr=0.006866
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.65%
+[LOOKUP] cuckoo neg=0 qps=7.53128e+06 p50=200ns p95=400ns p99=400ns fpr=0.006996
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.65%
+[LOOKUP] cuckoo neg=0.5 qps=8.07736e+06 p50=200ns p95=400ns p99=400ns fpr=0.006996
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.65%
+[LOOKUP] cuckoo neg=0.9 qps=9.52511e+06 p50=200ns p95=300ns p99=500ns fpr=0.006996
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.77%
+[LOOKUP] cuckoo neg=0 qps=7.76379e+06 p50=200ns p95=300ns p99=300ns fpr=0.007
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.77%
+[LOOKUP] cuckoo neg=0.5 qps=8.96236e+06 p50=200ns p95=300ns p99=500ns fpr=0.007
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.77%
+[LOOKUP] cuckoo neg=0.9 qps=1.00973e+07 p50=200ns p95=200ns p99=300ns fpr=0.007
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.69%
+[LOOKUP] cuckoo neg=0 qps=7.86421e+06 p50=200ns p95=400ns p99=600ns fpr=0.006938
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.69%
+[LOOKUP] cuckoo neg=0.5 qps=8.30479e+06 p50=200ns p95=500ns p99=700ns fpr=0.006938
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.69%
+[LOOKUP] cuckoo neg=0.9 qps=9.36442e+06 p50=200ns p95=500ns p99=600ns fpr=0.006938
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.61%
+[LOOKUP] cuckoo neg=0 qps=6.83455e+06 p50=300ns p95=600ns p99=800ns fpr=0.006835
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.61%
+[LOOKUP] cuckoo neg=0.5 qps=8.93254e+06 p50=200ns p95=300ns p99=500ns fpr=0.006835
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.61%
+[LOOKUP] cuckoo neg=0.9 qps=9.51192e+06 p50=200ns p95=400ns p99=500ns fpr=0.006835
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.6%
+[LOOKUP] cuckoo neg=0 qps=7.49215e+06 p50=200ns p95=300ns p99=400ns fpr=0.006857
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.6%
+[LOOKUP] cuckoo neg=0.5 qps=8.36195e+06 p50=200ns p95=400ns p99=500ns fpr=0.006857
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.6%
+[LOOKUP] cuckoo neg=0.9 qps=9.30432e+06 p50=200ns p95=400ns p99=400ns fpr=0.006857
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.7%
+[LOOKUP] cuckoo neg=0 qps=8.23818e+06 p50=200ns p95=400ns p99=700ns fpr=0.006828
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.7%
+[LOOKUP] cuckoo neg=0.5 qps=7.63739e+06 p50=300ns p95=400ns p99=400ns fpr=0.006828
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.7%
+[LOOKUP] cuckoo neg=0.9 qps=9.06118e+06 p50=200ns p95=400ns p99=400ns fpr=0.006828
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0 qps=8.02904e+06 p50=200ns p95=500ns p99=600ns fpr=0.006884
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0.5 qps=8.36376e+06 p50=200ns p95=500ns p99=500ns fpr=0.006884
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.59%
+[LOOKUP] cuckoo neg=0.9 qps=9.71929e+06 p50=200ns p95=300ns p99=400ns fpr=0.006884
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] cuckoo FP rate (10k sample) = 0.76%
+[LOOKUP] cuckoo neg=0 qps=7.64385e+06 p50=200ns p95=500ns p99=600ns fpr=0.006991
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] cuckoo FP rate (10k sample) = 0.76%
+[LOOKUP] cuckoo neg=0.5 qps=8.32618e+06 p50=200ns p95=400ns p99=400ns fpr=0.006991
+=== bench mode=lookup filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] cuckoo target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] cuckoo FP rate (10k sample) = 0.76%
+[LOOKUP] cuckoo neg=0.9 qps=8.85257e+06 p50=200ns p95=500ns p99=600ns fpr=0.006991
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0 qps=1.48526e+07 p50=100ns p95=200ns p99=300ns fpr=0.001825
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.5 qps=1.33235e+07 p50=200ns p95=300ns p99=400ns fpr=0.001825
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.9 qps=1.61894e+07 p50=100ns p95=300ns p99=400ns fpr=0.001825
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.18%
+[LOOKUP] quotient neg=0 qps=1.48719e+07 p50=100ns p95=300ns p99=400ns fpr=0.001895
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.18%
+[LOOKUP] quotient neg=0.5 qps=1.20552e+07 p50=200ns p95=400ns p99=600ns fpr=0.001895
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.18%
+[LOOKUP] quotient neg=0.9 qps=1.16326e+07 p50=200ns p95=500ns p99=500ns fpr=0.001895
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0 qps=1.42527e+07 p50=200ns p95=400ns p99=4600ns fpr=0.001879
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0.5 qps=1.24824e+07 p50=200ns p95=300ns p99=400ns fpr=0.001879
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0.9 qps=1.5183e+07 p50=200ns p95=300ns p99=300ns fpr=0.001879
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0 qps=1.38676e+07 p50=100ns p95=500ns p99=500ns fpr=0.001951
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.5 qps=1.31502e+07 p50=200ns p95=400ns p99=500ns fpr=0.001951
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.9 qps=1.52236e+07 p50=100ns p95=300ns p99=400ns fpr=0.001951
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.24%
+[LOOKUP] quotient neg=0 qps=1.0605e+07 p50=200ns p95=400ns p99=600ns fpr=0.001925
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.24%
+[LOOKUP] quotient neg=0.5 qps=1.17893e+07 p50=200ns p95=400ns p99=500ns fpr=0.001925
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.24%
+[LOOKUP] quotient neg=0.9 qps=1.36886e+07 p50=200ns p95=300ns p99=400ns fpr=0.001925
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0 qps=1.20337e+07 p50=200ns p95=300ns p99=400ns fpr=0.001893
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0.5 qps=1.33907e+07 p50=100ns p95=300ns p99=400ns fpr=0.001893
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.14%
+[LOOKUP] quotient neg=0.9 qps=1.52851e+07 p50=200ns p95=300ns p99=500ns fpr=0.001893
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0 qps=1.46976e+07 p50=100ns p95=300ns p99=300ns fpr=0.001942
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.5 qps=1.26679e+07 p50=100ns p95=300ns p99=300ns fpr=0.001942
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.25%
+[LOOKUP] quotient neg=0.9 qps=1.64164e+07 p50=100ns p95=200ns p99=300ns fpr=0.001942
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.13%
+[LOOKUP] quotient neg=0 qps=1.48252e+07 p50=200ns p95=200ns p99=300ns fpr=0.001959
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.13%
+[LOOKUP] quotient neg=0.5 qps=1.34273e+07 p50=100ns p95=200ns p99=500ns fpr=0.001959
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.13%
+[LOOKUP] quotient neg=0.9 qps=1.62549e+07 p50=100ns p95=300ns p99=300ns fpr=0.001959
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.21%
+[LOOKUP] quotient neg=0 qps=1.39058e+07 p50=200ns p95=300ns p99=400ns fpr=0.001824
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.21%
+[LOOKUP] quotient neg=0.5 qps=1.33173e+07 p50=200ns p95=300ns p99=400ns fpr=0.001824
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.21%
+[LOOKUP] quotient neg=0.9 qps=1.51741e+07 p50=100ns p95=300ns p99=500ns fpr=0.001824
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0 actual=0  pos=1000000  neg=0
+[SANITY] quotient FP rate (10k sample) = 0.19%
+[LOOKUP] quotient neg=0 qps=1.48363e+07 p50=100ns p95=200ns p99=400ns fpr=0.001787
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.5 actual=0.5  pos=500000  neg=500000
+[SANITY] quotient FP rate (10k sample) = 0.19%
+[LOOKUP] quotient neg=0.5 qps=1.09607e+07 p50=200ns p95=400ns p99=500ns fpr=0.001787
+=== bench mode=lookup filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/lookup_latency/2025-10-24_22-09-42/results.csv ===
+[SANITY] quotient target_neg_ratio=0.9 actual=0.9  pos=100000  neg=900000
+[SANITY] quotient FP rate (10k sample) = 0.19%
+[LOOKUP] quotient neg=0.9 qps=6.77019e+06 p50=300ns p95=500ns p99=500ns fpr=0.001787

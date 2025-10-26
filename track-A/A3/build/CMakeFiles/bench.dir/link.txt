@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/bench.dir/benchmark/bench.cpp.o CMakeFiles/bench.dir/filters/bloom.cpp.o CMakeFiles/bench.dir/filters/cuckoo.cpp.o CMakeFiles/bench.dir/filters/quotient.cpp.o CMakeFiles/bench.dir/filters/xor.cpp.o -o bench  libxxhash.a 

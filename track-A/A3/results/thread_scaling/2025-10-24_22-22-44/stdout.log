@@ -1,0 +1,800 @@
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.52147e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.52845e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.57454e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.61713e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.6342e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.55932e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.56425e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.48655e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.43069e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=1 totalQ=1000000 qps=1.4822e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.04494e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.12583e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.0945e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.04728e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.17725e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.14598e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.02667e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.16346e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=2.90549e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=2 totalQ=2000000 qps=3.08563e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.23225e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.69513e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.24352e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.59319e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=4.98495e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.83874e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.64564e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=5.98774e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=6.10539e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=4 totalQ=4000000 qps=4.68661e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=5.68396e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=8.08186e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=8.20216e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=7.36863e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=6.60353e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=7.79832e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=7.72937e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=7.5312e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=6.93919e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=8 totalQ=8000000 qps=7.85026e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.29698e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.79191e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.43646e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.70509e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.50374e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.0704e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.64711e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.51217e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=6.17376e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=read_mostly T=16 totalQ=16000000 qps=7.11241e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.35269e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.42164e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.37323e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.35995e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.38224e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.39989e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.35645e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.44855e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.27014e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=1 totalQ=1000000 qps=1.41219e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.75024e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.66865e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.76888e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.53736e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.70203e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.64513e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.7344e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.65948e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.62783e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=2 totalQ=2000000 qps=2.73879e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.61475e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.79283e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.65946e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=5.25019e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=5.20013e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=5.11859e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.19446e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.19762e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=4.43886e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=4 totalQ=4000000 qps=5.42376e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.11131e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.7069e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.64149e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.34986e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.53287e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.81342e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=6.94215e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.45317e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.2787e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=8 totalQ=8000000 qps=7.59777e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=7.75578e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.18028e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.19054e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.12172e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.63274e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.69252e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=7.59967e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=6.04451e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=8.37479e+07
+=== bench mode=threads filter=bloom n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] bloom wl=balanced T=16 totalQ=16000000 qps=7.91145e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.31721e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=8.23262e+06
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.26086e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.32811e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.35126e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.37533e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.33095e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.30627e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.36311e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=1 totalQ=1000000 qps=1.40416e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.82797e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.78928e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.75698e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.6959e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.82657e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.7825e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.79818e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.59794e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.83917e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=2 totalQ=2000000 qps=2.8206e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.27865e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.52379e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.65712e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=3.10128e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.17416e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=4.51582e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.50822e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.60757e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=5.61818e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=4 totalQ=4000000 qps=4.42752e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.28486e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.53682e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.04266e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.13533e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=7.23552e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.4384e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=5.63516e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.40591e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=6.35954e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=8 totalQ=8000000 qps=5.26945e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=8.12516e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=8.24868e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=7.82101e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=9.29325e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=8.09546e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=8.21098e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=8.41415e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=6.02289e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=7.42636e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=read_mostly T=16 totalQ=16000000 qps=7.95765e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.27357e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.34885e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.33671e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.32117e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.26092e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.34084e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.3428e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.36408e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.36524e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=1 totalQ=1000000 qps=1.31098e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.76291e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.66116e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.6133e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.68769e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.59912e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.70412e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.78278e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.69066e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.75586e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=2 totalQ=2000000 qps=2.69765e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.57848e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.3726e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.49725e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.47245e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.15413e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=3.21884e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.56309e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.48366e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.27954e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=4 totalQ=4000000 qps=5.37686e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.02227e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=6.50051e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.45429e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.13372e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.37277e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.41772e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=7.29252e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=6.22744e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=6.42788e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=8 totalQ=8000000 qps=6.0937e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.01812e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.1605e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.16511e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=8.92288e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.4055e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.33936e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=9.08392e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=8.37701e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=8.60522e+07
+=== bench mode=threads filter=xor n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] xor wl=balanced T=16 totalQ=16000000 qps=8.62821e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.96448e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.76341e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.33228e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.94762e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=6.07467e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.79453e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.88863e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=6.03727e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.62858e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=1 totalQ=1000000 qps=5.61844e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.28023e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.2263e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.19697e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.29791e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.23741e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.26439e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.19276e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.30691e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.29575e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=2 totalQ=2000000 qps=1.20997e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.75094e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.64506e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.6321e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.68918e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.71824e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.70571e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.03051e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.69192e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.11672e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=4 totalQ=4000000 qps=2.69982e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.99042e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.70548e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=4.32518e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.5946e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.97804e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=4.08245e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.92315e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.63637e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=4.17958e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=8 totalQ=8000000 qps=3.83706e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.97376e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.40214e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=4.96864e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.58477e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.79733e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.96487e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.55743e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.02664e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.38099e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=read_mostly T=16 totalQ=16000000 qps=5.53149e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.95307e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=6.07243e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.44894e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.73221e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=6.11721e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.73818e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.93257e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=6.07536e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.88506e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=1 totalQ=1000000 qps=5.99804e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.34293e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.27469e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=9.61198e+06
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.27175e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.27694e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.24243e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.28374e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.28108e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.26767e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=2 totalQ=2000000 qps=1.35759e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=1.9859e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.66572e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.10486e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.8287e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.80708e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.79818e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.79419e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=1.92518e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.76918e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=4 totalQ=4000000 qps=2.68176e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.02988e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=3.77609e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=3.67235e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.1841e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.33203e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.21745e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=3.30235e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=2.65774e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.23852e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=8 totalQ=8000000 qps=4.13275e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.78027e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=6.14347e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.48474e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=6.25382e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=6.32727e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.64252e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=6.23059e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.04085e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.46002e+07
+=== bench mode=threads filter=cuckoo n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] cuckoo wl=balanced T=16 totalQ=16000000 qps=5.06791e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.00098e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.04408e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.09977e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.03662e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.02904e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.0899e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.08422e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.05732e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=9.10051e+06
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=1 totalQ=1000000 qps=1.00759e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=1.82099e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=1.97999e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.12539e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.13622e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.20634e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.21009e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.2298e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.1009e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.04078e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=2 totalQ=2000000 qps=2.19506e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=4.49049e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=2.63422e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=2.6918e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=3.76213e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=3.57863e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=3.98281e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=3.77417e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=4.03013e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=4.49004e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=4 totalQ=4000000 qps=4.12725e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=3.78957e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=5.65842e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=6.08246e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=5.62741e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=6.07894e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=5.94011e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=5.44636e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=6.98902e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=6.70045e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=8 totalQ=8000000 qps=5.76974e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.07992e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.80735e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.9059e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.82957e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.02588e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.85889e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.57645e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.4601e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.34137e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=read_mostly T=16 totalQ=16000000 qps=8.82474e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.03083e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.02813e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.03397e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.03612e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.01766e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.03514e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=9.86291e+06
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=9.97317e+06
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=1.01924e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=1 totalQ=1000000 qps=8.60026e+06
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.9003e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.54115e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.74585e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.87843e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.90738e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.84782e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.86742e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.73066e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.71021e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=2 totalQ=2000000 qps=1.39186e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=2.76843e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=2.87036e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=3.66614e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=3.55906e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=3.81033e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=4.1049e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=3.56981e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=4.15603e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=4.18288e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=4 totalQ=4000000 qps=4.03503e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=4.50734e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.71187e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=6.03219e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.8391e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=6.02476e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.25036e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.55778e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.92078e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=5.71633e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=8 totalQ=8000000 qps=6.33146e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=8.02444e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=6.38843e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=8.06995e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=7.45942e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=6.85883e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=7.38858e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=6.69074e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=8.43033e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=8.85525e+07
+=== bench mode=threads filter=quotient n=1000000 fpr=0.01 out=/mnt/c/Users/LaunJames/Documents/Classes/Semester_9/ACS/ACS/track-A/A3/results/thread_scaling/2025-10-24_22-22-44/results.csv ===
+[THREADS] quotient wl=balanced T=16 totalQ=16000000 qps=8.63336e+07
